@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Large model weights & checkpoints (exceed GitHub 100 MB limit)
+checkpoints/
+qwen25_3b_cpe_lora*/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Raw 170 MB NVD CPE dump (use the compact cpe_lookup_cache.json instead)
+data/cpe_index/extracted_cpe_targets.json
+
+# Experiment outputs & logs
+outputs/
+*.log
+.DS_Store
+Thumbs.db
