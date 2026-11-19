@@ -4,12 +4,43 @@ A two-stage pipeline for extracting **CPE 2.3** (`part:vendor:product:version`) 
 
 ---
 
-## Why 2 Stages?
+## Why 2 Stages? (Qwen Does Not Output Final CPE Strings)
 
 Real TOE titles routinely combine shorthand model lists (`C7771/C6671/C5571`), omitted OEM vendors (`bizhub C754 / ineo+ 754`), multi-clause version bindings (`C160 running AsyncOS 7.1 and C670 running AsyncOS 7.3`), multi-ROM versions, and certificate noise (`ANSSI-CC-...`).
 
-1. **Stage 1 — `Qwen2.5-3B` (QLoRA + Outlines JSON):** Expands prefixes, separates base `targets` from shared `companions` (firmware/OS/ROMs/kits), splits independent `clauses`, and strips noise.
-2. **Stage 2 — `CPEDictionaryResolver` (`src/cpe_resolver.py`):** Resolves missing/alias vendors against a standalone 142k-product NVD CPE cache (`cpe_lookup_cache.json`), guards against vendor hallucinations, and outputs `cpe:2.3:...` strings.
+**Important:** `Qwen2.5-3B` does **not** output final `cpe:2.3:...` strings directly. Instead, it extracts a clean intermediate JSON structure, and Python converts that JSON into official CPE strings:
+
+1. **Stage 1 — `Qwen2.5-3B` (QLoRA + Outlines JSON):** Expands shorthand prefixes, separates base `targets` from shared `companions` (firmware/OS/ROMs/kits), splits independent `clauses`, and strips noise.
+2. **Stage 2 — `CPEDictionaryResolver` (`src/cpe_resolver.py`):** Looks up missing/alias vendors in the standalone 142k-product NVD CPE cache (`cpe_lookup_cache.json`) and programmatically builds the final `cpe:2.3:...` strings.
+
+### Example (Input → Stage 1 JSON → Stage 2 CPEs)
+
+**Raw Input:**
+> `"Fuji Xerox DocuCentre-IV C2265/C2263 Series Controller Software Version: Controller ROM Ver. 1.101.12"`
+
+**Stage 1 — Annotated Qwen Output (JSON):**
+```json
+{
+  "clauses": [
+    {
+      "targets": [
+        {"vendor": "Fuji Xerox", "product": "DocuCentre-IV C2265", "part": "h", "version": "-"},
+        {"vendor": "Fuji Xerox", "product": "DocuCentre-IV C2263", "part": "h", "version": "-"}
+      ],
+      "companions": [
+        {"vendor": null, "product": "Controller ROM", "part": "o", "versions": ["1.101.12"]}
+      ]
+    }
+  ]
+}
+```
+
+**Stage 2 — Programmatic CPE Output (`cpe_resolver.py`):**
+```text
+cpe:2.3:h:fujixerox:docucentre-iv_c2265:-:*:*:*:*:*:*:*
+cpe:2.3:h:fujixerox:docucentre-iv_c2263:-:*:*:*:*:*:*:*
+cpe:2.3:o:fujixerox:controller_rom:1.101.12:*:*:*:*:*:*:*
+```
 
 ---
 
@@ -87,7 +118,8 @@ python src/infer_and_resolve.py --reprocess_only outputs/names_predictions.json
 
 ## Suggestions for Improvement
 
-1. **Evaluation Metrics:** Annotate a 50–100 entry gold subset from `data/benchmarks/` and measure exact/fuzzy `(part, vendor, product, version)` F1 and multi-clause pairing accuracy.
-2. **Synthetic Data Coverage (`src/generate_synthetic_dataset.py`):** Add extreme multi-module firmware lists (15+ modules), French/German Common Criteria phrasing, OS-on-Hardware stacking, and missing-space typos (`TOSHIBAe-STUDIO...`).
-3. **Fine-Tuning Experiments (`src/train_qwen.py`):** Tune LoRA rank (`r=8/16/32`), epochs (`1–2`), dataset size (`5k–10k`), compare `Qwen2.5-1.5B/7B` or `Qwen3`, or explore GRPO/DPO with CPE validity rewards.
-4. **CPE Linking (`src/cpe_resolver.py`):** Upgrade prefix lookup to BM25 or dense embedding retrieval over the 142k CPE dictionary. *(To regenerate synthetic data from raw NVD entries, place `extracted_cpe_targets.json` in `data/cpe_index/`.)*
+1. **Write an Annotation Codebook:** Define clear rules for tricky edge cases (e.g., when a component is `h` vs `o` vs `a`, how to handle sub-versions like Service Packs/ROMs, and what text counts as noise).
+2. **Create a Small Hand-Labeled Test Set:** Manually annotate 50–100 entries from `data/benchmarks/` using the codebook so you can measure real accuracy before and after every change.
+3. **Expand the Synthetic Training Data (`src/generate_synthetic_dataset.py`):** Inspect where the model makes mistakes on `data/benchmarks/` (such as multi-module firmware lists, French/German titles, or missing spaces like `TOSHIBAe-STUDIO...`) and add matching synthetic patterns.
+4. **Tune Training Settings (`src/train_qwen.py`):** Test different LoRA ranks (`r=8, 16, 32`), learning rates, epoch counts (`1–2`), or larger synthetic datasets (`5,000+` examples) and compare scores on your hand-labeled test set.
+5. **Improve Vendor & Product Matching (`src/cpe_resolver.py`):** Add missing vendor/chip rules or improve fuzzy matching against `cpe_lookup_cache.json` for product names that don't match exactly.
