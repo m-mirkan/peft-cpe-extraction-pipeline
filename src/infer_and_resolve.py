@@ -82,11 +82,17 @@ def main():
             f"<|im_start|>assistant\n"
         )
 
-        raw_json = model(prompt, TOEExtraction, max_new_tokens=1024)
-        if isinstance(raw_json, str):
-            parsed = TOEExtraction.model_validate_json(raw_json)
-        else:
-            parsed = raw_json
+        try:
+            raw_json = model(prompt, TOEExtraction, max_new_tokens=2048)
+            if isinstance(raw_json, str):
+                parsed = TOEExtraction.model_validate_json(raw_json)
+            else:
+                parsed = raw_json
+        except Exception as e:
+            err = f"{type(e).__name__}: {str(e)[:300]}"
+            print(f"\n[{i}] FAILED: {raw_text}\n  {err}")
+            all_outputs.append({"index": i, "input": raw_text, "error": err, "extracted_structure": None, "cpes": []})
+            continue
 
         cpes = resolver.build_cpes_from_extraction(
             parsed,
@@ -106,6 +112,9 @@ def main():
                 "cpes": cpes,
             }
         )
+        os.makedirs(os.path.dirname(args.output_file) or ".", exist_ok=True)
+        with open(args.output_file, "w", encoding="utf-8") as f:
+            json.dump(all_outputs, f, indent=2, ensure_ascii=False)
 
     out_dir = os.path.dirname(args.output_file)
     if out_dir:
