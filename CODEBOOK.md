@@ -1,6 +1,6 @@
 # Annotation Codebook — TOE title → Stage-1 JSON
 
-**Version:** v0 (draft, 2026-11-20) · **Status:** proposed rules, NOT yet validated · **Author:** Mohamed
+**Version:** v0.2 (draft, 2026-11-21) · **Status:** proposed rules, NOT yet validated (D1, D2 decided; D3-D7 have PROPOSED defaults awaiting your confirmation) · **Author:** Mohamed
 
 ## 0. Purpose and how this document is used
 
@@ -41,14 +41,14 @@ It is applied in four places:
 ### R2 — Software products follow the NVD part when the product exists
 - Cisco PIX Firewall → `o` (NVD: o 75, a 2). *Baseline: `a` in [58].*
 - Check Point VPN-1 / FireWall-1 → `a` (NVD: a 9 / a 17). *Baseline: `h` in [60], `a` in [63] → inconsistent.*
-- Sidewinder G2 *Software* must get ONE part. *Baseline: `a` in [61], `o` in [62].* → **D2**
+- Sidewinder G2 *Software* must get ONE part. *Baseline: `a` in [61], `o` in [62].* **Decided (D2):** when NVD splits between `o` and `a`, use the NVD majority for that product (ASA software → `o`, NX-OS → `o`). If the product is not in NVD (Sidewinder G2 Software), system software of a firewall/network appliance → `o`.
 - VMware vSphere → `a` (NVD: vmware a 8, o 1); ESXi → `o` (NVD: o 530). *Baseline: `o` in [1].*
 - Email Security Appliance → `a` (NVD: a 104, h 11). Baseline matched ([26]).
 
 ### R3 — Firmware / ROM components
 - Firmware, Controller ROM, FAX ROM, control software that runs a printer or device → `o`.
 - NVD names these `<model>_firmware` (about 40,000 NVD products, almost all `o`). The bare product `firmware` has almost no NVD entries. *Baseline emits `firmware`, `control_software`, `system`, `panel`, `fax` in about 15 titles (e.g. [4], [5], [29], [35], [38]–[41], [85]–[88]).*
-- → **D1** decides how the model-bound name is produced (model vs resolver).
+- **Decided (D1):** the model outputs a plain component (`Firmware`, `Controller ROM`, `Control Software`, …) with `part: "o"` and its version. The resolver does the naming: it binds each firmware component to the hardware models of its clause as `<model>_firmware` (the resolver's `attach_shared_firmware_to_models` mode, which should become the default). The model must never invent model-bound names itself.
 
 ### R4 — Versions
 - A version never stays inside `product`. `vSphere 5.5 Update 2` → product `vSphere`, version `5.5 Update 2`. *Baseline: version `-` in [1], [25], [69], [73].*
@@ -92,13 +92,16 @@ It is applied in four places:
 
 ## 5. Open decisions (need your call)
 
-- **D1.** Firmware naming: should the model output `Firmware` and the resolver bind it to the model (`<model>_firmware`), or should the model output the bound name? (The notebook already has an `attach_fw` toggle.)
-- **D2.** Sidewinder G2 Software, ASA software, NX-OS: NVD is split between `o` and `a`. Pick one convention per product family.
-- **D3.** When to keep `Series` / `Services Gateway` in the product name (check each against NVD).
-- **D4.** Editions (`Platinum Edition`): drop, or append to the version?
-- **D5.** Options, kits, part numbers (`Data Security Kit`, `Secure Element (P/N 57X0185)`): products or noise?
-- **D6.** Policy for ambiguous titles (flag in the gold set? how should the model behave?).
-- **D7.** Bare model numbers / letters: prepend the family name, or keep as-is?
+- ~~**D1.**~~ **DECIDED (2026-11-21):** the resolver does firmware naming (`<model>_firmware`); the model outputs a plain component. See R3.
+- ~~**D2.**~~ **DECIDED (2026-11-21):** NVD majority when NVD is split; `o` for unlisted firewall/network system software. See R2.
+- **D3. PROPOSED:** drop `Series` / `Services Gateway` / device-class nouns from the product. Keep `Series` only if the exact NVD product name contains it (check with the lookup cache before keeping).
+- **D4. PROPOSED:** drop editions (`Enterprise Edition`, `Platinum Edition`), architecture, language and `LTS`. The version holds only the number (and update / release text per R4). Reason: NVD stores editions in a separate CPE field, not in product or version.
+- **D5. PROPOSED:** options and kits that are separately named hardware or software (`FAX Unit`, `HDD Option`, `eMMC`, `SPC-4-15-320`) are kept as `companions` with their own part; part numbers (`P/N 57X0185`), certificate ids (`ANSSI-CC-...`), application ids and build numbers are noise and dropped. Weakest decision: NVD rarely has these, so check how many resolve before you confirm.
+- **D6. PROPOSED:** titles that are genuinely ambiguous (vendor only, placeholder like `xyz`, family name only) get `status: "ambiguous"` in the gold set and are excluded from scoring. The model is not required to handle them.
+- **D7. PROPOSED:** bare model numbers / letters inherit the family prefix written in the title (`A-Series 12500`, `ProxySG SG510`); the vendor is kept when the title states it. If no family prefix exists, keep the bare number.
+- **D8. NEW (open):** smart-card / ePassport applets and card OSes (`IDeal Citiz`, `ID-One CNS`, `XSmart e-Passport`, `JCOP`): `a` or `o`? Gold drafts use `a` for applications and `o` for JCOP / card OS platforms. Check NVD and decide.
+- **D9. NEW (open):** `JCOP 4 P71`: product `JCOP` with version `4 P71`, or product `JCOP 4`? Drafts use product `JCOP`, version = everything after.
+- **D10. NEW (open):** hardware revision / stepping (`A02`, `rev. E`, `Revision 3`, `T23`) goes in the hardware `version` (drafts), not in the product name.
 
 ## 6. Worked examples (to verify before they become training data)
 
@@ -116,3 +119,6 @@ It is applied in four places:
 ## 7. Changelog
 
 - v0 (2026-11-20): first draft from 100-title baseline run + NVD cache lookups. No rule validated yet.
+- v0.1 (2026-11-21): decided D1 (resolver names firmware) and D2 (NVD majority, `o` fallback). Rules R2 and R3 updated. Open decisions left: D3 to D7.
+- v0.2 (2026-11-21): added proposed defaults for D3-D7 (so the gold drafts and the codebook agree) and new open decisions D8-D10. Gold draft G013 aligned to R5 (device-class words stripped).
+- v0.2b (2026-11-21): the 4 ambiguous gold titles (G031, G039, G047, G048) were replaced by clearer titles from the pool, so all 100 gold titles are scoreable. D6 still applies to future ambiguous titles.
