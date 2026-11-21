@@ -1,6 +1,6 @@
 # Annotation Codebook — TOE title → Stage-1 JSON
 
-**Version:** v0.2 (draft, 2026-11-21) · **Status:** proposed rules, NOT yet validated (D1, D2 decided; D3-D7 have PROPOSED defaults awaiting your confirmation) · **Author:** Mohamed
+**Version:** v1.0 (2026-11-21) · **Status:** all open decisions D1-D11 settled; rules are still to be validated against the gold review and the retrained model · **Author:** Mohamed
 
 ## 0. Purpose and how this document is used
 
@@ -90,18 +90,19 @@ It is applied in four places:
 | Unknown vendor | [20], [33] | infer vendor from the clause's other items, or flag |
 | Backslash artifacts (`eTrust\ Admin`, `NetBackup\ 8.2`) | [65], [73] | strip `\` in post-processing |
 
-## 5. Open decisions (need your call)
+## 5. Decisions (all settled in v1.0; decisions D3-D11 were delegated to Claude on 2026-11-21 and may be revisited after the gold review)
 
 - ~~**D1.**~~ **DECIDED (2026-11-21):** the resolver does firmware naming (`<model>_firmware`); the model outputs a plain component. See R3.
 - ~~**D2.**~~ **DECIDED (2026-11-21):** NVD majority when NVD is split; `o` for unlisted firewall/network system software. See R2.
-- **D3. PROPOSED:** drop `Series` / `Services Gateway` / device-class nouns from the product. Keep `Series` only if the exact NVD product name contains it (check with the lookup cache before keeping).
-- **D4. PROPOSED:** drop editions (`Enterprise Edition`, `Platinum Edition`), architecture, language and `LTS`. The version holds only the number (and update / release text per R4). Reason: NVD stores editions in a separate CPE field, not in product or version.
-- **D5. PROPOSED:** options and kits that are separately named hardware or software (`FAX Unit`, `HDD Option`, `eMMC`, `SPC-4-15-320`) are kept as `companions` with their own part; part numbers (`P/N 57X0185`), certificate ids (`ANSSI-CC-...`), application ids and build numbers are noise and dropped. Weakest decision: NVD rarely has these, so check how many resolve before you confirm.
-- **D6. PROPOSED:** titles that are genuinely ambiguous (vendor only, placeholder like `xyz`, family name only) get `status: "ambiguous"` in the gold set and are excluded from scoring. The model is not required to handle them.
-- **D7. PROPOSED:** bare model numbers / letters inherit the family prefix written in the title (`A-Series 12500`, `ProxySG SG510`); the vendor is kept when the title states it. If no family prefix exists, keep the bare number.
-- **D8. NEW (open):** smart-card / ePassport applets and card OSes (`IDeal Citiz`, `ID-One CNS`, `XSmart e-Passport`, `JCOP`): `a` or `o`? Gold drafts use `a` for applications and `o` for JCOP / card OS platforms. Check NVD and decide.
-- **D9. NEW (open):** `JCOP 4 P71`: product `JCOP` with version `4 P71`, or product `JCOP 4`? Drafts use product `JCOP`, version = everything after.
-- **D10. NEW (open):** hardware revision / stepping (`A02`, `rev. E`, `Revision 3`, `T23`) goes in the hardware `version` (drafts), not in the product name.
+- **D3. DECIDED:** drop `Series` / `Services Gateway` / device-class nouns from the product. Keep `Series` only if the exact NVD product name contains it (check with the lookup cache before keeping).
+- **D4. DECIDED:** drop editions (`Enterprise Edition`, `Platinum Edition`), architecture, language and `LTS`. The version holds only the number (and update / release text per R4). Reason: NVD stores editions in a separate CPE field, not in product or version.
+- **D5. DECIDED:** options and kits that are separately named hardware or software (`FAX Unit`, `HDD Option`, `eMMC`, `SPC-4-15-320`) are kept as `companions` with their own part; part numbers (`P/N 57X0185`), certificate ids (`ANSSI-CC-...`), application ids and build numbers are noise and dropped. Weakest decision: NVD rarely has these, so check how many resolve before you confirm.
+- **D6. DECIDED:** titles that are genuinely ambiguous (vendor only, placeholder like `xyz`, family name only) get `status: "ambiguous"` in the gold set and are excluded from scoring. The model is not required to handle them.
+- **D7. DECIDED:** bare model numbers / letters inherit the family prefix written in the title (`A-Series 12500`, `ProxySG SG510`); the vendor is kept when the title states it. If no family prefix exists, keep the bare number.
+- **D8. DECIDED:** smart-card / ePassport applets and card OSes (`IDeal Citiz`, `ID-One CNS`, `XSmart e-Passport`, `JCOP`): `a` or `o`? Gold drafts use `a` for applications and `o` for JCOP / card OS platforms. Decision: applets and applications are `a`; card OS platforms (JCOP, ID-One Cosmo) are `o`.
+- **D9. DECIDED:** `JCOP 4 P71`: product `JCOP` with version `4 P71`, or product `JCOP 4`? Drafts use product `JCOP`, version = everything after.
+- **D10. DECIDED:** hardware revision / stepping (`A02`, `rev. E`, `Revision 3`, `T23`) goes in the hardware `version` (drafts), not in the product name.
+- **D11. DECIDED:** chip names keep their manufacturer prefix in the product (`ST23YL80B`, never `23YL80B`). The vendor field stays `null` unless the title states the vendor; the resolver infers it from NVD.
 
 ## 6. Worked examples (to verify before they become training data)
 
@@ -122,3 +123,4 @@ It is applied in four places:
 - v0.1 (2026-11-21): decided D1 (resolver names firmware) and D2 (NVD majority, `o` fallback). Rules R2 and R3 updated. Open decisions left: D3 to D7.
 - v0.2 (2026-11-21): added proposed defaults for D3-D7 (so the gold drafts and the codebook agree) and new open decisions D8-D10. Gold draft G013 aligned to R5 (device-class words stripped).
 - v0.2b (2026-11-21): the 4 ambiguous gold titles (G031, G039, G047, G048) were replaced by clearer titles from the pool, so all 100 gold titles are scoreable. D6 still applies to future ambiguous titles.
+- v1.0 (2026-11-21): all decisions D3-D10 confirmed as written; new D11 (ST prefix kept in chip names). The gold drafts already follow these rules.
