@@ -1,4 +1,4 @@
-# Gold set: expected answers (v1.2, reviewed by Claude and Mohamed)
+# Gold set: DRAFT expected answers (review before use)
 
 Format per title: `part vendor | product | version(s)`. `T` = target, `C` = companion. Confidence and notes show what I was unsure about.
 
@@ -14,10 +14,11 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - T `a` (no vendor) | Xaica-Alpha PLUS ePassport | -
 - note: eMRTD OS/applet: a vs o undecided; 'Active Authentication' treated as a feature, dropped
 
-## G003 [easy, enterprise_sw, confidence: high, status: labeled]
-> Sybase Replication Server, Version 15.2
+## G003 [easy, enterprise_sw, confidence: medium, status: labeled]
+> DBsign for Client/Server Applications Version 3.0
 
-- T `a` Sybase | Replication Server | 15.2
+- T `a` (no vendor) | DBsign for Client/Server Applications | 3.0
+- note: vendor (DBsign Inc.) not in the title; product name contains a slash
 
 ## G004 [medium, other_hardware, confidence: medium, status: labeled]
 > Wasion aMeter100 and aMeter300 Smart Energy Meters
@@ -26,25 +27,24 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - T `h` Wasion | aMeter300 | -
 - note: 'Smart Energy Meters' dropped as device-class words
 
-## G005 [easy, smartcard_chip, confidence: high, status: labeled]
-> Secure Microcontroller ST23YL80B
+## G005 [easy, smartcard_chip, confidence: medium, status: labeled]
+> Philips Smart Card Controller P16WX064V0C
 
-- T `h` (no vendor) | ST23YL80B | -
-- note: vendor (ST) not stated
+- T `h` Philips | P16WX064V0C | -
+- note: Smart Card Controller dropped as device class
 
 ## G006 [medium, epassport_applet, confidence: low, status: labeled]
-> IDentity Applet v3.4-p1/QSCD on NXP JCOP 4 P71
+> KONA2 D2320N ePassport [EAC configuration] version 01 revision 03 patch 00
 
-- T `a` (no vendor) | IDentity Applet | 3.4-p1
-- C `o` NXP | JCOP | 4 P71
-- note: '/QSCD' is a configuration, dropped; JCOP naming (product vs version) undecided
+- T `a` (no vendor) | KONA2 D2320N ePassport | 01 revision 03 patch 00
+- note: [EAC configuration] dropped; version text kept per R4; applet a per D8
 
-## G007 [hard, epassport_applet, confidence: medium, status: labeled]
-> eTravel Essential for Japan 1.0, with SAC (PACE) and AA, embedded in the Infineon SLC52GDA Integrated Circuit version 0101h
+## G007 [hard, epassport_applet, confidence: low, status: labeled]
+> Passeport MorphoePass EAC CC with BAC, AA and EAC RSA or EAC ECC, on STMicroelectronics ST19NR66-A/1.1.0
 
-- T `a` (no vendor) | eTravel Essential for Japan | 1.0
-- C `h` Infineon | SLC52GDA | 0101h
-- note: SAC (PACE) and AA are features, dropped
+- T `a` (no vendor) | MorphoePass | -
+- C `h` STMicroelectronics | ST19NR66-A | 1.1.0
+- note: French; Passeport / EAC / BAC / AA / RSA / ECC are features, dropped; split of ST19NR66-A/1.1.0 is a guess
 
 ## G008 [medium, network_security, confidence: medium, status: labeled]
 > Fortinet FortiGate™-1240B Unified Threat Management Solutions and FortiOS 4.0 CC Compliant Firmware
@@ -54,13 +54,11 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - note: 'Unified Threat Management Solutions' and 'CC Compliant Firmware' dropped
 
 ## G009 [medium, network_security, confidence: medium, status: labeled]
-> Blue Coat ProxySG SG510, SG810, and SG9000 running SGOS v5.5
+> Klas Fastnet Series Switches KlasOS 5.3
 
-- T `h` Blue Coat | ProxySG SG510 | -
-- T `h` Blue Coat | ProxySG SG810 | -
-- T `h` Blue Coat | ProxySG SG9000 | -
-- C `o` (no vendor) | SGOS | 5.5
-- note: family prefix 'ProxySG' inherited (rule 1)
+- T `h` Klas | Fastnet | -
+- C `o` (no vendor) | KlasOS | 5.3
+- note: Series Switches dropped per D3
 
 ## G010 [medium, enterprise_sw, confidence: medium, status: labeled]
 > KnoWho Authentication Server v1.2.2 and Private ID v2.1.15
@@ -70,19 +68,18 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - note: vendor/product split of 'KnoWho Authentication Server' is a naming choice
 
 ## G011 [medium, smartcard_chip, confidence: low, status: labeled]
-> ST31P450 A02
+> MN67S150 Smart Card IC Version RV08 including IC Dedicated Software
 
-- T `h` (no vendor) | ST31P450 | A02
-- note: A02 read as a hardware revision; vendor not stated
+- T `h` (no vendor) | MN67S150 | RV08
+- C `o` (no vendor) | IC Dedicated Software | -
+- note: RV08 read as a hardware revision (D10); vendor (Panasonic) not stated
 
 ## G012 [hard, epassport_applet, confidence: low, status: labeled]
-> Athena IDPass ICAO BAC avec AA sur composant SB23YR48/80B avec librairie cryptographique NesLib v3.0
+> Idemia CombICAO Applet in PACE and CA configuration on ID-ONE Cosmo V9 Essential
 
-- T `a` Athena | IDPass ICAO | -
-- C `h` (no vendor) | SB23YR48B | -
-- C `h` (no vendor) | SB23YR80B | -
-- C `a` (no vendor) | NesLib | 3.0
-- note: 'SB23YR48/80B' expanded with shared suffix B; BAC/AA are features; French
+- T `a` Idemia | CombICAO Applet | -
+- C `o` (no vendor) | ID-One Cosmo | V9
+- note: configuration (PACE and CA) dropped; Essential is an edition (D4), dropped
 
 ## G013 [hard, network_security, confidence: medium, status: labeled]
 > Sidewinder G2 Security Appliance Models 210, 310, 315, 410, 415, 510, 515, 1100, 1150, 2150, 4150 and Sidewinder G2 Software v6.1
@@ -119,12 +116,14 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - note: options/kits depend on D5; glued text 'ACall of the above'
 
 ## G016 [medium, printer_mfp, confidence: low, status: labeled]
-> Canon imageRUNNER ADVANCE C350/C250 Series 2600.1 model 1.0
+> Canon imagePRESS C910/C810/C710/C660 2600 model1.0
 
-- T `h` Canon | imageRUNNER ADVANCE C350 | -
-- T `h` Canon | imageRUNNER ADVANCE C250 | -
-- C `o` (no vendor) | Firmware | 2600.1
-- note: '2600.1 model 1.0': assumed 2600.1 is the firmware/system version
+- T `h` Canon | imagePRESS C910 | -
+- T `h` Canon | imagePRESS C810 | -
+- T `h` Canon | imagePRESS C710 | -
+- T `h` Canon | imagePRESS C660 | -
+- C `o` (no vendor) | Firmware | 2600
+- note: '2600 model1.0' read as firmware 2600 (same convention as the earlier Canon title)
 
 ## G017 [easy, enterprise_sw, confidence: high, status: labeled]
 > Voltage SecureMail Suite 2.0
@@ -132,9 +131,9 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - T `a` Voltage | SecureMail Suite | 2.0
 
 ## G018 [easy, enterprise_sw, confidence: high, status: labeled]
-> Varonis Data Security Platform v8.6
+> McAfee Vulnerability Manager 7.0
 
-- T `a` Varonis | Data Security Platform | 8.6
+- T `a` McAfee | Vulnerability Manager | 7.0
 
 ## G019 [medium, smartcard_chip, confidence: low, status: labeled]
 > NXP J3A080 and J2A080 Secure Smart Card Controller Revision 3
@@ -150,37 +149,46 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - C `a` Oracle | Database Vault | 11.1.0.7
 - note: edition (D4) dropped; critical patch update text dropped as noise
 
-## G021 [hard, smartcard_chip, confidence: low, status: labeled]
-> NXP Secure Smart Card Controller P60D024/016/012MVB including IC Dedicated Software with MIFARE Plus MF1PLUSx0
+## G021 [hard, smartcard_chip, confidence: medium, status: labeled]
+> Microcontrôleurs sécurisés SC23Z018, SC23ZD12, SC23ZD08, SC23ZD04, SB23ZD18, SB23ZD12, SB23ZD08 et SB23ZD04 incluant optionnellement la librairie cryptographique NesLib révision 3.1
 
-- T `h` NXP | P60D024MVB | -
-- T `h` NXP | P60D016MVB | -
-- T `h` NXP | P60D012MVB | -
-- C `o` (no vendor) | IC Dedicated Software | -
-- C `a` NXP | MIFARE Plus MF1PLUSx0 | -
-- note: slash list expanded with shared prefix P60D0 and suffix MVB
+- T `h` (no vendor) | SC23Z018 | -
+- T `h` (no vendor) | SC23ZD12 | -
+- T `h` (no vendor) | SC23ZD08 | -
+- T `h` (no vendor) | SC23ZD04 | -
+- T `h` (no vendor) | SB23ZD18 | -
+- T `h` (no vendor) | SB23ZD12 | -
+- T `h` (no vendor) | SB23ZD08 | -
+- T `h` (no vendor) | SB23ZD04 | -
+- C `a` (no vendor) | NesLib | 3.1
+- note: French; vendor (ST) not stated; 'révision 3.1' is the NesLib version
 
-## G022 [medium, printer_mfp, confidence: high, status: labeled]
-> RICOH IM C530F/C530FB version E-1.00-H
+## G022 [medium, printer_mfp, confidence: medium, status: labeled]
+> Samsung SCX-8030 SCX-8040 SCX-8038 SCX-8048 CLX-9250 CLX-9350 CLX-9258 CLX-9358 MultiFunctionPrinter
 
-- T `h` RICOH | IM C530F | -
-- T `h` RICOH | IM C530FB | -
-- C `o` (no vendor) | Firmware | E-1.00-H
+- T `h` Samsung | SCX-8030 | -
+- T `h` Samsung | SCX-8040 | -
+- T `h` Samsung | SCX-8038 | -
+- T `h` Samsung | SCX-8048 | -
+- T `h` Samsung | CLX-9250 | -
+- T `h` Samsung | CLX-9350 | -
+- T `h` Samsung | CLX-9258 | -
+- T `h` Samsung | CLX-9358 | -
+- note: MultiFunctionPrinter dropped as device class; no version
 
-## G023 [medium, printer_mfp, confidence: high, status: labeled]
-> RICOH IM C8000/C6500 J-1.00
+## G023 [medium, printer_mfp, confidence: medium, status: labeled]
+> Xerox D136 Copier/Printer Controller+PS ROM Ver. 1.200.15
 
-- T `h` RICOH | IM C8000 | -
-- T `h` RICOH | IM C6500 | -
-- C `o` (no vendor) | Firmware | J-1.00
+- T `h` Xerox | D136 | -
+- C `o` (no vendor) | Controller+PS ROM | 1.200.15
+- note: Copier/Printer dropped as device class
 
-## G024 [medium, network_security, confidence: high, status: labeled]
-> Juniper Junos OS 18.1R2 for QFX10002, QFX10008 and QFX10016
+## G024 [medium, network_security, confidence: medium, status: labeled]
+> Nokia 7705 SAR Series with SAR OS 21.10R5
 
-- T `h` Juniper | QFX10002 | -
-- T `h` Juniper | QFX10008 | -
-- T `h` Juniper | QFX10016 | -
-- C `o` Juniper | Junos OS | 18.1R2
+- T `h` Nokia | 7705 SAR | -
+- C `o` (no vendor) | SAR OS | 21.10R5
+- note: Series dropped per D3
 
 ## G025 [medium, mobile_embedded, confidence: low, status: ambiguous]
 > Motorola Mobility LLC Mobile Devices on Android 14
@@ -196,16 +204,26 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - note: part a/o/h depends on how D2 is applied; consider marking ambiguous
 
 ## G027 [hard, printer_mfp, confidence: low, status: labeled]
-> RICOH IM C7010,nashuatec IM C7010,Rex Rotary IM C7010,Gestetner IM C7010with Fax Option Type M52 andHDD Option Type M52 320GBE-1.00
+> MX-M6050 / M5050 / M4050 / M3550 / M3050 / M2630 HDD standard model with MX-FR56U and MX-FX15; and MX-M6050 / M5050 / M4050 / M3550 / M3050 / M2630 HDD option model with MX-FR56U, MX-HD16 and MX-FX150220zc00
 
-- T `h` RICOH | IM C7010 | -
-- T `h` nashuatec | IM C7010 | -
-- T `h` Rex Rotary | IM C7010 | -
-- T `h` Gestetner | IM C7010 | -
-- C `o` (no vendor) | Firmware | E-1.00
-- C `h` (no vendor) | Fax Option Type M52 | -
-- C `h` (no vendor) | HDD Option Type M52 320GB | -
-- note: rebrand aliases kept as separate targets; options (D5); glued '320GBE-1.00' split as 320GB + E-1.00
+- T `h` (no vendor) | MX-M6050 | -
+- T `h` (no vendor) | MX-M5050 | -
+- T `h` (no vendor) | MX-M4050 | -
+- T `h` (no vendor) | MX-M3550 | -
+- T `h` (no vendor) | MX-M3050 | -
+- T `h` (no vendor) | MX-M2630 | -
+- C `h` (no vendor) | MX-FR56U | -
+- C `h` (no vendor) | MX-FX15 | -
+- T `h` (no vendor) | MX-M6050 | -
+- T `h` (no vendor) | MX-M5050 | -
+- T `h` (no vendor) | MX-M4050 | -
+- T `h` (no vendor) | MX-M3550 | -
+- T `h` (no vendor) | MX-M3050 | -
+- T `h` (no vendor) | MX-M2630 | -
+- C `h` (no vendor) | MX-FR56U | -
+- C `h` (no vendor) | MX-HD16 | -
+- C `h` (no vendor) | MX-FX15 | 0220zc00
+- note: standard vs option model are two clauses; glued MX-FX150220zc00 read as MX-FX15 + 0220zc00 (guess); vendor (Sharp) not stated
 
 ## G028 [hard, other_hardware, confidence: low, status: labeled]
 > SSD Drives, Firmware Versions: SCPU13.0/ECPU13.0/SCQU15.0/ECQU15.0
@@ -345,25 +363,18 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - C `h` (no vendor) | ST33K1M5M | B03
 - note: B03 attached to both chips
 
-## G046 [hard, network_security, confidence: medium, status: labeled]
-> JUNOS 12.3 X48-D30 FOR SRX PLATFORMSComponents: SRX100, SRX110, SRX210, SRX220, SRX240, SRX550 and SRX650; SRX5400, SRX5400E SRX5600, SRX5600E, SRX5800 and SRX5800E with SPC-4-15-320
+## G046 [hard, network_security, confidence: low, status: labeled]
+> Cisco Wide Area Application Services Version 4.0, Wide Area Application Engine (WAE) 512, 612, 674, 7341, 7371 and WAE Network Module [NME-WAE] NME-WAE-502 and NME-WAE-522
 
-- T `h` (no vendor) | SRX100 | -
-- T `h` (no vendor) | SRX110 | -
-- T `h` (no vendor) | SRX210 | -
-- T `h` (no vendor) | SRX220 | -
-- T `h` (no vendor) | SRX240 | -
-- T `h` (no vendor) | SRX550 | -
-- T `h` (no vendor) | SRX650 | -
-- T `h` (no vendor) | SRX5400 | -
-- T `h` (no vendor) | SRX5400E | -
-- T `h` (no vendor) | SRX5600 | -
-- T `h` (no vendor) | SRX5600E | -
-- T `h` (no vendor) | SRX5800 | -
-- T `h` (no vendor) | SRX5800E | -
-- C `o` (no vendor) | JUNOS | 12.3 X48-D30
-- C `h` (no vendor) | SPC-4-15-320 | -
-- note: missing space 'PLATFORMSComponents'
+- T `h` Cisco | Wide Area Application Engine 512 | -
+- T `h` Cisco | Wide Area Application Engine 612 | -
+- T `h` Cisco | Wide Area Application Engine 674 | -
+- T `h` Cisco | Wide Area Application Engine 7341 | -
+- T `h` Cisco | Wide Area Application Engine 7371 | -
+- T `h` Cisco | NME-WAE-502 | -
+- T `h` Cisco | NME-WAE-522 | -
+- C `a` Cisco | Wide Area Application Services | 4.0
+- note: bare numbers inherit WAE family name (D7); WAAS software kept as companion a
 
 ## G047 [hard, enterprise_sw, confidence: low, status: labeled]
 > Connect:Direct® with Secure+ Option v3.7 running on UNIX and v4.2 on Windows
@@ -445,12 +456,10 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - note: 'Matrix Switch' dropped as device class
 
 ## G057 [medium, epassport_applet, confidence: low, status: labeled]
-> Carte CC IDeal Citiz (sur composants SB23YR80B et SB23YR48B)
+> KONA102J1 ePassport EAC, versión 1.1
 
-- T `a` (no vendor) | IDeal Citiz | -
-- C `h` (no vendor) | SB23YR80B | -
-- C `h` (no vendor) | SB23YR48B | -
-- note: French
+- T `a` (no vendor) | KONA102J1 ePassport | 1.1
+- note: Spanish (versión); EAC is a configuration, dropped
 
 ## G058 [hard, other_hardware, confidence: low, status: labeled]
 > DERMALOG Fingerprint PAD Kit ZF1/F1 bestehend aus ZF1, Part-No. 9014-0005-02; F1, Part-No. 9024-0002-01; DermalogBPZF1Plugin, V 1.2.5.1817; DermalogFakeFingerDetectionZF1Plugin, V 1.3.1.1817; DermalogAuditLogger, V 1.0.1.1803
@@ -683,10 +692,10 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - note: bare numbers expanded with the family prefix (D7)
 
 ## G089 [easy, epassport_applet, confidence: low, status: labeled]
-> XSmart e-Passport V1.1
+> DNIe version 4.0
 
-- T `a` (no vendor) | XSmart e-Passport | 1.1
-- note: eMRTD application: a vs o undecided
+- T `a` (no vendor) | DNIe | 4.0
+- note: national eID application: a vs o undecided (D8: application = a)
 
 ## G090 [easy, network_security, confidence: high, status: labeled]
 > A10 Networks Thunder TPS 3030S

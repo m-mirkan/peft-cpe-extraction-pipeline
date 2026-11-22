@@ -61,8 +61,8 @@
   },
   {
     "id": "G003",
-    "source_index": 3,
-    "input": "Sybase Replication Server, Version 15.2",
+    "source_index": 276,
+    "input": "DBsign for Client/Server Applications Version 3.0",
     "difficulty": "easy",
     "tags": [
       "enterprise_sw"
@@ -74,18 +74,18 @@
         {
           "targets": [
             {
-              "vendor": "Sybase",
-              "product": "Replication Server",
+              "vendor": null,
+              "product": "DBsign for Client/Server Applications",
               "part": "a",
-              "version": "15.2"
+              "version": "3.0"
             }
           ],
           "companions": []
         }
       ]
     },
-    "notes": "",
-    "confidence": "high"
+    "notes": "vendor (DBsign Inc.) not in the title; product name contains a slash",
+    "confidence": "medium"
   },
   {
     "id": "G004",
@@ -125,23 +125,21 @@
   },
   {
     "id": "G005",
-    "source_index": 8,
-    "input": "Secure Microcontroller ST23YL80B",
+    "source_index": 430,
+    "input": "Philips Smart Card Controller P16WX064V0C",
     "difficulty": "easy",
     "tags": [
       "smartcard_chip"
     ],
-    "flags": [
-      "vendor-omitted"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": null,
-              "product": "ST23YL80B",
+              "vendor": "Philips",
+              "product": "P16WX064V0C",
               "part": "h",
               "version": "-"
             }
@@ -150,21 +148,18 @@
         }
       ]
     },
-    "notes": "vendor (ST) not stated",
-    "confidence": "high"
+    "notes": "Smart Card Controller dropped as device class",
+    "confidence": "medium"
   },
   {
     "id": "G006",
-    "source_index": 9,
-    "input": "IDentity Applet v3.4-p1/QSCD on NXP JCOP 4 P71",
+    "source_index": 39,
+    "input": "KONA2 D2320N ePassport [EAC configuration] version 01 revision 03 patch 00",
     "difficulty": "medium",
     "tags": [
       "epassport_applet"
     ],
-    "flags": [
-      "applet-on-platform",
-      "config-text"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
@@ -172,39 +167,27 @@
           "targets": [
             {
               "vendor": null,
-              "product": "IDentity Applet",
+              "product": "KONA2 D2320N ePassport",
               "part": "a",
-              "version": "3.4-p1"
+              "version": "01 revision 03 patch 00"
             }
           ],
-          "companions": [
-            {
-              "vendor": "NXP",
-              "product": "JCOP",
-              "part": "o",
-              "versions": [
-                "4 P71"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
-    "notes": "'/QSCD' is a configuration, dropped; JCOP naming (product vs version) undecided",
+    "notes": "[EAC configuration] dropped; version text kept per R4; applet a per D8",
     "confidence": "low"
   },
   {
     "id": "G007",
-    "source_index": 10,
-    "input": "eTravel Essential for Japan 1.0, with SAC (PACE) and AA, embedded in the Infineon SLC52GDA Integrated Circuit version 0101h",
+    "source_index": 161,
+    "input": "Passeport MorphoePass EAC CC with BAC, AA and EAC RSA or EAC ECC, on STMicroelectronics ST19NR66-A/1.1.0",
     "difficulty": "hard",
     "tags": [
       "epassport_applet"
     ],
-    "flags": [
-      "app+feature+chip",
-      "multi-version"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
@@ -212,26 +195,26 @@
           "targets": [
             {
               "vendor": null,
-              "product": "eTravel Essential for Japan",
+              "product": "MorphoePass",
               "part": "a",
-              "version": "1.0"
+              "version": "-"
             }
           ],
           "companions": [
             {
-              "vendor": "Infineon",
-              "product": "SLC52GDA",
+              "vendor": "STMicroelectronics",
+              "product": "ST19NR66-A",
               "part": "h",
               "versions": [
-                "0101h"
+                "1.1.0"
               ]
             }
           ]
         }
       ]
     },
-    "notes": "SAC (PACE) and AA are features, dropped",
-    "confidence": "medium"
+    "notes": "French; Passeport / EAC / BAC / AA / RSA / ECC are features, dropped; split of ST19NR66-A/1.1.0 is a guess",
+    "confidence": "low"
   },
   {
     "id": "G008",
@@ -275,36 +258,21 @@
   },
   {
     "id": "G009",
-    "source_index": 20,
-    "input": "Blue Coat ProxySG SG510, SG810, and SG9000 running SGOS v5.5",
+    "source_index": 347,
+    "input": "Klas Fastnet Series Switches KlasOS 5.3",
     "difficulty": "medium",
     "tags": [
       "network_security"
     ],
-    "flags": [
-      "list-expand",
-      "os-binding"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Blue Coat",
-              "product": "ProxySG SG510",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Blue Coat",
-              "product": "ProxySG SG810",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Blue Coat",
-              "product": "ProxySG SG9000",
+              "vendor": "Klas",
+              "product": "Fastnet",
               "part": "h",
               "version": "-"
             }
@@ -312,17 +280,17 @@
           "companions": [
             {
               "vendor": null,
-              "product": "SGOS",
+              "product": "KlasOS",
               "part": "o",
               "versions": [
-                "5.5"
+                "5.3"
               ]
             }
           ]
         }
       ]
     },
-    "notes": "family prefix 'ProxySG' inherited (rule 1)",
+    "notes": "Series Switches dropped per D3",
     "confidence": "medium"
   },
   {
@@ -363,16 +331,13 @@
   },
   {
     "id": "G011",
-    "source_index": 23,
-    "input": "ST31P450 A02",
+    "source_index": 270,
+    "input": "MN67S150 Smart Card IC Version RV08 including IC Dedicated Software",
     "difficulty": "medium",
     "tags": [
       "smartcard_chip"
     ],
-    "flags": [
-      "vendor-omitted",
-      "revision-as-version"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
@@ -380,39 +345,44 @@
           "targets": [
             {
               "vendor": null,
-              "product": "ST31P450",
+              "product": "MN67S150",
               "part": "h",
-              "version": "A02"
+              "version": "RV08"
             }
           ],
-          "companions": []
+          "companions": [
+            {
+              "vendor": null,
+              "product": "IC Dedicated Software",
+              "part": "o",
+              "versions": [
+                "-"
+              ]
+            }
+          ]
         }
       ]
     },
-    "notes": "A02 read as a hardware revision; vendor not stated",
+    "notes": "RV08 read as a hardware revision (D10); vendor (Panasonic) not stated",
     "confidence": "low"
   },
   {
     "id": "G012",
-    "source_index": 24,
-    "input": "Athena IDPass ICAO BAC avec AA sur composant SB23YR48/80B avec librairie cryptographique NesLib v3.0",
+    "source_index": 471,
+    "input": "Idemia CombICAO Applet in PACE and CA configuration on ID-ONE Cosmo V9 Essential",
     "difficulty": "hard",
     "tags": [
       "epassport_applet"
     ],
-    "flags": [
-      "non-english",
-      "list-expand",
-      "library"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Athena",
-              "product": "IDPass ICAO",
+              "vendor": "Idemia",
+              "product": "CombICAO Applet",
               "part": "a",
               "version": "-"
             }
@@ -420,33 +390,17 @@
           "companions": [
             {
               "vendor": null,
-              "product": "SB23YR48B",
-              "part": "h",
+              "product": "ID-One Cosmo",
+              "part": "o",
               "versions": [
-                "-"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "SB23YR80B",
-              "part": "h",
-              "versions": [
-                "-"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "NesLib",
-              "part": "a",
-              "versions": [
-                "3.0"
+                "V9"
               ]
             }
           ]
         }
       ]
     },
-    "notes": "'SB23YR48/80B' expanded with shared suffix B; BAC/AA are features; French",
+    "notes": "configuration (PACE and CA) dropped; Essential is an edition (D4), dropped",
     "confidence": "low"
   },
   {
@@ -648,16 +602,13 @@
   },
   {
     "id": "G016",
-    "source_index": 46,
-    "input": "Canon imageRUNNER ADVANCE C350/C250 Series 2600.1 model 1.0",
+    "source_index": 137,
+    "input": "Canon imagePRESS C910/C810/C710/C660 2600 model1.0",
     "difficulty": "medium",
     "tags": [
       "printer_mfp"
     ],
-    "flags": [
-      "list-expand",
-      "version-ambiguous"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
@@ -665,13 +616,25 @@
           "targets": [
             {
               "vendor": "Canon",
-              "product": "imageRUNNER ADVANCE C350",
+              "product": "imagePRESS C910",
               "part": "h",
               "version": "-"
             },
             {
               "vendor": "Canon",
-              "product": "imageRUNNER ADVANCE C250",
+              "product": "imagePRESS C810",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "Canon",
+              "product": "imagePRESS C710",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "Canon",
+              "product": "imagePRESS C660",
               "part": "h",
               "version": "-"
             }
@@ -682,14 +645,14 @@
               "product": "Firmware",
               "part": "o",
               "versions": [
-                "2600.1"
+                "2600"
               ]
             }
           ]
         }
       ]
     },
-    "notes": "'2600.1 model 1.0': assumed 2600.1 is the firmware/system version",
+    "notes": "'2600 model1.0' read as firmware 2600 (same convention as the earlier Canon title)",
     "confidence": "low"
   },
   {
@@ -722,8 +685,8 @@
   },
   {
     "id": "G018",
-    "source_index": 54,
-    "input": "Varonis Data Security Platform v8.6",
+    "source_index": 353,
+    "input": "McAfee Vulnerability Manager 7.0",
     "difficulty": "easy",
     "tags": [
       "enterprise_sw"
@@ -735,10 +698,10 @@
         {
           "targets": [
             {
-              "vendor": "Varonis",
-              "product": "Data Security Platform",
+              "vendor": "McAfee",
+              "product": "Vulnerability Manager",
               "part": "a",
-              "version": "8.6"
+              "version": "7.0"
             }
           ],
           "companions": []
@@ -827,37 +790,63 @@
   },
   {
     "id": "G021",
-    "source_index": 63,
-    "input": "NXP Secure Smart Card Controller P60D024/016/012MVB including IC Dedicated Software with MIFARE Plus MF1PLUSx0",
+    "source_index": 317,
+    "input": "Microcontrôleurs sécurisés SC23Z018, SC23ZD12, SC23ZD08, SC23ZD04, SB23ZD18, SB23ZD12, SB23ZD08 et SB23ZD04 incluant optionnellement la librairie cryptographique NesLib révision 3.1",
     "difficulty": "hard",
     "tags": [
       "smartcard_chip"
     ],
-    "flags": [
-      "list-expand-suffix",
-      "dedicated-software",
-      "third-product"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "NXP",
-              "product": "P60D024MVB",
+              "vendor": null,
+              "product": "SC23Z018",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": "NXP",
-              "product": "P60D016MVB",
+              "vendor": null,
+              "product": "SC23ZD12",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": "NXP",
-              "product": "P60D012MVB",
+              "vendor": null,
+              "product": "SC23ZD08",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": null,
+              "product": "SC23ZD04",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": null,
+              "product": "SB23ZD18",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": null,
+              "product": "SB23ZD12",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": null,
+              "product": "SB23ZD08",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": null,
+              "product": "SB23ZD04",
               "part": "h",
               "version": "-"
             }
@@ -865,99 +854,106 @@
           "companions": [
             {
               "vendor": null,
-              "product": "IC Dedicated Software",
-              "part": "o",
-              "versions": [
-                "-"
-              ]
-            },
-            {
-              "vendor": "NXP",
-              "product": "MIFARE Plus MF1PLUSx0",
+              "product": "NesLib",
               "part": "a",
               "versions": [
-                "-"
+                "3.1"
               ]
             }
           ]
         }
       ]
     },
-    "notes": "slash list expanded with shared prefix P60D0 and suffix MVB",
-    "confidence": "low"
+    "notes": "French; vendor (ST) not stated; 'révision 3.1' is the NesLib version",
+    "confidence": "medium"
   },
   {
     "id": "G022",
-    "source_index": 68,
-    "input": "RICOH IM C530F/C530FB version E-1.00-H",
+    "source_index": 485,
+    "input": "Samsung SCX-8030 SCX-8040 SCX-8038 SCX-8048 CLX-9250 CLX-9350 CLX-9258 CLX-9358 MultiFunctionPrinter",
     "difficulty": "medium",
     "tags": [
       "printer_mfp"
     ],
-    "flags": [
-      "list-expand",
-      "firmware-binding"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "RICOH",
-              "product": "IM C530F",
+              "vendor": "Samsung",
+              "product": "SCX-8030",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": "RICOH",
-              "product": "IM C530FB",
+              "vendor": "Samsung",
+              "product": "SCX-8040",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "Samsung",
+              "product": "SCX-8038",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "Samsung",
+              "product": "SCX-8048",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "Samsung",
+              "product": "CLX-9250",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "Samsung",
+              "product": "CLX-9350",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "Samsung",
+              "product": "CLX-9258",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "Samsung",
+              "product": "CLX-9358",
               "part": "h",
               "version": "-"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "Firmware",
-              "part": "o",
-              "versions": [
-                "E-1.00-H"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
-    "notes": "",
-    "confidence": "high"
+    "notes": "MultiFunctionPrinter dropped as device class; no version",
+    "confidence": "medium"
   },
   {
     "id": "G023",
-    "source_index": 74,
-    "input": "RICOH IM C8000/C6500 J-1.00",
+    "source_index": 142,
+    "input": "Xerox D136 Copier/Printer Controller+PS ROM Ver. 1.200.15",
     "difficulty": "medium",
     "tags": [
       "printer_mfp"
     ],
-    "flags": [
-      "list-expand",
-      "firmware-binding"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "RICOH",
-              "product": "IM C8000",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "RICOH",
-              "product": "IM C6500",
+              "vendor": "Xerox",
+              "product": "D136",
               "part": "h",
               "version": "-"
             }
@@ -965,70 +961,55 @@
           "companions": [
             {
               "vendor": null,
-              "product": "Firmware",
+              "product": "Controller+PS ROM",
               "part": "o",
               "versions": [
-                "J-1.00"
+                "1.200.15"
               ]
             }
           ]
         }
       ]
     },
-    "notes": "",
-    "confidence": "high"
+    "notes": "Copier/Printer dropped as device class",
+    "confidence": "medium"
   },
   {
     "id": "G024",
-    "source_index": 75,
-    "input": "Juniper Junos OS 18.1R2 for QFX10002, QFX10008 and QFX10016",
+    "source_index": 464,
+    "input": "Nokia 7705 SAR Series with SAR OS 21.10R5",
     "difficulty": "medium",
     "tags": [
       "network_security"
     ],
-    "flags": [
-      "list-expand",
-      "os-binding"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Juniper",
-              "product": "QFX10002",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Juniper",
-              "product": "QFX10008",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Juniper",
-              "product": "QFX10016",
+              "vendor": "Nokia",
+              "product": "7705 SAR",
               "part": "h",
               "version": "-"
             }
           ],
           "companions": [
             {
-              "vendor": "Juniper",
-              "product": "Junos OS",
+              "vendor": null,
+              "product": "SAR OS",
               "part": "o",
               "versions": [
-                "18.1R2"
+                "21.10R5"
               ]
             }
           ]
         }
       ]
     },
-    "notes": "",
-    "confidence": "high"
+    "notes": "Series dropped per D3",
+    "confidence": "medium"
   },
   {
     "id": "G025",
@@ -1102,43 +1083,51 @@
   },
   {
     "id": "G027",
-    "source_index": 93,
-    "input": "RICOH IM C7010,nashuatec IM C7010,Rex Rotary IM C7010,Gestetner IM C7010with Fax Option Type M52 andHDD Option Type M52 320GBE-1.00",
+    "source_index": 274,
+    "input": "MX-M6050 / M5050 / M4050 / M3550 / M3050 / M2630 HDD standard model with MX-FR56U and MX-FX15; and MX-M6050 / M5050 / M4050 / M3550 / M3050 / M2630 HDD option model with MX-FR56U, MX-HD16 and MX-FX150220zc00",
     "difficulty": "hard",
     "tags": [
       "printer_mfp"
     ],
-    "flags": [
-      "rebrand-alias",
-      "missing-spaces",
-      "options-kit"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "RICOH",
-              "product": "IM C7010",
+              "vendor": null,
+              "product": "MX-M6050",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": "nashuatec",
-              "product": "IM C7010",
+              "vendor": null,
+              "product": "MX-M5050",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": "Rex Rotary",
-              "product": "IM C7010",
+              "vendor": null,
+              "product": "MX-M4050",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": "Gestetner",
-              "product": "IM C7010",
+              "vendor": null,
+              "product": "MX-M3550",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": null,
+              "product": "MX-M3050",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": null,
+              "product": "MX-M2630",
               "part": "h",
               "version": "-"
             }
@@ -1146,15 +1135,7 @@
           "companions": [
             {
               "vendor": null,
-              "product": "Firmware",
-              "part": "o",
-              "versions": [
-                "E-1.00"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "Fax Option Type M52",
+              "product": "MX-FR56U",
               "part": "h",
               "versions": [
                 "-"
@@ -1162,17 +1143,83 @@
             },
             {
               "vendor": null,
-              "product": "HDD Option Type M52 320GB",
+              "product": "MX-FX15",
               "part": "h",
               "versions": [
                 "-"
               ]
             }
           ]
+        },
+        {
+          "targets": [
+            {
+              "vendor": null,
+              "product": "MX-M6050",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": null,
+              "product": "MX-M5050",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": null,
+              "product": "MX-M4050",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": null,
+              "product": "MX-M3550",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": null,
+              "product": "MX-M3050",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": null,
+              "product": "MX-M2630",
+              "part": "h",
+              "version": "-"
+            }
+          ],
+          "companions": [
+            {
+              "vendor": null,
+              "product": "MX-FR56U",
+              "part": "h",
+              "versions": [
+                "-"
+              ]
+            },
+            {
+              "vendor": null,
+              "product": "MX-HD16",
+              "part": "h",
+              "versions": [
+                "-"
+              ]
+            },
+            {
+              "vendor": null,
+              "product": "MX-FX15",
+              "part": "h",
+              "versions": [
+                "0220zc00"
+              ]
+            }
+          ]
         }
       ]
     },
-    "notes": "rebrand aliases kept as separate targets; options (D5); glued '320GBE-1.00' split as 320GB + E-1.00",
+    "notes": "standard vs option model are two clauses; glued MX-FX150220zc00 read as MX-FX15 + 0220zc00 (guess); vendor (Sharp) not stated",
     "confidence": "low"
   },
   {
@@ -1965,124 +2012,76 @@
   },
   {
     "id": "G046",
-    "source_index": 150,
-    "input": "JUNOS 12.3 X48-D30 FOR SRX PLATFORMSComponents: SRX100, SRX110, SRX210, SRX220, SRX240, SRX550 and SRX650; SRX5400, SRX5400E SRX5600, SRX5600E, SRX5800 and SRX5800E with SPC-4-15-320",
+    "source_index": 491,
+    "input": "Cisco Wide Area Application Services Version 4.0, Wide Area Application Engine (WAE) 512, 612, 674, 7341, 7371 and WAE Network Module [NME-WAE] NME-WAE-502 and NME-WAE-522",
     "difficulty": "hard",
     "tags": [
       "network_security"
     ],
-    "flags": [
-      "missing-space",
-      "components-list",
-      "extra-module"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": null,
-              "product": "SRX100",
+              "vendor": "Cisco",
+              "product": "Wide Area Application Engine 512",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": null,
-              "product": "SRX110",
+              "vendor": "Cisco",
+              "product": "Wide Area Application Engine 612",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": null,
-              "product": "SRX210",
+              "vendor": "Cisco",
+              "product": "Wide Area Application Engine 674",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": null,
-              "product": "SRX220",
+              "vendor": "Cisco",
+              "product": "Wide Area Application Engine 7341",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": null,
-              "product": "SRX240",
+              "vendor": "Cisco",
+              "product": "Wide Area Application Engine 7371",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": null,
-              "product": "SRX550",
+              "vendor": "Cisco",
+              "product": "NME-WAE-502",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": null,
-              "product": "SRX650",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "SRX5400",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "SRX5400E",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "SRX5600",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "SRX5600E",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "SRX5800",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "SRX5800E",
+              "vendor": "Cisco",
+              "product": "NME-WAE-522",
               "part": "h",
               "version": "-"
             }
           ],
           "companions": [
             {
-              "vendor": null,
-              "product": "JUNOS",
-              "part": "o",
+              "vendor": "Cisco",
+              "product": "Wide Area Application Services",
+              "part": "a",
               "versions": [
-                "12.3 X48-D30"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "SPC-4-15-320",
-              "part": "h",
-              "versions": [
-                "-"
+                "4.0"
               ]
             }
           ]
         }
       ]
     },
-    "notes": "missing space 'PLATFORMSComponents'",
-    "confidence": "medium"
+    "notes": "bare numbers inherit WAE family name (D7); WAAS software kept as companion a",
+    "confidence": "low"
   },
   {
     "id": "G047",
@@ -2534,16 +2533,13 @@
   },
   {
     "id": "G057",
-    "source_index": 190,
-    "input": "Carte CC IDeal Citiz (sur composants SB23YR80B et SB23YR48B)",
+    "source_index": 179,
+    "input": "KONA102J1 ePassport EAC, versión 1.1",
     "difficulty": "medium",
     "tags": [
       "epassport_applet"
     ],
-    "flags": [
-      "non-english",
-      "list-expand"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
@@ -2551,33 +2547,16 @@
           "targets": [
             {
               "vendor": null,
-              "product": "IDeal Citiz",
+              "product": "KONA102J1 ePassport",
               "part": "a",
-              "version": "-"
+              "version": "1.1"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "SB23YR80B",
-              "part": "h",
-              "versions": [
-                "-"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "SB23YR48B",
-              "part": "h",
-              "versions": [
-                "-"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
-    "notes": "French",
+    "notes": "Spanish (versión); EAC is a configuration, dropped",
     "confidence": "low"
   },
   {
@@ -3890,8 +3869,8 @@
   },
   {
     "id": "G089",
-    "source_index": 366,
-    "input": "XSmart e-Passport V1.1",
+    "source_index": 334,
+    "input": "DNIe version 4.0",
     "difficulty": "easy",
     "tags": [
       "epassport_applet"
@@ -3904,16 +3883,16 @@
           "targets": [
             {
               "vendor": null,
-              "product": "XSmart e-Passport",
+              "product": "DNIe",
               "part": "a",
-              "version": "1.1"
+              "version": "4.0"
             }
           ],
           "companions": []
         }
       ]
     },
-    "notes": "eMRTD application: a vs o undecided",
+    "notes": "national eID application: a vs o undecided (D8: application = a)",
     "confidence": "low"
   },
   {
