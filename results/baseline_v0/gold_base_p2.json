@@ -8,7 +8,7 @@
           "targets": [
             {
               "vendor": "ST",
-              "product": "31R480 A01",
+              "product": "ST31R480 A01",
               "part": "h",
               "version": "-"
             }
@@ -25,7 +25,7 @@
             {
               "vendor": null,
               "product": "(ANSSI-CC-2025/31)",
-              "part": "a",
+              "part": "o",
               "versions": [
                 "-"
               ]
@@ -54,9 +54,9 @@
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:a:stmicroelectronics:anssi-cc-2025_31:-:*:*:*:*:*:*:*",
-        "short": "a:stmicroelectronics:anssi-cc-2025_31:-",
-        "part": "a",
+        "cpe": "cpe:2.3:o:stmicroelectronics:anssi-cc-2025_31:-:*:*:*:*:*:*:*",
+        "short": "o:stmicroelectronics:anssi-cc-2025_31:-",
+        "part": "o",
         "vendor": "stmicroelectronics",
         "product": "anssi-cc-2025_31",
         "version": "-",
@@ -73,9 +73,9 @@
           "targets": [
             {
               "vendor": "NXP",
-              "product": "JCOP 5.2",
+              "product": "JCOP",
               "part": "a",
-              "version": "-"
+              "version": "5.2"
             }
           ],
           "companions": [
@@ -345,8 +345,8 @@
         {
           "targets": [
             {
-              "vendor": null,
-              "product": "Trellix Security Enterprise Security Manager",
+              "vendor": "Trellix",
+              "product": "Security Enterprise Security Manager",
               "part": "a",
               "version": "11.6.12"
             }
@@ -357,13 +357,13 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:a:unknown:trellix_security_enterprise_security_manager:11.6.12:*:*:*:*:*:*:*",
-        "short": "a:unknown:trellix_security_enterprise_security_manager:11.6.12",
+        "cpe": "cpe:2.3:a:trellix:security_enterprise_security_manager:11.6.12:*:*:*:*:*:*:*",
+        "short": "a:trellix:security_enterprise_security_manager:11.6.12",
         "part": "a",
-        "vendor": "unknown",
-        "product": "trellix_security_enterprise_security_manager",
+        "vendor": "trellix",
+        "product": "security_enterprise_security_manager",
         "version": "11.6.12",
-        "resolution": "unresolved"
+        "resolution": "explicit_vendor"
       }
     ]
   },
@@ -399,14 +399,14 @@
   },
   {
     "index": 57,
-    "input": "Carte CC IDeal Citiz (sur composants SB23YR80B et SB23YR48B)",
+    "input": "KONA102J1 ePassport EAC, versión 1.1",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
               "vendor": null,
-              "product": "Carte CC IDeal Citiz",
+              "product": "KONA102J1",
               "part": "h",
               "version": "-"
             }
@@ -414,18 +414,10 @@
           "companions": [
             {
               "vendor": null,
-              "product": "SB23YR80B",
-              "part": "h",
+              "product": "ePassport EAC",
+              "part": "a",
               "versions": [
-                "-"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "SB23YR48B",
-              "part": "h",
-              "versions": [
-                "-"
+                "1.1"
               ]
             }
           ]
@@ -434,31 +426,22 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:unknown:carte_cc_ideal_citiz:-:*:*:*:*:*:*:*",
-        "short": "h:unknown:carte_cc_ideal_citiz:-",
+        "cpe": "cpe:2.3:h:unknown:kona102j1:-:*:*:*:*:*:*:*",
+        "short": "h:unknown:kona102j1:-",
         "part": "h",
         "vendor": "unknown",
-        "product": "carte_cc_ideal_citiz",
+        "product": "kona102j1",
         "version": "-",
         "resolution": "unresolved"
       },
       {
-        "cpe": "cpe:2.3:h:stmicroelectronics:sb23yr80b:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:sb23yr80b:-",
-        "part": "h",
-        "vendor": "stmicroelectronics",
-        "product": "sb23yr80b",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:stmicroelectronics:sb23yr48b:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:sb23yr48b:-",
-        "part": "h",
-        "vendor": "stmicroelectronics",
-        "product": "sb23yr48b",
-        "version": "-",
-        "resolution": "explicit_vendor"
+        "cpe": "cpe:2.3:a:unknown:epassport_eac:1.1:*:*:*:*:*:*:*",
+        "short": "a:unknown:epassport_eac:1.1",
+        "part": "a",
+        "vendor": "unknown",
+        "product": "epassport_eac",
+        "version": "1.1",
+        "resolution": "unresolved"
       }
     ]
   },
@@ -813,7 +796,7 @@
               "vendor": null,
               "product": "Cortex M35P",
               "part": "h",
-              "version": "-"
+              "version": "r1p1"
             }
           ],
           "companions": []
@@ -822,12 +805,12 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:paloaltonetworks:cortex_m35p:-:*:*:*:*:*:*:*",
-        "short": "h:paloaltonetworks:cortex_m35p:-",
+        "cpe": "cpe:2.3:h:paloaltonetworks:cortex_m35p:r1p1:*:*:*:*:*:*:*",
+        "short": "h:paloaltonetworks:cortex_m35p:r1p1",
         "part": "h",
         "vendor": "paloaltonetworks",
         "product": "cortex_m35p",
-        "version": "-",
+        "version": "r1p1",
         "resolution": "cpe_prefix(cortex)"
       }
     ]
@@ -841,7 +824,7 @@
           "targets": [
             {
               "vendor": "ST",
-              "product": "ST33J2M0",
+              "product": "33J2M0",
               "part": "h",
               "version": "-"
             }
@@ -849,10 +832,10 @@
           "companions": [
             {
               "vendor": null,
-              "product": "NESLIB (F02)",
+              "product": "NESLIB",
               "part": "a",
               "versions": [
-                "-"
+                "F02"
               ]
             },
             {
@@ -878,12 +861,12 @@
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:a:stmicroelectronics:neslib_f02:-:*:*:*:*:*:*:*",
-        "short": "a:stmicroelectronics:neslib_f02:-",
+        "cpe": "cpe:2.3:a:stmicroelectronics:neslib:f02:*:*:*:*:*:*:*",
+        "short": "a:stmicroelectronics:neslib:f02",
         "part": "a",
         "vendor": "stmicroelectronics",
-        "product": "neslib_f02",
-        "version": "-",
+        "product": "neslib",
+        "version": "f02",
         "resolution": "explicit_vendor"
       },
       {
@@ -1107,7 +1090,7 @@
             {
               "vendor": "Oracle",
               "product": "Weblogic Server",
-              "part": "o",
+              "part": "a",
               "version": "12.1.3"
             }
           ],
@@ -1117,9 +1100,9 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:o:oracle:weblogic_server:12.1.3:*:*:*:*:*:*:*",
-        "short": "o:oracle:weblogic_server:12.1.3",
-        "part": "o",
+        "cpe": "cpe:2.3:a:oracle:weblogic_server:12.1.3:*:*:*:*:*:*:*",
+        "short": "a:oracle:weblogic_server:12.1.3",
+        "part": "a",
         "vendor": "oracle",
         "product": "weblogic_server",
         "version": "12.1.3",
@@ -1162,26 +1145,26 @@
           "companions": [
             {
               "vendor": null,
-              "product": "RSA",
+              "product": "RSA libraries",
               "part": "a",
               "versions": [
-                "1.6"
+                "RSA V1.6"
               ]
             },
             {
               "vendor": null,
-              "product": "EC",
+              "product": "EC libraries",
               "part": "a",
               "versions": [
-                "1.1"
+                "EC, V1.1"
               ]
             },
             {
               "vendor": null,
-              "product": "SHA-2",
+              "product": "SHA-2 libraries",
               "part": "a",
               "versions": [
-                "1.0"
+                "SHA-2 V1.0"
               ]
             }
           ]
@@ -1226,30 +1209,30 @@
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:a:emc:rsa:1.6:*:*:*:*:*:*:*",
-        "short": "a:emc:rsa:1.6",
+        "cpe": "cpe:2.3:a:emc:rsa_libraries:rsa_v1.6:*:*:*:*:*:*:*",
+        "short": "a:emc:rsa_libraries:rsa_v1.6",
         "part": "a",
         "vendor": "emc",
-        "product": "rsa",
-        "version": "1.6",
+        "product": "rsa_libraries",
+        "version": "rsa_v1.6",
         "resolution": "cpe_prefix(rsa)"
       },
       {
-        "cpe": "cpe:2.3:a:infineon:ec:1.1:*:*:*:*:*:*:*",
-        "short": "a:infineon:ec:1.1",
+        "cpe": "cpe:2.3:a:infineon:ec_libraries:ec,_v1.1:*:*:*:*:*:*:*",
+        "short": "a:infineon:ec_libraries:ec,_v1.1",
         "part": "a",
         "vendor": "infineon",
-        "product": "ec",
-        "version": "1.1",
+        "product": "ec_libraries",
+        "version": "ec,_v1.1",
         "resolution": "clause_inheritance"
       },
       {
-        "cpe": "cpe:2.3:a:infineon:sha-2:1.0:*:*:*:*:*:*:*",
-        "short": "a:infineon:sha-2:1.0",
+        "cpe": "cpe:2.3:a:infineon:sha-2_libraries:sha-2_v1.0:*:*:*:*:*:*:*",
+        "short": "a:infineon:sha-2_libraries:sha-2_v1.0",
         "part": "a",
         "vendor": "infineon",
-        "product": "sha-2",
-        "version": "1.0",
+        "product": "sha-2_libraries",
+        "version": "sha-2_v1.0",
         "resolution": "clause_inheritance"
       }
     ]
@@ -1370,7 +1353,7 @@
           ],
           "companions": [
             {
-              "vendor": "Versa Networks",
+              "vendor": null,
               "product": "Versa Secure SD-WAN Versa Operating System (VOS)",
               "part": "o",
               "versions": [
@@ -1382,13 +1365,13 @@
         {
           "targets": [
             {
-              "vendor": "Versa Networks",
+              "vendor": null,
               "product": "Versa Director",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": "Versa Networks",
+              "vendor": null,
               "product": "Versa Analytics",
               "part": "h",
               "version": "-"
@@ -1396,7 +1379,7 @@
           ],
           "companions": [
             {
-              "vendor": "Versa Networks",
+              "vendor": null,
               "product": "Versa Secure SD-WAN Versa Operating System (VOS)",
               "part": "o",
               "versions": [
@@ -1463,31 +1446,31 @@
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:o:versa_networks:versa_secure_sd-wan_versa_operating_system_vos:22.1:*:*:*:*:*:*:*",
-        "short": "o:versa_networks:versa_secure_sd-wan_versa_operating_system_vos:22.1",
+        "cpe": "cpe:2.3:o:versa-networks:versa_secure_sd-wan_versa_operating_system_vos:22.1:*:*:*:*:*:*:*",
+        "short": "o:versa-networks:versa_secure_sd-wan_versa_operating_system_vos:22.1",
         "part": "o",
-        "vendor": "versa_networks",
+        "vendor": "versa-networks",
         "product": "versa_secure_sd-wan_versa_operating_system_vos",
         "version": "22.1",
-        "resolution": "explicit_vendor"
+        "resolution": "cpe_prefix(versa)"
       },
       {
-        "cpe": "cpe:2.3:h:versa_networks:versa_director:-:*:*:*:*:*:*:*",
-        "short": "h:versa_networks:versa_director:-",
+        "cpe": "cpe:2.3:h:versa-networks:versa_director:-:*:*:*:*:*:*:*",
+        "short": "h:versa-networks:versa_director:-",
         "part": "h",
-        "vendor": "versa_networks",
+        "vendor": "versa-networks",
         "product": "versa_director",
         "version": "-",
-        "resolution": "explicit_vendor"
+        "resolution": "cpe_exact"
       },
       {
-        "cpe": "cpe:2.3:h:versa_networks:versa_analytics:-:*:*:*:*:*:*:*",
-        "short": "h:versa_networks:versa_analytics:-",
+        "cpe": "cpe:2.3:h:versa-networks:versa_analytics:-:*:*:*:*:*:*:*",
+        "short": "h:versa-networks:versa_analytics:-",
         "part": "h",
-        "vendor": "versa_networks",
+        "vendor": "versa-networks",
         "product": "versa_analytics",
         "version": "-",
-        "resolution": "explicit_vendor"
+        "resolution": "cpe_exact+clause_vendor"
       }
     ]
   },
@@ -1499,8 +1482,8 @@
         {
           "targets": [
             {
-              "vendor": "Fort Fox",
-              "product": "Hardware Data Diode",
+              "vendor": "Fort",
+              "product": "Fox Hardware Data Diode",
               "part": "h",
               "version": "-"
             }
@@ -1511,11 +1494,11 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:fort_fox:hardware_data_diode:-:*:*:*:*:*:*:*",
-        "short": "h:fort_fox:hardware_data_diode:-",
+        "cpe": "cpe:2.3:h:fort:fox_hardware_data_diode:-:*:*:*:*:*:*:*",
+        "short": "h:fort:fox_hardware_data_diode:-",
         "part": "h",
-        "vendor": "fort_fox",
-        "product": "hardware_data_diode",
+        "vendor": "fort",
+        "product": "fox_hardware_data_diode",
         "version": "-",
         "resolution": "explicit_vendor"
       }
@@ -1589,7 +1572,7 @@
         {
           "targets": [
             {
-              "vendor": null,
+              "vendor": "ST",
               "product": "ST33TPM12LPC",
               "part": "h",
               "version": "-"
@@ -1926,7 +1909,24 @@
               "version": "6.0.0.0"
             }
           ],
-          "companions": []
+          "companions": [
+            {
+              "vendor": null,
+              "product": "(APAR PK67104)",
+              "part": "a",
+              "versions": [
+                "-"
+              ]
+            },
+            {
+              "vendor": null,
+              "product": "(APAR PK79436)",
+              "part": "a",
+              "versions": [
+                "-"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1939,6 +1939,24 @@
         "product": "websphereportal",
         "version": "6.0.0.0",
         "resolution": "explicit_vendor"
+      },
+      {
+        "cpe": "cpe:2.3:a:ibm:apar_pk67104:-:*:*:*:*:*:*:*",
+        "short": "a:ibm:apar_pk67104:-",
+        "part": "a",
+        "vendor": "ibm",
+        "product": "apar_pk67104",
+        "version": "-",
+        "resolution": "clause_inheritance"
+      },
+      {
+        "cpe": "cpe:2.3:a:ibm:apar_pk79436:-:*:*:*:*:*:*:*",
+        "short": "a:ibm:apar_pk79436:-",
+        "part": "a",
+        "vendor": "ibm",
+        "product": "apar_pk79436",
+        "version": "-",
+        "resolution": "clause_inheritance"
       }
     ]
   },
@@ -2028,8 +2046,8 @@
         {
           "targets": [
             {
-              "vendor": null,
-              "product": "ID-One CNS",
+              "vendor": "ID-One",
+              "product": "CNS",
               "part": "a",
               "version": "2"
             }
@@ -2040,11 +2058,11 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:a:idemia:id-one_cns:2:*:*:*:*:*:*:*",
-        "short": "a:idemia:id-one_cns:2",
+        "cpe": "cpe:2.3:a:id-one:cns:2:*:*:*:*:*:*:*",
+        "short": "a:id-one:cns:2",
         "part": "a",
-        "vendor": "idemia",
-        "product": "id-one_cns",
+        "vendor": "id-one",
+        "product": "cns",
         "version": "2",
         "resolution": "explicit_vendor"
       }
@@ -2220,16 +2238,16 @@
   },
   {
     "index": 89,
-    "input": "XSmart e-Passport V1.1",
+    "input": "DNIe version 4.0",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "XSmart",
-              "product": "e-Passport",
+              "vendor": null,
+              "product": "DNIe",
               "part": "a",
-              "version": "1.1"
+              "version": "4.0"
             }
           ],
           "companions": []
@@ -2238,13 +2256,13 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:a:xsmart:e-passport:1.1:*:*:*:*:*:*:*",
-        "short": "a:xsmart:e-passport:1.1",
+        "cpe": "cpe:2.3:a:unknown:dnie:4.0:*:*:*:*:*:*:*",
+        "short": "a:unknown:dnie:4.0",
         "part": "a",
-        "vendor": "xsmart",
-        "product": "e-passport",
-        "version": "1.1",
-        "resolution": "explicit_vendor"
+        "vendor": "unknown",
+        "product": "dnie",
+        "version": "4.0",
+        "resolution": "unresolved"
       }
     ]
   },
@@ -2379,8 +2397,8 @@
         {
           "targets": [
             {
-              "vendor": null,
-              "product": "BMC Server Automation",
+              "vendor": "BMC",
+              "product": "Server Automation",
               "part": "a",
               "version": "8.3"
             }
@@ -2391,13 +2409,13 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:a:unknown:bmc_server_automation:8.3:*:*:*:*:*:*:*",
-        "short": "a:unknown:bmc_server_automation:8.3",
+        "cpe": "cpe:2.3:a:bmc:server_automation:8.3:*:*:*:*:*:*:*",
+        "short": "a:bmc:server_automation:8.3",
         "part": "a",
-        "vendor": "unknown",
-        "product": "bmc_server_automation",
+        "vendor": "bmc",
+        "product": "server_automation",
         "version": "8.3",
-        "resolution": "unresolved"
+        "resolution": "cpe_exact+explicit"
       }
     ]
   },
@@ -2441,14 +2459,25 @@
           ],
           "companions": [
             {
-              "vendor": "Cisco",
-              "product": "VPN Client",
+              "vendor": null,
+              "product": "Firmware",
               "part": "o",
               "versions": [
-                "5.0.03.0560"
+                "7.2(4)"
               ]
             }
           ]
+        },
+        {
+          "targets": [
+            {
+              "vendor": "Cisco",
+              "product": "VPN Client",
+              "part": "a",
+              "version": "5.0.03.0560"
+            }
+          ],
+          "companions": []
         }
       ]
     },
@@ -2499,9 +2528,18 @@
         "resolution": "cpe_exact+explicit"
       },
       {
-        "cpe": "cpe:2.3:o:cisco:vpn_client:5.0.03.0560:*:*:*:*:*:*:*",
-        "short": "o:cisco:vpn_client:5.0.03.0560",
+        "cpe": "cpe:2.3:o:cisco:firmware:7.2(4):*:*:*:*:*:*:*",
+        "short": "o:cisco:firmware:7.2(4)",
         "part": "o",
+        "vendor": "cisco",
+        "product": "firmware",
+        "version": "7.2(4)",
+        "resolution": "clause_inheritance"
+      },
+      {
+        "cpe": "cpe:2.3:a:cisco:vpn_client:5.0.03.0560:*:*:*:*:*:*:*",
+        "short": "a:cisco:vpn_client:5.0.03.0560",
+        "part": "a",
         "vendor": "cisco",
         "product": "vpn_client",
         "version": "5.0.03.0560",
@@ -2769,7 +2807,15 @@
           "companions": [
             {
               "vendor": null,
-              "product": "System/Copy",
+              "product": "Facsimile Function",
+              "part": "a",
+              "versions": [
+                "-"
+              ]
+            },
+            {
+              "vendor": null,
+              "product": "Software: System/Copy",
               "part": "o",
               "versions": [
                 "2.02"
@@ -2881,18 +2927,18 @@
             },
             {
               "vendor": null,
-              "product": "Engine A2.0",
+              "product": "Engine A",
               "part": "o",
               "versions": [
-                "20"
+                "2.0:20"
               ]
             },
             {
               "vendor": null,
-              "product": "Engine(Scanner) 1.01",
+              "product": "Engine(Scanner)",
               "part": "o",
               "versions": [
-                "00"
+                "1.01:00"
               ]
             },
             {
@@ -3087,11 +3133,20 @@
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:o:ricoh:system_copy:2.02:*:*:*:*:*:*:*",
-        "short": "o:ricoh:system_copy:2.02",
+        "cpe": "cpe:2.3:a:ricoh:facsimile_function:-:*:*:*:*:*:*:*",
+        "short": "a:ricoh:facsimile_function:-",
+        "part": "a",
+        "vendor": "ricoh",
+        "product": "facsimile_function",
+        "version": "-",
+        "resolution": "clause_inheritance"
+      },
+      {
+        "cpe": "cpe:2.3:o:ricoh:software_system_copy:2.02:*:*:*:*:*:*:*",
+        "short": "o:ricoh:software_system_copy:2.02",
         "part": "o",
         "vendor": "ricoh",
-        "product": "system_copy",
+        "product": "software_system_copy",
         "version": "2.02",
         "resolution": "clause_inheritance"
       },
@@ -3213,21 +3268,21 @@
         "resolution": "clause_inheritance"
       },
       {
-        "cpe": "cpe:2.3:o:docker:engine_a2.0:20:*:*:*:*:*:*:*",
-        "short": "o:docker:engine_a2.0:20",
+        "cpe": "cpe:2.3:o:docker:engine_a:2.0:20:*:*:*:*:*:*:*",
+        "short": "o:docker:engine_a:2.0:20",
         "part": "o",
         "vendor": "docker",
-        "product": "engine_a2.0",
-        "version": "20",
+        "product": "engine_a",
+        "version": "2.0:20",
         "resolution": "cpe_prefix(engine)"
       },
       {
-        "cpe": "cpe:2.3:o:ricoh:enginescanner_1.01:00:*:*:*:*:*:*:*",
-        "short": "o:ricoh:enginescanner_1.01:00",
+        "cpe": "cpe:2.3:o:ricoh:enginescanner:1.01:00:*:*:*:*:*:*:*",
+        "short": "o:ricoh:enginescanner:1.01:00",
         "part": "o",
         "vendor": "ricoh",
-        "product": "enginescanner_1.01",
-        "version": "00",
+        "product": "enginescanner",
+        "version": "1.01:00",
         "resolution": "clause_inheritance"
       },
       {
