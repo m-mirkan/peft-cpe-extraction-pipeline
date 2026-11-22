@@ -46,12 +46,11 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - C `h` STMicroelectronics | ST19NR66-A | 1.1.0
 - note: French; Passeport / EAC / BAC / AA / RSA / ECC are features, dropped; split of ST19NR66-A/1.1.0 is a guess
 
-## G008 [medium, network_security, confidence: medium, status: labeled]
-> Fortinet FortiGate™-1240B Unified Threat Management Solutions and FortiOS 4.0 CC Compliant Firmware
+## G008 [medium, network_security, confidence: low, status: labeled]
+> antiKor Next Generation Firewall and Security Management v2
 
-- T `h` Fortinet | FortiGate-1240B | -
-- C `o` Fortinet | FortiOS | 4.0
-- note: 'Unified Threat Management Solutions' and 'CC Compliant Firmware' dropped
+- T `o` (no vendor) | antiKor Next Generation Firewall and Security Management | 2
+- note: vendor not stated; product name kept whole; part by the D2 fallback (not in NVD)
 
 ## G009 [medium, network_security, confidence: medium, status: labeled]
 > Klas Fastnet Series Switches KlasOS 5.3
@@ -81,22 +80,11 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - C `o` (no vendor) | ID-One Cosmo | V9
 - note: configuration (PACE and CA) dropped; Essential is an edition (D4), dropped
 
-## G013 [hard, network_security, confidence: medium, status: labeled]
-> Sidewinder G2 Security Appliance Models 210, 310, 315, 410, 415, 510, 515, 1100, 1150, 2150, 4150 and Sidewinder G2 Software v6.1
+## G013 [hard, network_security, confidence: low, status: labeled]
+> IPS-Firewall software suite for NETASQ appliances, version 8.0.1.1
 
-- T `h` (no vendor) | Sidewinder G2 210 | -
-- T `h` (no vendor) | Sidewinder G2 310 | -
-- T `h` (no vendor) | Sidewinder G2 315 | -
-- T `h` (no vendor) | Sidewinder G2 410 | -
-- T `h` (no vendor) | Sidewinder G2 415 | -
-- T `h` (no vendor) | Sidewinder G2 510 | -
-- T `h` (no vendor) | Sidewinder G2 515 | -
-- T `h` (no vendor) | Sidewinder G2 1100 | -
-- T `h` (no vendor) | Sidewinder G2 1150 | -
-- T `h` (no vendor) | Sidewinder G2 2150 | -
-- T `h` (no vendor) | Sidewinder G2 4150 | -
-- C `o` (no vendor) | Sidewinder G2 Software | 6.1
-- note: device-class words (Security Appliance) stripped per R5; software part follows D2 (o when not in NVD)
+- T `o` NETASQ | IPS-Firewall | 8.0.1.1
+- note: software suite for NETASQ appliances: system software of a firewall, o by the D2 fallback; appliances themselves have no model so no hardware item
 
 ## G014 [easy, smartcard_chip, confidence: medium, status: labeled]
 > ATMEL AT90SC9608R rev. E microcontroller
@@ -105,15 +93,12 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - note: 'rev. E' read as hardware revision
 
 ## G015 [hard, printer_mfp, confidence: low, status: labeled]
-> TOSHIBAe-STUDIO2525AC/3025AC/3525ACall of the above with FAX Unit and FIPS Hard Disk KitSYS V2.1
+> Sharp Corporation Multifunction Device with Data Security Kit (AR-FR4 V.M.10, AR-FR5 V.E.10, AR-FR6 V.J.10)
 
-- T `h` TOSHIBA | e-STUDIO2525AC | -
-- T `h` TOSHIBA | e-STUDIO3025AC | -
-- T `h` TOSHIBA | e-STUDIO3525AC | -
-- C `h` (no vendor) | FAX Unit | -
-- C `h` (no vendor) | FIPS Hard Disk Kit | -
-- C `o` (no vendor) | SYS | 2.1
-- note: options/kits depend on D5; glued text 'ACall of the above'
+- T `a` Sharp | AR-FR4 | V.M.10
+- T `a` Sharp | AR-FR5 | V.E.10
+- T `a` Sharp | AR-FR6 | V.J.10
+- note: no base model named, so the three data security kits are the targets; Multifunction Device dropped
 
 ## G016 [medium, printer_mfp, confidence: low, status: labeled]
 > Canon imagePRESS C910/C810/C710/C660 2600 model1.0
@@ -131,9 +116,10 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - T `a` Voltage | SecureMail Suite | 2.0
 
 ## G018 [easy, enterprise_sw, confidence: high, status: labeled]
-> McAfee Vulnerability Manager 7.0
+> Symantec Brightmail™ Gateway 9.0.1
 
-- T `a` McAfee | Vulnerability Manager | 7.0
+- T `a` Symantec | Brightmail Gateway | 9.0.1
+- note: trademark symbol dropped; NVD has brightmail_antispam (a), the resolver may need an alias
 
 ## G019 [medium, smartcard_chip, confidence: low, status: labeled]
 > NXP J3A080 and J2A080 Secure Smart Card Controller Revision 3
@@ -142,26 +128,20 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - T `h` NXP | J2A080 | 3
 - note: 'Revision 3' read as hardware revision
 
-## G020 [hard, enterprise_sw, confidence: low, status: labeled]
-> Oracle Database 11g Enterprise Edition with Oracle Database Vault Release 11.1.0.7 with Critical Patch Updates up to and including July 2009
+## G020 [hard, enterprise_sw, confidence: medium, status: labeled]
+> IBM DB2 Version 9.1 for z/OS Version 1 Release 10
 
-- T `a` Oracle | Database | 11.1.0.7
-- C `a` Oracle | Database Vault | 11.1.0.7
-- note: edition (D4) dropped; critical patch update text dropped as noise
+- T `a` IBM | DB2 | 9.1
+- C `o` IBM | z/OS | 1 Release 10
+- note: for z/OS: host platform as companion; release text kept (R4); NVD db2 is a
 
 ## G021 [hard, smartcard_chip, confidence: medium, status: labeled]
-> Microcontrôleurs sécurisés SC23Z018, SC23ZD12, SC23ZD08, SC23ZD04, SB23ZD18, SB23ZD12, SB23ZD08 et SB23ZD04 incluant optionnellement la librairie cryptographique NesLib révision 3.1
+> MICROTECH M7245 Revision 7, M7246 Revision 7, and M7248 Revision 4
 
-- T `h` (no vendor) | SC23Z018 | -
-- T `h` (no vendor) | SC23ZD12 | -
-- T `h` (no vendor) | SC23ZD08 | -
-- T `h` (no vendor) | SC23ZD04 | -
-- T `h` (no vendor) | SB23ZD18 | -
-- T `h` (no vendor) | SB23ZD12 | -
-- T `h` (no vendor) | SB23ZD08 | -
-- T `h` (no vendor) | SB23ZD04 | -
-- C `a` (no vendor) | NesLib | 3.1
-- note: French; vendor (ST) not stated; 'révision 3.1' is the NesLib version
+- T `h` MICROTECH | M7245 | 7
+- T `h` MICROTECH | M7246 | 7
+- T `h` MICROTECH | M7248 | 4
+- note: Revision N read as hardware revision (same as the NXP Revision 3 title)
 
 ## G022 [medium, printer_mfp, confidence: medium, status: labeled]
 > Samsung SCX-8030 SCX-8040 SCX-8038 SCX-8048 CLX-9250 CLX-9350 CLX-9258 CLX-9358 MultiFunctionPrinter
@@ -190,18 +170,17 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - C `o` (no vendor) | SAR OS | 21.10R5
 - note: Series dropped per D3
 
-## G025 [medium, mobile_embedded, confidence: low, status: ambiguous]
-> Motorola Mobility LLC Mobile Devices on Android 14
+## G025 [medium, mobile_embedded, confidence: medium, status: labeled]
+> Samsung SDS EMM v1.5.1
 
-- T `h` Motorola Mobility LLC | Mobile Devices | -
-- C `o` (no vendor) | Android | 14
-- note: 'Mobile Devices' is a generic device-class noun (R5), not a model: ambiguous per D6, excluded from scoring
+- T `a` Samsung SDS | EMM | 1.5.1
+- note: mobile device management software; vendor is Samsung SDS
 
 ## G026 [medium, network_security, confidence: low, status: labeled]
-> Sidewinder® G2 Firewall, V6.0
+> Astaro Security Gateway (ASG) Version 6.300
 
-- T `o` (no vendor) | Sidewinder G2 Firewall | 6.0
-- note: part a/o/h depends on how D2 is applied; consider marking ambiguous
+- T `o` Astaro | Security Gateway | 6.300
+- note: (ASG) is the abbreviation, dropped; vendor Astaro is the first word; part by the D2 fallback (not in NVD)
 
 ## G027 [hard, printer_mfp, confidence: low, status: labeled]
 > MX-M6050 / M5050 / M4050 / M3550 / M3050 / M2630 HDD standard model with MX-FR56U and MX-FX15; and MX-M6050 / M5050 / M4050 / M3550 / M3050 / M2630 HDD option model with MX-FR56U, MX-HD16 and MX-FX150220zc00
@@ -263,12 +242,17 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - note: vendor (ST) not stated
 
 ## G033 [medium, printer_mfp, confidence: medium, status: labeled]
-> bizhub C252 / ineo+ 251 Control Software
+> FUJIFILM Apeos C3061 / C2561 / C2061 / C3061 GK / C2561 GK / C2061 GK models with Copy, Print, Fax, Scan and StorageController ROM Ver. 1.0.4A, Fax ROM Ver. 3.0.0
 
-- T `h` (no vendor) | bizhub C252 | -
-- T `h` (no vendor) | ineo+ 251 | -
-- C `o` (no vendor) | Control Software | -
-- note: vendors (Konica Minolta / Develop) not stated
+- T `h` FUJIFILM | Apeos C3061 | -
+- T `h` FUJIFILM | Apeos C2561 | -
+- T `h` FUJIFILM | Apeos C2061 | -
+- T `h` FUJIFILM | Apeos C3061 GK | -
+- T `h` FUJIFILM | Apeos C2561 GK | -
+- T `h` FUJIFILM | Apeos C2061 GK | -
+- C `o` (no vendor) | Storage Controller ROM | 1.0.4A
+- C `o` (no vendor) | Fax ROM | 3.0.0
+- note: same conventions as the earlier Fujifilm title (Copy, Print, Fax, Scan dropped; StorageController split)
 
 ## G034 [medium, os_platform, confidence: low, status: labeled]
 > IBM RACF for z/OS Version 2 Release 4
@@ -276,29 +260,29 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - T `a` IBM | RACF for z/OS | 2 Release 4
 - note: RACF is a z/OS component; modelling as one product is a choice
 
-## G035 [medium, printer_mfp, confidence: low, status: labeled]
-> Xerox® VersaLink™ C625 and B625 with eMMC
+## G035 [medium, printer_mfp, confidence: medium, status: labeled]
+> Sindoh MF2000, MF3000, MF4000, N610, N410 Series
 
-- T `h` Xerox | VersaLink C625 | -
-- T `h` Xerox | VersaLink B625 | -
-- C `h` (no vendor) | eMMC | -
-- note: option component (D5)
+- T `h` Sindoh | MF2000 | -
+- T `h` Sindoh | MF3000 | -
+- T `h` Sindoh | MF4000 | -
+- T `h` Sindoh | N610 | -
+- T `h` Sindoh | N410 | -
+- note: Series dropped per D3
 
 ## G036 [hard, epassport_applet, confidence: low, status: labeled]
-> Carte VITALE 2 - Application VITALE : Composant SB23ZL48 masqué par le logiciel SESAM VITALE v1.0.1 avec correctif version 1
+> dragonFly version 3.2 sur composantSM33F1ME
 
-- T `a` (no vendor) | Carte VITALE 2 Application VITALE | -
-- C `h` (no vendor) | SB23ZL48 | -
-- C `a` (no vendor) | SESAM VITALE | 1.0.1
-- note: French; 'correctif version 1' (patch) dropped
+- T `a` (no vendor) | dragonFly | 3.2
+- C `h` (no vendor) | SM33F1ME | -
+- note: French; glued composantSM33F1ME split; chip name kept as written
 
 ## G037 [hard, epassport_applet, confidence: low, status: labeled]
-> IAS ECC v2, version 1.3, in configuration #1 on ID-One Cosmo v8.2 open platform on NXP P6022M VB (Identification de l’application : F0 02 02 13) (ANSSI-CC-2020/50-R01)
+> MaskTech ePP Applet on Secora ID S v1.1
 
-- T `a` (no vendor) | IAS ECC v2 | 1.3
-- C `o` (no vendor) | ID-One Cosmo | 8.2
-- C `h` NXP | P6022M VB | -
-- note: configuration #1, application id and certificate id dropped as noise
+- T `a` MaskTech | ePP Applet | -
+- C `o` (no vendor) | Secora ID S | 1.1
+- note: v1.1 read as the version of the card OS; vendor Infineon not in the title
 
 ## G038 [easy, epassport_applet, confidence: low, status: labeled]
 > NXP JCOP 4.5 P71
@@ -306,21 +290,18 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - T `o` NXP | JCOP | 4.5 P71
 - note: JCOP naming (product vs version) undecided
 
-## G039 [hard, smartcard_chip, confidence: medium, status: labeled]
-> SA23YR18A and SB23YR18A Secure Microcontrollers, including the cryptographic library Neslib v3.1, in SA or SB configuration
+## G039 [hard, smartcard_chip, confidence: low, status: labeled]
+> ATMEL AT90SC6464C Integrated circuit (reference AT568A9 rev. F)
 
-- T `h` (no vendor) | SA23YR18A | -
-- T `h` (no vendor) | SB23YR18A | -
-- C `a` (no vendor) | Neslib | 3.1
-- note: vendor (ST) not stated; 'in SA or SB configuration' dropped as noise
+- T `h` ATMEL | AT90SC6464C | F
+- note: (reference AT568A9 rev. F): rev F is the chip revision; the reference code is noise
 
-## G040 [medium, network_security, confidence: low, status: labeled]
-> Cisco Adaptive Security Appliances and ASA Virtual Version 9.6
+## G040 [medium, network_security, confidence: medium, status: labeled]
+> Fortress Mesh Point ES520, ES820
 
-- T `h` Cisco | Adaptive Security Appliances | -
-- T `a` Cisco | ASA Virtual | -
-- C `o` Cisco | Adaptive Security Appliance Software | 9.6
-- note: ASA software = o per D2 (NVD name: adaptive_security_appliance_software, o 1024 vs a 680); ASA Virtual is a virtual (software) appliance: a, as NVD adaptive_security_virtual_appliance (a 5 vs h 1); the hardware family stays h
+- T `h` Fortress | Mesh Point ES520 | -
+- T `h` Fortress | Mesh Point ES820 | -
+- note: vendor Fortress is the first word of the title; bare ES820 expanded with the family prefix (D7)
 
 ## G041 [easy, smartcard_chip, confidence: medium, status: labeled]
 > Renesas HD65256D smartcard integrated circuit V01
@@ -342,26 +323,17 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - C `a` McAfee | ePolicy Orchestrator | 5.3.1
 
 ## G044 [hard, smartcard_chip, confidence: low, status: labeled]
-> IFX_CCI_000Dh, IFX_CCI_0020h, IFX_CCI_0031h, IFX_CCI_0032h, IFX_CCI_0034h design step T23 with optional HSL v2.62.7626, optional SCL v2.04.003, UMSLC lib v01.00.0234 with specific IC-dedicated firmware identifier 80.301.05.1 and user guidance
+> Renesas Cryptographic Library v5126 on Renesas RS47X security integrated circuit Version 01
 
-- T `h` (no vendor) | IFX_CCI_000Dh | T23
-- T `h` (no vendor) | IFX_CCI_0020h | T23
-- T `h` (no vendor) | IFX_CCI_0031h | T23
-- T `h` (no vendor) | IFX_CCI_0032h | T23
-- T `h` (no vendor) | IFX_CCI_0034h | T23
-- C `a` (no vendor) | HSL | 2.62.7626
-- C `a` (no vendor) | SCL | 2.04.003
-- C `a` (no vendor) | UMSLC | 01.00.0234
-- C `o` (no vendor) | Firmware | 80.301.05.1
-- note: design step read as hardware version; user guidance dropped
+- T `a` Renesas | Cryptographic Library | 5126
+- C `h` Renesas | RS47X | 01
+- note: Version 01 read as the chip version; security integrated circuit dropped as device class
 
-## G045 [medium, smartcard_chip, confidence: low, status: labeled]
-> STMicroelectronics NesLib 6.7.4 on ST33K1M5A and ST33K1M5M B03
+## G045 [medium, smartcard_chip, confidence: medium, status: labeled]
+> Google H1D3 Secure Microcontroller with Crypto Library v1.5.2
 
-- T `a` STMicroelectronics | NesLib | 6.7.4
-- C `h` (no vendor) | ST33K1M5A | B03
-- C `h` (no vendor) | ST33K1M5M | B03
-- note: B03 attached to both chips
+- T `h` Google | H1D3 | -
+- C `a` (no vendor) | Crypto Library | 1.5.2
 
 ## G046 [hard, network_security, confidence: low, status: labeled]
 > Cisco Wide Area Application Services Version 4.0, Wide Area Application Engine (WAE) 512, 612, 674, 7341, 7371 and WAE Network Module [NME-WAE] NME-WAE-502 and NME-WAE-522
@@ -385,20 +357,21 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - C `a` (no vendor) | Secure+ Option | -
 - note: two clauses with different versions; UNIX/Windows platforms dropped; vendor (IBM/Sterling) not stated
 
-## G048 [hard, network_security, confidence: medium, status: labeled]
-> CISCO IOS/IPSec release 12.4(6)T3, 12.4(7) & 12.2(33)SRA
+## G048 [hard, network_security, confidence: low, status: labeled]
+> Primus HSM FW 3.1.0 Series E, Series E2, Series X, Series X2
 
-- T `o` Cisco | IOS | 12.4(6)T3
-- T `o` Cisco | IOS | 12.4(7)
-- T `o` Cisco | IOS | 12.2(33)SRA
-- note: IPSec is a feature of IOS, not a product; three releases of the same product
+- T `h` (no vendor) | Primus HSM Series E | -
+- T `h` (no vendor) | Primus HSM Series E2 | -
+- T `h` (no vendor) | Primus HSM Series X | -
+- T `h` (no vendor) | Primus HSM Series X2 | -
+- C `o` (no vendor) | Firmware | 3.1.0
+- note: Series E/E2/X/X2 are the model names so Series is kept; FW read as firmware (R3)
 
-## G049 [medium, printer_mfp, confidence: high, status: labeled]
-> Xerox WorkCentre 5030/5050 Multifunction Systems, System Software Version 5.003.07.000
+## G049 [medium, printer_mfp, confidence: low, status: labeled]
+> Data Security Kit(D) Software V1.00J
 
-- T `h` Xerox | WorkCentre 5030 | -
-- T `h` Xerox | WorkCentre 5050 | -
-- C `o` (no vendor) | System Software | 5.003.07.000
+- T `a` (no vendor) | Data Security Kit(D) | V1.00J
+- note: optional kit with its own version; vendor (Sharp) not in the title; the word Software dropped
 
 ## G050 [hard, other_hardware, confidence: medium, status: labeled]
 > Trusted Platform Modules ST33KTPM2XSPI & ST33KTPM2X (TPM Firmware 9.257) ( ANSSI-CC-2024/04)
@@ -481,12 +454,11 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 
 - T `a` EMC | ViPR Controller | 2.1.0.3
 
-## G061 [medium, network_security, confidence: high, status: labeled]
-> Cisco Catalyst 2960CX and 3560CX Series Compact Switches running IOS 15.2(3)E1
+## G061 [medium, network_security, confidence: low, status: labeled]
+> SDoT Security Gateway, Version 6.2i
 
-- T `h` Cisco | Catalyst 2960CX | -
-- T `h` Cisco | Catalyst 3560CX | -
-- C `o` Cisco | IOS | 15.2(3)E1
+- T `o` (no vendor) | SDoT Security Gateway | 6.2i
+- note: vendor not stated; part by the D2 fallback (not in NVD), same convention as the CyberGuard title
 
 ## G062 [easy, enterprise_sw, confidence: medium, status: labeled]
 > Forescout v8.1
@@ -516,12 +488,12 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - T `h` (no vendor) | Cortex M35P | r1p1
 - note: vendor (Arm) not stated
 
-## G067 [medium, smartcard_chip, confidence: low, status: labeled]
-> ST33J2M0 including optional cryptographic library NESLIB (F02) (ANSSI-CC-2024/06-R01)
+## G067 [medium, smartcard_chip, confidence: medium, status: labeled]
+> T6ND1 Integrated Circuit with Crypto Library v6.0
 
-- T `h` (no vendor) | ST33J2M0 | F02
-- C `a` (no vendor) | NESLIB | -
-- note: (F02) read as chip revision; certificate id dropped
+- T `h` (no vendor) | T6ND1 | -
+- C `a` (no vendor) | Crypto Library | 6.0
+- note: vendor not stated
 
 ## G068 [medium, smartcard_chip, confidence: low, status: labeled]
 > Shenzhen Goodix GEOP01 on GSEA01 Security Chip version 1.0
@@ -548,16 +520,12 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 
 - T `a` Oracle | WebLogic Server | 12.1.3
 
-## G071 [hard, smartcard_chip, confidence: medium, status: labeled]
-> Infineon Smart Card IC (Security Controller) SLE66CX162PE / m1531-a25 and SLE66CX80PE / m1533-a25 all with optional libraries RSA V1.6, EC, V1.1, SHA-2 V1.0 and both with specific IC dedicated software
+## G071 [hard, smartcard_chip, confidence: low, status: labeled]
+> SLS 32TLC00xS(M) CIPURSE™4move v1.0.2
 
-- T `h` Infineon | SLE66CX162PE | m1531-a25
-- T `h` Infineon | SLE66CX80PE | m1533-a25
-- C `a` (no vendor) | RSA | 1.6
-- C `a` (no vendor) | EC | 1.1
-- C `a` (no vendor) | SHA-2 | 1.0
-- C `o` (no vendor) | IC Dedicated Software | -
-- note: m15xx-a25 read as a mask/hardware version
+- T `h` (no vendor) | SLS 32TLC00xS(M) | -
+- C `o` (no vendor) | CIPURSE 4move | 1.0.2
+- note: chip plus card OS (D8); vendor (Infineon) not in the title; trademark symbol dropped
 
 ## G072 [hard, mobile_embedded, confidence: low, status: labeled]
 > Strong Customer Authentication for Apple Pay on Vision Pro with M2 running visionOS 2.4(visionOS 2.4 (build 22O238)) (ANSSI-CC-2026/05)
@@ -594,10 +562,10 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - note: part a vs o depends on D2
 
 ## G076 [medium, enterprise_sw, confidence: medium, status: labeled]
-> Microsoft SQL Server 2022 Database Engine Enterprise Edition x64 (English) version 16.0.4105.2
+> EMC Isilon® OneFS® v6.5.4
 
-- T `a` Microsoft | SQL Server | 16.0.4105.2
-- note: '2022', edition, arch and language (D4) dropped
+- T `a` EMC | Isilon OneFS | 6.5.4
+- note: NVD isilon_onefs is split a 43 / o 41, so the majority rule gives a; registered symbols dropped
 
 ## G077 [easy, other_hardware, confidence: medium, status: labeled]
 > ST33TPM12LPC
@@ -610,19 +578,13 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 
 - T `a` Alacris | OCSP Client Professional | 4.0.0
 
-## G079 [hard, smartcard_chip, confidence: medium, status: labeled]
-> STMicroelectronics Secured microcontroller ST33F1ME, ST33F768E, SC33F768E, ST33F640E, SC33F640E, ST33F512E, SC33F512E et SC33F384E all with optional cryptographic library NESLIB 3.0
+## G079 [hard, smartcard_chip, confidence: low, status: labeled]
+> NXP Secure Smart Card Controller N7122 with IC Dedicated Software and Crypto Library (R1/R2/R3)
 
-- T `h` STMicroelectronics | ST33F1ME | -
-- T `h` STMicroelectronics | ST33F768E | -
-- T `h` STMicroelectronics | SC33F768E | -
-- T `h` STMicroelectronics | ST33F640E | -
-- T `h` STMicroelectronics | SC33F640E | -
-- T `h` STMicroelectronics | ST33F512E | -
-- T `h` STMicroelectronics | SC33F512E | -
-- T `h` STMicroelectronics | SC33F384E | -
-- C `a` (no vendor) | NESLIB | 3.0
-- note: mixed French/English ('et')
+- T `h` NXP | N7122 | -
+- C `o` (no vendor) | IC Dedicated Software | -
+- C `a` (no vendor) | Crypto Library | R1, R2, R3
+- note: R1/R2/R3 read as library versions
 
 ## G080 [medium, other_hardware, confidence: high, status: labeled]
 > ST33TPHF20 TPM Firmware 0x4A.0x14 & 0x4A.0x15
@@ -642,10 +604,10 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - T `h` Winbond | W75F32W | 1.0
 
 ## G083 [hard, enterprise_sw, confidence: low, status: labeled]
-> IBM WebSpherePortal 6.0.0.0 (with APAR PK67104 and APAR PK79436)
+> Symfoware Server Enterprise Extended Edition 8.0.1(with patch T000132QP-01 and T000133QP-01)
 
-- T `a` IBM | WebSphere Portal | 6.0.0.0
-- note: APARs (patches) dropped; glued 'WebSpherePortal' split
+- T `a` (no vendor) | Symfoware Server | 8.0.1
+- note: edition (D4) dropped; patch ids are noise (D5); vendor Fujitsu not in the title
 
 ## G084 [easy, network_security, confidence: medium, status: labeled]
 > Motorola AP-7131N Wireless Access Point
@@ -653,12 +615,11 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - T `h` Motorola | AP-7131N | -
 - note: 'Wireless Access Point' dropped as device class
 
-## G085 [easy, network_security, confidence: medium, status: labeled]
-> Junos OS 20.3R1 for ACX5448-M
+## G085 [easy, network_security, confidence: low, status: labeled]
+> AhnLab TrusGuard V2.2
 
-- T `h` (no vendor) | ACX5448-M | -
-- C `o` (no vendor) | Junos OS | 20.3R1
-- note: vendor Juniper not in the title (R9), so null
+- T `o` AhnLab | TrusGuard | 2.2
+- note: firewall system software: o by the D2 fallback (not in NVD); could also be read as the appliance itself
 
 ## G086 [easy, epassport_applet, confidence: low, status: labeled]
 > ID-One CNS v2
@@ -666,30 +627,20 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - T `a` (no vendor) | ID-One CNS | 2
 - note: card OS/application: a vs o undecided
 
-## G087 [hard, printer_mfp, confidence: medium, status: labeled]
-> HP Color LaserJet Enterprise M856, HP LaserJet Enterprise M610/M611/M612, HP LaserJet Enterprise M507, HP Color LaserJet Enterprise M751 and HP Color LaserJet Managed E75245 printers with HP FutureSmart 5.7.1.1 Firmware
+## G087 [hard, printer_mfp, confidence: low, status: labeled]
+> Océ Smart Imager 8.3.3.39 as used in the Océ VP 2090 R3.3
 
-- T `h` HP | Color LaserJet Enterprise M856 | -
-- T `h` HP | LaserJet Enterprise M610 | -
-- T `h` HP | LaserJet Enterprise M611 | -
-- T `h` HP | LaserJet Enterprise M612 | -
-- T `h` HP | LaserJet Enterprise M507 | -
-- T `h` HP | Color LaserJet Enterprise M751 | -
-- T `h` HP | Color LaserJet Managed E75245 | -
-- C `o` HP | FutureSmart | 5.7.1.1
-- note: family words (Color LaserJet Enterprise ...) kept in the product
+- T `a` Océ | Smart Imager | 8.3.3.39
+- C `h` Océ | VP 2090 | R3.3
+- note: as used in = host device as companion; R3.3 read as its release
 
 ## G088 [hard, network_security, confidence: low, status: labeled]
-> Hewlett-Packard Networking A-Series Switches: 12500, 9500, 7500, 5820, 5800, 5500, and 5120
+> xPortalNet HS Server version 2.0.0.2, xPortalNet HS Client version 2.0.0.2 and Xp-GLS5100 Controllers
 
-- T `h` Hewlett-Packard | A-Series 12500 | -
-- T `h` Hewlett-Packard | A-Series 9500 | -
-- T `h` Hewlett-Packard | A-Series 7500 | -
-- T `h` Hewlett-Packard | A-Series 5820 | -
-- T `h` Hewlett-Packard | A-Series 5800 | -
-- T `h` Hewlett-Packard | A-Series 5500 | -
-- T `h` Hewlett-Packard | A-Series 5120 | -
-- note: bare numbers expanded with the family prefix (D7)
+- T `a` (no vendor) | xPortalNet HS Server | 2.0.0.2
+- T `a` (no vendor) | xPortalNet HS Client | 2.0.0.2
+- T `h` (no vendor) | Xp-GLS5100 | -
+- note: Controllers dropped as device class; one clause with three items
 
 ## G089 [easy, epassport_applet, confidence: low, status: labeled]
 > DNIe version 4.0
@@ -703,12 +654,11 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - T `h` A10 Networks | Thunder TPS 3030S | -
 
 ## G091 [medium, smartcard_chip, confidence: medium, status: labeled]
-> Infineon smartcard IC (Security Controller) M7791 B12 and G11 with specific IC-dedicated firmware
+> NXP Secure Smart Card Controller N7021 VA including IC Dedicated Software
 
-- T `h` Infineon | M7791 | B12
-- T `h` Infineon | M7791 | G11
-- C `o` (no vendor) | IC-dedicated firmware | -
-- note: B12 and G11 read as two steppings
+- T `h` NXP | N7021 | VA
+- C `o` (no vendor) | IC Dedicated Software | -
+- note: VA read as hardware revision (D10)
 
 ## G092 [easy, mobile_embedded, confidence: medium, status: labeled]
 > BlackBerry® Device Software 5.0.0
@@ -720,17 +670,11 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 
 - T `a` BMC | Server Automation | 8.3
 
-## G094 [hard, network_security, confidence: medium, status: labeled]
-> Cisco ASA 5505, 5510, 5520, 5540, and 5550 (Release 7.2(4)), Cisco VPN Client Release 5.0.03.0560
+## G094 [hard, network_security, confidence: low, status: labeled]
+> McAfee Firewall Enterprise v7.0.1.02HW02
 
-- T `h` Cisco | ASA 5505 | -
-- T `h` Cisco | ASA 5510 | -
-- T `h` Cisco | ASA 5520 | -
-- T `h` Cisco | ASA 5540 | -
-- T `h` Cisco | ASA 5550 | -
-- C `o` Cisco | Adaptive Security Appliance Software | 7.2(4)
-- C `a` Cisco | VPN Client | 5.0.03.0560
-- note: ASA software = o per D2 (NVD name: adaptive_security_appliance_software, o 1024 vs a 680)
+- T `o` McAfee | Firewall Enterprise | 7.0.1.02HW02
+- note: version text kept as written; part by the D2 fallback (NVD has only Firewall Enterprise Admin Console / Control Center, both a)
 
 ## G095 [medium, other_hardware, confidence: low, status: labeled]
 > xFusion Server intelligent Baseboard Management Controller iBMC version 3.3.10.7
@@ -802,10 +746,7 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - T `o` Sophos | Firewall OS | 17.01
 
 ## G100 [medium, network_security, confidence: medium, status: labeled]
-> Cisco IronPort S-Series Web Security Appliance (WSA) (S160, S360, S660) running AsyncOS 5.6.1
+> Trustwave Network Access Control (NAC) Software Version 3.4.0
 
-- T `h` Cisco | IronPort S160 | -
-- T `h` Cisco | IronPort S360 | -
-- T `h` Cisco | IronPort S660 | -
-- C `o` Cisco | AsyncOS | 5.6.1
-- note: 'Web Security Appliance (WSA)' dropped as device class
+- T `a` Trustwave | Network Access Control | 3.4.0
+- note: (NAC) is the abbreviation, dropped; Software dropped as generic; NVD network_access_control is a

@@ -218,43 +218,31 @@
   },
   {
     "id": "G008",
-    "source_index": 11,
-    "input": "Fortinet FortiGate™-1240B Unified Threat Management Solutions and FortiOS 4.0 CC Compliant Firmware",
+    "source_index": 52,
+    "input": "antiKor Next Generation Firewall and Security Management v2",
     "difficulty": "medium",
     "tags": [
       "network_security"
     ],
-    "flags": [
-      "two-products",
-      "os-binding"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Fortinet",
-              "product": "FortiGate-1240B",
-              "part": "h",
-              "version": "-"
+              "vendor": null,
+              "product": "antiKor Next Generation Firewall and Security Management",
+              "part": "o",
+              "version": "2"
             }
           ],
-          "companions": [
-            {
-              "vendor": "Fortinet",
-              "product": "FortiOS",
-              "part": "o",
-              "versions": [
-                "4.0"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
-    "notes": "'Unified Threat Management Solutions' and 'CC Compliant Firmware' dropped",
-    "confidence": "medium"
+    "notes": "vendor not stated; product name kept whole; part by the D2 fallback (not in NVD)",
+    "confidence": "low"
   },
   {
     "id": "G009",
@@ -405,103 +393,31 @@
   },
   {
     "id": "G013",
-    "source_index": 27,
-    "input": "Sidewinder G2 Security Appliance Models 210, 310, 315, 410, 415, 510, 515, 1100, 1150, 2150, 4150 and Sidewinder G2 Software v6.1",
+    "source_index": 360,
+    "input": "IPS-Firewall software suite for NETASQ appliances, version 8.0.1.1",
     "difficulty": "hard",
     "tags": [
       "network_security"
     ],
-    "flags": [
-      "bare-number-list",
-      "software-component"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": null,
-              "product": "Sidewinder G2 210",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "Sidewinder G2 310",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "Sidewinder G2 315",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "Sidewinder G2 410",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "Sidewinder G2 415",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "Sidewinder G2 510",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "Sidewinder G2 515",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "Sidewinder G2 1100",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "Sidewinder G2 1150",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "Sidewinder G2 2150",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "Sidewinder G2 4150",
-              "part": "h",
-              "version": "-"
+              "vendor": "NETASQ",
+              "product": "IPS-Firewall",
+              "part": "o",
+              "version": "8.0.1.1"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "Sidewinder G2 Software",
-              "part": "o",
-              "versions": [
-                "6.1"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
-    "notes": "device-class words (Security Appliance) stripped per R5; software part follows D2 (o when not in NVD)",
-    "confidence": "medium"
+    "notes": "software suite for NETASQ appliances: system software of a firewall, o by the D2 fallback; appliances themselves have no model so no hardware item",
+    "confidence": "low"
   },
   {
     "id": "G014",
@@ -533,71 +449,42 @@
   },
   {
     "id": "G015",
-    "source_index": 44,
-    "input": "TOSHIBAe-STUDIO2525AC/3025AC/3525ACall of the above with FAX Unit and FIPS Hard Disk KitSYS V2.1",
+    "source_index": 382,
+    "input": "Sharp Corporation Multifunction Device with Data Security Kit (AR-FR4 V.M.10, AR-FR5 V.E.10, AR-FR6 V.J.10)",
     "difficulty": "hard",
     "tags": [
       "printer_mfp"
     ],
-    "flags": [
-      "missing-spaces",
-      "options-kit",
-      "list-expand"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "TOSHIBA",
-              "product": "e-STUDIO2525AC",
-              "part": "h",
-              "version": "-"
+              "vendor": "Sharp",
+              "product": "AR-FR4",
+              "part": "a",
+              "version": "V.M.10"
             },
             {
-              "vendor": "TOSHIBA",
-              "product": "e-STUDIO3025AC",
-              "part": "h",
-              "version": "-"
+              "vendor": "Sharp",
+              "product": "AR-FR5",
+              "part": "a",
+              "version": "V.E.10"
             },
             {
-              "vendor": "TOSHIBA",
-              "product": "e-STUDIO3525AC",
-              "part": "h",
-              "version": "-"
+              "vendor": "Sharp",
+              "product": "AR-FR6",
+              "part": "a",
+              "version": "V.J.10"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "FAX Unit",
-              "part": "h",
-              "versions": [
-                "-"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "FIPS Hard Disk Kit",
-              "part": "h",
-              "versions": [
-                "-"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "SYS",
-              "part": "o",
-              "versions": [
-                "2.1"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
-    "notes": "options/kits depend on D5; glued text 'ACall of the above'",
+    "notes": "no base model named, so the three data security kits are the targets; Multifunction Device dropped",
     "confidence": "low"
   },
   {
@@ -685,8 +572,8 @@
   },
   {
     "id": "G018",
-    "source_index": 353,
-    "input": "McAfee Vulnerability Manager 7.0",
+    "source_index": 484,
+    "input": "Symantec Brightmail™ Gateway 9.0.1",
     "difficulty": "easy",
     "tags": [
       "enterprise_sw"
@@ -698,17 +585,17 @@
         {
           "targets": [
             {
-              "vendor": "McAfee",
-              "product": "Vulnerability Manager",
+              "vendor": "Symantec",
+              "product": "Brightmail Gateway",
               "part": "a",
-              "version": "7.0"
+              "version": "9.0.1"
             }
           ],
           "companions": []
         }
       ]
     },
-    "notes": "",
+    "notes": "trademark symbol dropped; NVD has brightmail_antispam (a), the resolver may need an alias",
     "confidence": "high"
   },
   {
@@ -750,48 +637,45 @@
   },
   {
     "id": "G020",
-    "source_index": 61,
-    "input": "Oracle Database 11g Enterprise Edition with Oracle Database Vault Release 11.1.0.7 with Critical Patch Updates up to and including July 2009",
+    "source_index": 350,
+    "input": "IBM DB2 Version 9.1 for z/OS Version 1 Release 10",
     "difficulty": "hard",
     "tags": [
       "enterprise_sw"
     ],
-    "flags": [
-      "patch-text",
-      "two-products"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Oracle",
-              "product": "Database",
+              "vendor": "IBM",
+              "product": "DB2",
               "part": "a",
-              "version": "11.1.0.7"
+              "version": "9.1"
             }
           ],
           "companions": [
             {
-              "vendor": "Oracle",
-              "product": "Database Vault",
-              "part": "a",
+              "vendor": "IBM",
+              "product": "z/OS",
+              "part": "o",
               "versions": [
-                "11.1.0.7"
+                "1 Release 10"
               ]
             }
           ]
         }
       ]
     },
-    "notes": "edition (D4) dropped; critical patch update text dropped as noise",
-    "confidence": "low"
+    "notes": "for z/OS: host platform as companion; release text kept (R4); NVD db2 is a",
+    "confidence": "medium"
   },
   {
     "id": "G021",
-    "source_index": 317,
-    "input": "Microcontrôleurs sécurisés SC23Z018, SC23ZD12, SC23ZD08, SC23ZD04, SB23ZD18, SB23ZD12, SB23ZD08 et SB23ZD04 incluant optionnellement la librairie cryptographique NesLib révision 3.1",
+    "source_index": 359,
+    "input": "MICROTECH M7245 Revision 7, M7246 Revision 7, and M7248 Revision 4",
     "difficulty": "hard",
     "tags": [
       "smartcard_chip"
@@ -803,68 +687,29 @@
         {
           "targets": [
             {
-              "vendor": null,
-              "product": "SC23Z018",
+              "vendor": "MICROTECH",
+              "product": "M7245",
               "part": "h",
-              "version": "-"
+              "version": "7"
             },
             {
-              "vendor": null,
-              "product": "SC23ZD12",
+              "vendor": "MICROTECH",
+              "product": "M7246",
               "part": "h",
-              "version": "-"
+              "version": "7"
             },
             {
-              "vendor": null,
-              "product": "SC23ZD08",
+              "vendor": "MICROTECH",
+              "product": "M7248",
               "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "SC23ZD04",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "SB23ZD18",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "SB23ZD12",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "SB23ZD08",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "SB23ZD04",
-              "part": "h",
-              "version": "-"
+              "version": "4"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "NesLib",
-              "part": "a",
-              "versions": [
-                "3.1"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
-    "notes": "French; vendor (ST) not stated; 'révision 3.1' is the NesLib version",
+    "notes": "Revision N read as hardware revision (same as the NXP Revision 3 title)",
     "confidence": "medium"
   },
   {
@@ -1013,72 +858,58 @@
   },
   {
     "id": "G025",
-    "source_index": 84,
-    "input": "Motorola Mobility LLC Mobile Devices on Android 14",
+    "source_index": 488,
+    "input": "Samsung SDS EMM v1.5.1",
     "difficulty": "medium",
     "tags": [
       "mobile_embedded"
     ],
-    "flags": [
-      "mobile-os",
-      "family-not-model"
-    ],
-    "status": "ambiguous",
-    "gold": {
-      "clauses": [
-        {
-          "targets": [
-            {
-              "vendor": "Motorola Mobility LLC",
-              "product": "Mobile Devices",
-              "part": "h",
-              "version": "-"
-            }
-          ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "Android",
-              "part": "o",
-              "versions": [
-                "14"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "notes": "'Mobile Devices' is a generic device-class noun (R5), not a model: ambiguous per D6, excluded from scoring",
-    "confidence": "low"
-  },
-  {
-    "id": "G026",
-    "source_index": 90,
-    "input": "Sidewinder® G2 Firewall, V6.0",
-    "difficulty": "medium",
-    "tags": [
-      "network_security"
-    ],
-    "flags": [
-      "part-ambiguous"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": null,
-              "product": "Sidewinder G2 Firewall",
-              "part": "o",
-              "version": "6.0"
+              "vendor": "Samsung SDS",
+              "product": "EMM",
+              "part": "a",
+              "version": "1.5.1"
             }
           ],
           "companions": []
         }
       ]
     },
-    "notes": "part a/o/h depends on how D2 is applied; consider marking ambiguous",
+    "notes": "mobile device management software; vendor is Samsung SDS",
+    "confidence": "medium"
+  },
+  {
+    "id": "G026",
+    "source_index": 298,
+    "input": "Astaro Security Gateway (ASG) Version 6.300",
+    "difficulty": "medium",
+    "tags": [
+      "network_security"
+    ],
+    "flags": [],
+    "status": "labeled",
+    "gold": {
+      "clauses": [
+        {
+          "targets": [
+            {
+              "vendor": "Astaro",
+              "product": "Security Gateway",
+              "part": "o",
+              "version": "6.300"
+            }
+          ],
+          "companions": []
+        }
+      ]
+    },
+    "notes": "(ASG) is the abbreviation, dropped; vendor Astaro is the first word; part by the D2 fallback (not in NVD)",
     "confidence": "low"
   },
   {
@@ -1423,30 +1254,51 @@
   },
   {
     "id": "G033",
-    "source_index": 110,
-    "input": "bizhub C252 / ineo+ 251 Control Software",
+    "source_index": 264,
+    "input": "FUJIFILM Apeos C3061 / C2561 / C2061 / C3061 GK / C2561 GK / C2061 GK models with Copy, Print, Fax, Scan and StorageController ROM Ver. 1.0.4A, Fax ROM Ver. 3.0.0",
     "difficulty": "medium",
     "tags": [
       "printer_mfp"
     ],
-    "flags": [
-      "rebrand-alias",
-      "no-version"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": null,
-              "product": "bizhub C252",
+              "vendor": "FUJIFILM",
+              "product": "Apeos C3061",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": null,
-              "product": "ineo+ 251",
+              "vendor": "FUJIFILM",
+              "product": "Apeos C2561",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "FUJIFILM",
+              "product": "Apeos C2061",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "FUJIFILM",
+              "product": "Apeos C3061 GK",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "FUJIFILM",
+              "product": "Apeos C2561 GK",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "FUJIFILM",
+              "product": "Apeos C2061 GK",
               "part": "h",
               "version": "-"
             }
@@ -1454,17 +1306,25 @@
           "companions": [
             {
               "vendor": null,
-              "product": "Control Software",
+              "product": "Storage Controller ROM",
               "part": "o",
               "versions": [
-                "-"
+                "1.0.4A"
+              ]
+            },
+            {
+              "vendor": null,
+              "product": "Fax ROM",
+              "part": "o",
+              "versions": [
+                "3.0.0"
               ]
             }
           ]
         }
       ]
     },
-    "notes": "vendors (Konica Minolta / Develop) not stated",
+    "notes": "same conventions as the earlier Fujifilm title (Copy, Print, Fax, Scan dropped; StorageController split)",
     "confidence": "medium"
   },
   {
@@ -1499,61 +1359,65 @@
   },
   {
     "id": "G035",
-    "source_index": 116,
-    "input": "Xerox® VersaLink™ C625 and B625 with eMMC",
+    "source_index": 400,
+    "input": "Sindoh MF2000, MF3000, MF4000, N610, N410 Series",
     "difficulty": "medium",
     "tags": [
       "printer_mfp"
     ],
-    "flags": [
-      "option-component"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Xerox",
-              "product": "VersaLink C625",
+              "vendor": "Sindoh",
+              "product": "MF2000",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": "Xerox",
-              "product": "VersaLink B625",
+              "vendor": "Sindoh",
+              "product": "MF3000",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "Sindoh",
+              "product": "MF4000",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "Sindoh",
+              "product": "N610",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "Sindoh",
+              "product": "N410",
               "part": "h",
               "version": "-"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "eMMC",
-              "part": "h",
-              "versions": [
-                "-"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
-    "notes": "option component (D5)",
-    "confidence": "low"
+    "notes": "Series dropped per D3",
+    "confidence": "medium"
   },
   {
     "id": "G036",
-    "source_index": 117,
-    "input": "Carte VITALE 2 - Application VITALE : Composant SB23ZL48 masqué par le logiciel SESAM VITALE v1.0.1 avec correctif version 1",
+    "source_index": 441,
+    "input": "dragonFly version 3.2 sur composantSM33F1ME",
     "difficulty": "hard",
     "tags": [
       "epassport_applet"
     ],
-    "flags": [
-      "non-english",
-      "patch-text"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
@@ -1561,82 +1425,62 @@
           "targets": [
             {
               "vendor": null,
-              "product": "Carte VITALE 2 Application VITALE",
+              "product": "dragonFly",
               "part": "a",
-              "version": "-"
+              "version": "3.2"
             }
           ],
           "companions": [
             {
               "vendor": null,
-              "product": "SB23ZL48",
+              "product": "SM33F1ME",
               "part": "h",
               "versions": [
                 "-"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "SESAM VITALE",
-              "part": "a",
-              "versions": [
-                "1.0.1"
               ]
             }
           ]
         }
       ]
     },
-    "notes": "French; 'correctif version 1' (patch) dropped",
+    "notes": "French; glued composantSM33F1ME split; chip name kept as written",
     "confidence": "low"
   },
   {
     "id": "G037",
-    "source_index": 124,
-    "input": "IAS ECC v2, version 1.3, in configuration #1 on ID-One Cosmo v8.2 open platform on NXP P6022M VB (Identification de l’application : F0 02 02 13) (ANSSI-CC-2020/50-R01)",
+    "source_index": 330,
+    "input": "MaskTech ePP Applet on Secora ID S v1.1",
     "difficulty": "hard",
     "tags": [
       "epassport_applet"
     ],
-    "flags": [
-      "non-english",
-      "platform-chain",
-      "noise-cert-id"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": null,
-              "product": "IAS ECC v2",
+              "vendor": "MaskTech",
+              "product": "ePP Applet",
               "part": "a",
-              "version": "1.3"
+              "version": "-"
             }
           ],
           "companions": [
             {
               "vendor": null,
-              "product": "ID-One Cosmo",
+              "product": "Secora ID S",
               "part": "o",
               "versions": [
-                "8.2"
-              ]
-            },
-            {
-              "vendor": "NXP",
-              "product": "P6022M VB",
-              "part": "h",
-              "versions": [
-                "-"
+                "1.1"
               ]
             }
           ]
         }
       ]
     },
-    "notes": "configuration #1, application id and certificate id dropped as noise",
+    "notes": "v1.1 read as the version of the card OS; vendor Infineon not in the title",
     "confidence": "low"
   },
   {
@@ -1671,8 +1515,8 @@
   },
   {
     "id": "G039",
-    "source_index": 394,
-    "input": "SA23YR18A and SB23YR18A Secure Microcontrollers, including the cryptographic library Neslib v3.1, in SA or SB configuration",
+    "source_index": 303,
+    "input": "ATMEL AT90SC6464C Integrated circuit (reference AT568A9 rev. F)",
     "difficulty": "hard",
     "tags": [
       "smartcard_chip"
@@ -1684,79 +1528,52 @@
         {
           "targets": [
             {
-              "vendor": null,
-              "product": "SA23YR18A",
+              "vendor": "ATMEL",
+              "product": "AT90SC6464C",
               "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "SB23YR18A",
-              "part": "h",
-              "version": "-"
+              "version": "F"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "Neslib",
-              "part": "a",
-              "versions": [
-                "3.1"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
-    "notes": "vendor (ST) not stated; 'in SA or SB configuration' dropped as noise",
-    "confidence": "medium"
+    "notes": "(reference AT568A9 rev. F): rev F is the chip revision; the reference code is noise",
+    "confidence": "low"
   },
   {
     "id": "G040",
-    "source_index": 131,
-    "input": "Cisco Adaptive Security Appliances and ASA Virtual Version 9.6",
+    "source_index": 57,
+    "input": "Fortress Mesh Point ES520, ES820",
     "difficulty": "medium",
     "tags": [
       "network_security"
     ],
-    "flags": [
-      "part-ambiguous",
-      "two-products"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Cisco",
-              "product": "Adaptive Security Appliances",
+              "vendor": "Fortress",
+              "product": "Mesh Point ES520",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": "Cisco",
-              "product": "ASA Virtual",
-              "part": "a",
+              "vendor": "Fortress",
+              "product": "Mesh Point ES820",
+              "part": "h",
               "version": "-"
             }
           ],
-          "companions": [
-            {
-              "vendor": "Cisco",
-              "product": "Adaptive Security Appliance Software",
-              "part": "o",
-              "versions": [
-                "9.6"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
-    "notes": "ASA software = o per D2 (NVD name: adaptive_security_appliance_software, o 1024 vs a 680); ASA Virtual is a virtual (software) appliance: a, as NVD adaptive_security_virtual_appliance (a 5 vs h 1); the hardware family stays h",
-    "confidence": "low"
+    "notes": "vendor Fortress is the first word of the title; bare ES820 expanded with the family prefix (D7)",
+    "confidence": "medium"
   },
   {
     "id": "G041",
@@ -1874,141 +1691,77 @@
   },
   {
     "id": "G044",
-    "source_index": 139,
-    "input": "IFX_CCI_000Dh, IFX_CCI_0020h, IFX_CCI_0031h, IFX_CCI_0032h, IFX_CCI_0034h design step T23 with optional HSL v2.62.7626, optional SCL v2.04.003, UMSLC lib v01.00.0234 with specific IC-dedicated firmware identifier 80.301.05.1 and user guidance",
+    "source_index": 222,
+    "input": "Renesas Cryptographic Library v5126 on Renesas RS47X security integrated circuit Version 01",
     "difficulty": "hard",
     "tags": [
       "smartcard_chip"
     ],
-    "flags": [
-      "hex-list",
-      "libraries",
-      "firmware-id",
-      "long"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": null,
-              "product": "IFX_CCI_000Dh",
-              "part": "h",
-              "version": "T23"
-            },
-            {
-              "vendor": null,
-              "product": "IFX_CCI_0020h",
-              "part": "h",
-              "version": "T23"
-            },
-            {
-              "vendor": null,
-              "product": "IFX_CCI_0031h",
-              "part": "h",
-              "version": "T23"
-            },
-            {
-              "vendor": null,
-              "product": "IFX_CCI_0032h",
-              "part": "h",
-              "version": "T23"
-            },
-            {
-              "vendor": null,
-              "product": "IFX_CCI_0034h",
-              "part": "h",
-              "version": "T23"
+              "vendor": "Renesas",
+              "product": "Cryptographic Library",
+              "part": "a",
+              "version": "5126"
             }
           ],
           "companions": [
             {
-              "vendor": null,
-              "product": "HSL",
-              "part": "a",
+              "vendor": "Renesas",
+              "product": "RS47X",
+              "part": "h",
               "versions": [
-                "2.62.7626"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "SCL",
-              "part": "a",
-              "versions": [
-                "2.04.003"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "UMSLC",
-              "part": "a",
-              "versions": [
-                "01.00.0234"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "Firmware",
-              "part": "o",
-              "versions": [
-                "80.301.05.1"
+                "01"
               ]
             }
           ]
         }
       ]
     },
-    "notes": "design step read as hardware version; user guidance dropped",
+    "notes": "Version 01 read as the chip version; security integrated circuit dropped as device class",
     "confidence": "low"
   },
   {
     "id": "G045",
-    "source_index": 144,
-    "input": "STMicroelectronics NesLib 6.7.4 on ST33K1M5A and ST33K1M5M B03",
+    "source_index": 289,
+    "input": "Google H1D3 Secure Microcontroller with Crypto Library v1.5.2",
     "difficulty": "medium",
     "tags": [
       "smartcard_chip"
     ],
-    "flags": [
-      "library-on-chip",
-      "list-expand"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "STMicroelectronics",
-              "product": "NesLib",
-              "part": "a",
-              "version": "6.7.4"
+              "vendor": "Google",
+              "product": "H1D3",
+              "part": "h",
+              "version": "-"
             }
           ],
           "companions": [
             {
               "vendor": null,
-              "product": "ST33K1M5A",
-              "part": "h",
+              "product": "Crypto Library",
+              "part": "a",
               "versions": [
-                "B03"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "ST33K1M5M",
-              "part": "h",
-              "versions": [
-                "B03"
+                "1.5.2"
               ]
             }
           ]
         }
       ]
     },
-    "notes": "B03 attached to both chips",
-    "confidence": "low"
+    "notes": "",
+    "confidence": "medium"
   },
   {
     "id": "G046",
@@ -2142,8 +1895,8 @@
   },
   {
     "id": "G048",
-    "source_index": 434,
-    "input": "CISCO IOS/IPSec release 12.4(6)T3, 12.4(7) & 12.2(33)SRA",
+    "source_index": 170,
+    "input": "Primus HSM FW 3.1.0 Series E, Series E2, Series X, Series X2",
     "difficulty": "hard",
     "tags": [
       "network_security"
@@ -2155,57 +1908,26 @@
         {
           "targets": [
             {
-              "vendor": "Cisco",
-              "product": "IOS",
-              "part": "o",
-              "version": "12.4(6)T3"
-            },
-            {
-              "vendor": "Cisco",
-              "product": "IOS",
-              "part": "o",
-              "version": "12.4(7)"
-            },
-            {
-              "vendor": "Cisco",
-              "product": "IOS",
-              "part": "o",
-              "version": "12.2(33)SRA"
-            }
-          ],
-          "companions": []
-        }
-      ]
-    },
-    "notes": "IPSec is a feature of IOS, not a product; three releases of the same product",
-    "confidence": "medium"
-  },
-  {
-    "id": "G049",
-    "source_index": 163,
-    "input": "Xerox WorkCentre 5030/5050 Multifunction Systems, System Software Version 5.003.07.000",
-    "difficulty": "medium",
-    "tags": [
-      "printer_mfp"
-    ],
-    "flags": [
-      "list-expand",
-      "firmware-binding"
-    ],
-    "status": "labeled",
-    "gold": {
-      "clauses": [
-        {
-          "targets": [
-            {
-              "vendor": "Xerox",
-              "product": "WorkCentre 5030",
+              "vendor": null,
+              "product": "Primus HSM Series E",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": "Xerox",
-              "product": "WorkCentre 5050",
+              "vendor": null,
+              "product": "Primus HSM Series E2",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": null,
+              "product": "Primus HSM Series X",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": null,
+              "product": "Primus HSM Series X2",
               "part": "h",
               "version": "-"
             }
@@ -2213,18 +1935,46 @@
           "companions": [
             {
               "vendor": null,
-              "product": "System Software",
+              "product": "Firmware",
               "part": "o",
               "versions": [
-                "5.003.07.000"
+                "3.1.0"
               ]
             }
           ]
         }
       ]
     },
-    "notes": "",
-    "confidence": "high"
+    "notes": "Series E/E2/X/X2 are the model names so Series is kept; FW read as firmware (R3)",
+    "confidence": "low"
+  },
+  {
+    "id": "G049",
+    "source_index": 432,
+    "input": "Data Security Kit(D) Software V1.00J",
+    "difficulty": "medium",
+    "tags": [
+      "printer_mfp"
+    ],
+    "flags": [],
+    "status": "labeled",
+    "gold": {
+      "clauses": [
+        {
+          "targets": [
+            {
+              "vendor": null,
+              "product": "Data Security Kit(D)",
+              "part": "a",
+              "version": "V1.00J"
+            }
+          ],
+          "companions": []
+        }
+      ]
+    },
+    "notes": "optional kit with its own version; vendor (Sharp) not in the title; the word Software dropped",
+    "confidence": "low"
   },
   {
     "id": "G050",
@@ -2685,49 +2435,31 @@
   },
   {
     "id": "G061",
-    "source_index": 212,
-    "input": "Cisco Catalyst 2960CX and 3560CX Series Compact Switches running IOS 15.2(3)E1",
+    "source_index": 226,
+    "input": "SDoT Security Gateway, Version 6.2i",
     "difficulty": "medium",
     "tags": [
       "network_security"
     ],
-    "flags": [
-      "list-expand",
-      "os-binding"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Cisco",
-              "product": "Catalyst 2960CX",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Cisco",
-              "product": "Catalyst 3560CX",
-              "part": "h",
-              "version": "-"
+              "vendor": null,
+              "product": "SDoT Security Gateway",
+              "part": "o",
+              "version": "6.2i"
             }
           ],
-          "companions": [
-            {
-              "vendor": "Cisco",
-              "product": "IOS",
-              "part": "o",
-              "versions": [
-                "15.2(3)E1"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
-    "notes": "",
-    "confidence": "high"
+    "notes": "vendor not stated; part by the D2 fallback (not in NVD), same convention as the CyberGuard title",
+    "confidence": "low"
   },
   {
     "id": "G062",
@@ -2877,16 +2609,13 @@
   },
   {
     "id": "G067",
-    "source_index": 242,
-    "input": "ST33J2M0 including optional cryptographic library NESLIB (F02) (ANSSI-CC-2024/06-R01)",
+    "source_index": 487,
+    "input": "T6ND1 Integrated Circuit with Crypto Library v6.0",
     "difficulty": "medium",
     "tags": [
       "smartcard_chip"
     ],
-    "flags": [
-      "library-optional",
-      "noise-cert-id"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
@@ -2894,26 +2623,26 @@
           "targets": [
             {
               "vendor": null,
-              "product": "ST33J2M0",
+              "product": "T6ND1",
               "part": "h",
-              "version": "F02"
+              "version": "-"
             }
           ],
           "companions": [
             {
               "vendor": null,
-              "product": "NESLIB",
+              "product": "Crypto Library",
               "part": "a",
               "versions": [
-                "-"
+                "6.0"
               ]
             }
           ]
         }
       ]
     },
-    "notes": "(F02) read as chip revision; certificate id dropped",
-    "confidence": "low"
+    "notes": "vendor not stated",
+    "confidence": "medium"
   },
   {
     "id": "G068",
@@ -3057,74 +2786,40 @@
   },
   {
     "id": "G071",
-    "source_index": 259,
-    "input": "Infineon Smart Card IC (Security Controller) SLE66CX162PE / m1531-a25 and SLE66CX80PE / m1533-a25 all with optional libraries RSA V1.6, EC, V1.1, SHA-2 V1.0 and both with specific IC dedicated software",
+    "source_index": 463,
+    "input": "SLS 32TLC00xS(M) CIPURSE™4move v1.0.2",
     "difficulty": "hard",
     "tags": [
       "smartcard_chip"
     ],
-    "flags": [
-      "paired-model-mask",
-      "libraries",
-      "dedicated-software"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Infineon",
-              "product": "SLE66CX162PE",
+              "vendor": null,
+              "product": "SLS 32TLC00xS(M)",
               "part": "h",
-              "version": "m1531-a25"
-            },
-            {
-              "vendor": "Infineon",
-              "product": "SLE66CX80PE",
-              "part": "h",
-              "version": "m1533-a25"
+              "version": "-"
             }
           ],
           "companions": [
             {
               "vendor": null,
-              "product": "RSA",
-              "part": "a",
-              "versions": [
-                "1.6"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "EC",
-              "part": "a",
-              "versions": [
-                "1.1"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "SHA-2",
-              "part": "a",
-              "versions": [
-                "1.0"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "IC Dedicated Software",
+              "product": "CIPURSE 4move",
               "part": "o",
               "versions": [
-                "-"
+                "1.0.2"
               ]
             }
           ]
         }
       ]
     },
-    "notes": "m15xx-a25 read as a mask/hardware version",
-    "confidence": "medium"
+    "notes": "chip plus card OS (D8); vendor (Infineon) not in the title; trademark symbol dropped",
+    "confidence": "low"
   },
   {
     "id": "G072",
@@ -3329,32 +3024,30 @@
   },
   {
     "id": "G076",
-    "source_index": 282,
-    "input": "Microsoft SQL Server 2022 Database Engine Enterprise Edition x64 (English) version 16.0.4105.2",
+    "source_index": 203,
+    "input": "EMC Isilon® OneFS® v6.5.4",
     "difficulty": "medium",
     "tags": [
       "enterprise_sw"
     ],
-    "flags": [
-      "edition-arch"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Microsoft",
-              "product": "SQL Server",
+              "vendor": "EMC",
+              "product": "Isilon OneFS",
               "part": "a",
-              "version": "16.0.4105.2"
+              "version": "6.5.4"
             }
           ],
           "companions": []
         }
       ]
     },
-    "notes": "'2022', edition, arch and language (D4) dropped",
+    "notes": "NVD isilon_onefs is split a 43 / o 41, so the majority rule gives a; registered symbols dropped",
     "confidence": "medium"
   },
   {
@@ -3417,67 +3110,21 @@
   },
   {
     "id": "G079",
-    "source_index": 293,
-    "input": "STMicroelectronics Secured microcontroller ST33F1ME, ST33F768E, SC33F768E, ST33F640E, SC33F640E, ST33F512E, SC33F512E et SC33F384E all with optional cryptographic library NESLIB 3.0",
+    "source_index": 287,
+    "input": "NXP Secure Smart Card Controller N7122 with IC Dedicated Software and Crypto Library (R1/R2/R3)",
     "difficulty": "hard",
     "tags": [
       "smartcard_chip"
     ],
-    "flags": [
-      "long-list",
-      "mixed-language",
-      "library"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "STMicroelectronics",
-              "product": "ST33F1ME",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "STMicroelectronics",
-              "product": "ST33F768E",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "STMicroelectronics",
-              "product": "SC33F768E",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "STMicroelectronics",
-              "product": "ST33F640E",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "STMicroelectronics",
-              "product": "SC33F640E",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "STMicroelectronics",
-              "product": "ST33F512E",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "STMicroelectronics",
-              "product": "SC33F512E",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "STMicroelectronics",
-              "product": "SC33F384E",
+              "vendor": "NXP",
+              "product": "N7122",
               "part": "h",
               "version": "-"
             }
@@ -3485,18 +3132,28 @@
           "companions": [
             {
               "vendor": null,
-              "product": "NESLIB",
+              "product": "IC Dedicated Software",
+              "part": "o",
+              "versions": [
+                "-"
+              ]
+            },
+            {
+              "vendor": null,
+              "product": "Crypto Library",
               "part": "a",
               "versions": [
-                "3.0"
+                "R1",
+                "R2",
+                "R3"
               ]
             }
           ]
         }
       ]
     },
-    "notes": "mixed French/English ('et')",
-    "confidence": "medium"
+    "notes": "R1/R2/R3 read as library versions",
+    "confidence": "low"
   },
   {
     "id": "G080",
@@ -3599,33 +3256,30 @@
   },
   {
     "id": "G083",
-    "source_index": 319,
-    "input": "IBM WebSpherePortal 6.0.0.0 (with APAR PK67104 and APAR PK79436)",
+    "source_index": 395,
+    "input": "Symfoware Server Enterprise Extended Edition 8.0.1(with patch T000132QP-01 and T000133QP-01)",
     "difficulty": "hard",
     "tags": [
       "enterprise_sw"
     ],
-    "flags": [
-      "missing-space",
-      "apar-patches"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "IBM",
-              "product": "WebSphere Portal",
+              "vendor": null,
+              "product": "Symfoware Server",
               "part": "a",
-              "version": "6.0.0.0"
+              "version": "8.0.1"
             }
           ],
           "companions": []
         }
       ]
     },
-    "notes": "APARs (patches) dropped; glued 'WebSpherePortal' split",
+    "notes": "edition (D4) dropped; patch ids are noise (D5); vendor Fujitsu not in the title",
     "confidence": "low"
   },
   {
@@ -3658,42 +3312,31 @@
   },
   {
     "id": "G085",
-    "source_index": 340,
-    "input": "Junos OS 20.3R1 for ACX5448-M",
+    "source_index": 173,
+    "input": "AhnLab TrusGuard V2.2",
     "difficulty": "easy",
     "tags": [
       "network_security"
     ],
-    "flags": [
-      "os-for-hardware"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": null,
-              "product": "ACX5448-M",
-              "part": "h",
-              "version": "-"
+              "vendor": "AhnLab",
+              "product": "TrusGuard",
+              "part": "o",
+              "version": "2.2"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "Junos OS",
-              "part": "o",
-              "versions": [
-                "20.3R1"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
-    "notes": "vendor Juniper not in the title (R9), so null",
-    "confidence": "medium"
+    "notes": "firewall system software: o by the D2 fallback (not in NVD); could also be read as the appliance itself",
+    "confidence": "low"
   },
   {
     "id": "G086",
@@ -3725,137 +3368,70 @@
   },
   {
     "id": "G087",
-    "source_index": 352,
-    "input": "HP Color LaserJet Enterprise M856, HP LaserJet Enterprise M610/M611/M612, HP LaserJet Enterprise M507, HP Color LaserJet Enterprise M751 and HP Color LaserJet Managed E75245 printers with HP FutureSmart 5.7.1.1 Firmware",
+    "source_index": 326,
+    "input": "Océ Smart Imager 8.3.3.39 as used in the Océ VP 2090 R3.3",
     "difficulty": "hard",
     "tags": [
       "printer_mfp"
     ],
-    "flags": [
-      "many-families",
-      "firmware-family",
-      "long"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "HP",
-              "product": "Color LaserJet Enterprise M856",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "HP",
-              "product": "LaserJet Enterprise M610",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "HP",
-              "product": "LaserJet Enterprise M611",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "HP",
-              "product": "LaserJet Enterprise M612",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "HP",
-              "product": "LaserJet Enterprise M507",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "HP",
-              "product": "Color LaserJet Enterprise M751",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "HP",
-              "product": "Color LaserJet Managed E75245",
-              "part": "h",
-              "version": "-"
+              "vendor": "Océ",
+              "product": "Smart Imager",
+              "part": "a",
+              "version": "8.3.3.39"
             }
           ],
           "companions": [
             {
-              "vendor": "HP",
-              "product": "FutureSmart",
-              "part": "o",
+              "vendor": "Océ",
+              "product": "VP 2090",
+              "part": "h",
               "versions": [
-                "5.7.1.1"
+                "R3.3"
               ]
             }
           ]
         }
       ]
     },
-    "notes": "family words (Color LaserJet Enterprise ...) kept in the product",
-    "confidence": "medium"
+    "notes": "as used in = host device as companion; R3.3 read as its release",
+    "confidence": "low"
   },
   {
     "id": "G088",
-    "source_index": 358,
-    "input": "Hewlett-Packard Networking A-Series Switches: 12500, 9500, 7500, 5820, 5800, 5500, and 5120",
+    "source_index": 251,
+    "input": "xPortalNet HS Server version 2.0.0.2, xPortalNet HS Client version 2.0.0.2 and Xp-GLS5100 Controllers",
     "difficulty": "hard",
     "tags": [
       "network_security"
     ],
-    "flags": [
-      "bare-number-list",
-      "no-version"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Hewlett-Packard",
-              "product": "A-Series 12500",
-              "part": "h",
-              "version": "-"
+              "vendor": null,
+              "product": "xPortalNet HS Server",
+              "part": "a",
+              "version": "2.0.0.2"
             },
             {
-              "vendor": "Hewlett-Packard",
-              "product": "A-Series 9500",
-              "part": "h",
-              "version": "-"
+              "vendor": null,
+              "product": "xPortalNet HS Client",
+              "part": "a",
+              "version": "2.0.0.2"
             },
             {
-              "vendor": "Hewlett-Packard",
-              "product": "A-Series 7500",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Hewlett-Packard",
-              "product": "A-Series 5820",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Hewlett-Packard",
-              "product": "A-Series 5800",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Hewlett-Packard",
-              "product": "A-Series 5500",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Hewlett-Packard",
-              "product": "A-Series 5120",
+              "vendor": null,
+              "product": "Xp-GLS5100",
               "part": "h",
               "version": "-"
             }
@@ -3864,7 +3440,7 @@
         }
       ]
     },
-    "notes": "bare numbers expanded with the family prefix (D7)",
+    "notes": "Controllers dropped as device class; one clause with three items",
     "confidence": "low"
   },
   {
@@ -3925,38 +3501,29 @@
   },
   {
     "id": "G091",
-    "source_index": 373,
-    "input": "Infineon smartcard IC (Security Controller) M7791 B12 and G11 with specific IC-dedicated firmware",
+    "source_index": 379,
+    "input": "NXP Secure Smart Card Controller N7021 VA including IC Dedicated Software",
     "difficulty": "medium",
     "tags": [
       "smartcard_chip"
     ],
-    "flags": [
-      "two-revisions",
-      "dedicated-firmware"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Infineon",
-              "product": "M7791",
+              "vendor": "NXP",
+              "product": "N7021",
               "part": "h",
-              "version": "B12"
-            },
-            {
-              "vendor": "Infineon",
-              "product": "M7791",
-              "part": "h",
-              "version": "G11"
+              "version": "VA"
             }
           ],
           "companions": [
             {
               "vendor": null,
-              "product": "IC-dedicated firmware",
+              "product": "IC Dedicated Software",
               "part": "o",
               "versions": [
                 "-"
@@ -3966,7 +3533,7 @@
         }
       ]
     },
-    "notes": "B12 and G11 read as two steppings",
+    "notes": "VA read as hardware revision (D10)",
     "confidence": "medium"
   },
   {
@@ -4027,75 +3594,31 @@
   },
   {
     "id": "G094",
-    "source_index": 418,
-    "input": "Cisco ASA 5505, 5510, 5520, 5540, and 5550 (Release 7.2(4)), Cisco VPN Client Release 5.0.03.0560",
+    "source_index": 81,
+    "input": "McAfee Firewall Enterprise v7.0.1.02HW02",
     "difficulty": "hard",
     "tags": [
       "network_security"
     ],
-    "flags": [
-      "bare-number-list",
-      "two-products-different-versions"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Cisco",
-              "product": "ASA 5505",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Cisco",
-              "product": "ASA 5510",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Cisco",
-              "product": "ASA 5520",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Cisco",
-              "product": "ASA 5540",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Cisco",
-              "product": "ASA 5550",
-              "part": "h",
-              "version": "-"
+              "vendor": "McAfee",
+              "product": "Firewall Enterprise",
+              "part": "o",
+              "version": "7.0.1.02HW02"
             }
           ],
-          "companions": [
-            {
-              "vendor": "Cisco",
-              "product": "Adaptive Security Appliance Software",
-              "part": "o",
-              "versions": [
-                "7.2(4)"
-              ]
-            },
-            {
-              "vendor": "Cisco",
-              "product": "VPN Client",
-              "part": "a",
-              "versions": [
-                "5.0.03.0560"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
-    "notes": "ASA software = o per D2 (NVD name: adaptive_security_appliance_software, o 1024 vs a 680)",
-    "confidence": "medium"
+    "notes": "version text kept as written; part by the D2 fallback (NVD has only Firewall Enterprise Admin Console / Control Center, both a)",
+    "confidence": "low"
   },
   {
     "id": "G095",
@@ -4546,55 +4069,30 @@
   },
   {
     "id": "G100",
-    "source_index": 497,
-    "input": "Cisco IronPort S-Series Web Security Appliance (WSA) (S160, S360, S660) running AsyncOS 5.6.1",
+    "source_index": 341,
+    "input": "Trustwave Network Access Control (NAC) Software Version 3.4.0",
     "difficulty": "medium",
     "tags": [
       "network_security"
     ],
-    "flags": [
-      "list-expand",
-      "os-binding",
-      "parenthesized-models"
-    ],
+    "flags": [],
     "status": "labeled",
     "gold": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Cisco",
-              "product": "IronPort S160",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Cisco",
-              "product": "IronPort S360",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Cisco",
-              "product": "IronPort S660",
-              "part": "h",
-              "version": "-"
+              "vendor": "Trustwave",
+              "product": "Network Access Control",
+              "part": "a",
+              "version": "3.4.0"
             }
           ],
-          "companions": [
-            {
-              "vendor": "Cisco",
-              "product": "AsyncOS",
-              "part": "o",
-              "versions": [
-                "5.6.1"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
-    "notes": "'Web Security Appliance (WSA)' dropped as device class",
+    "notes": "(NAC) is the abbreviation, dropped; Software dropped as generic; NVD network_access_control is a",
     "confidence": "medium"
   }
 ]
