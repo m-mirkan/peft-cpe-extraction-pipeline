@@ -1,4 +1,4 @@
-# Gold set: expected answers (labeled by Claude, YOU must review one by one)
+# Gold set: expected answers (v1.2, reviewed by Claude and Mohamed)
 
 Format per title: `part vendor | product | version(s)`. `T` = target, `C` = companion. Confidence and notes show what I was unsure about.
 
@@ -182,12 +182,12 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - T `h` Juniper | QFX10016 | -
 - C `o` Juniper | Junos OS | 18.1R2
 
-## G025 [medium, mobile_embedded, confidence: low, status: labeled]
+## G025 [medium, mobile_embedded, confidence: low, status: ambiguous]
 > Motorola Mobility LLC Mobile Devices on Android 14
 
 - T `h` Motorola Mobility LLC | Mobile Devices | -
 - C `o` (no vendor) | Android | 14
-- note: 'Mobile Devices' is a family, not a model
+- note: 'Mobile Devices' is a generic device-class noun (R5), not a model: ambiguous per D6, excluded from scoring
 
 ## G026 [medium, network_security, confidence: low, status: labeled]
 > Sidewinder® G2 Firewall, V6.0
@@ -223,8 +223,8 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 ## G030 [medium, os_platform, confidence: medium, status: labeled]
 > z/VM Version 6 Release 3
 
-- T `o` IBM | z/VM | 6 Release 3
-- note: release text kept in version (rule R4); a model may write 6.3
+- T `o` (no vendor) | z/VM | 6 Release 3
+- note: release text kept in version (rule R4); a model may write 6.3; vendor IBM not in the title (R9), so null
 
 ## G031 [medium, network_security, confidence: low, status: labeled]
 > ZXR10 3900 Series Switches Running the ZXROS Operating System
@@ -300,9 +300,9 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 > Cisco Adaptive Security Appliances and ASA Virtual Version 9.6
 
 - T `h` Cisco | Adaptive Security Appliances | -
-- T `h` Cisco | ASA Virtual | -
-- C `o` Cisco | ASA Software | 9.6
-- note: ASA software = o per D2; split hardware/virtual is a choice
+- T `a` Cisco | ASA Virtual | -
+- C `o` Cisco | Adaptive Security Appliance Software | 9.6
+- note: ASA software = o per D2 (NVD name: adaptive_security_appliance_software, o 1024 vs a 680); ASA Virtual is a virtual (software) appliance: a, as NVD adaptive_security_virtual_appliance (a 5 vs h 1); the hardware family stays h
 
 ## G041 [easy, smartcard_chip, confidence: medium, status: labeled]
 > Renesas HD65256D smartcard integrated circuit V01
@@ -428,9 +428,9 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - T `h` FUJIFILM | Apeos C8180 | -
 - T `h` FUJIFILM | Apeos C7580 | -
 - T `h` FUJIFILM | Apeos C6580 | -
-- C `o` (no vendor) | Controller ROM | 1.0.20
+- C `o` (no vendor) | Storage Controller ROM | 1.0.20
 - C `o` (no vendor) | Fax ROM | 2.2.1
-- note: 'StorageController' glue split as Storage + Controller ROM
+- note: glued 'StorageController' split into 'Storage Controller ROM' (reviewer fix)
 
 ## G055 [easy, enterprise_sw, confidence: medium, status: labeled]
 > Trellix Security Enterprise Security Manager v11.6.12
@@ -625,7 +625,7 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 > Voltage SecureData Appliance 7.0.2
 
 - T `a` Voltage | SecureData Appliance | 7.0.2
-- note: appliance: a vs h undecided
+- note: appliance kept as a for consistency with R2 (NVD: email_security_appliance a 104 vs h 11, web_security_appliance a 103 vs h 5); no NVD entry for SecureData
 
 ## G082 [easy, smartcard_chip, confidence: medium, status: labeled]
 > Winbond Secure Flash Memory W75F32W version 1.0
@@ -648,7 +648,8 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 > Junos OS 20.3R1 for ACX5448-M
 
 - T `h` (no vendor) | ACX5448-M | -
-- C `o` Juniper | Junos OS | 20.3R1
+- C `o` (no vendor) | Junos OS | 20.3R1
+- note: vendor Juniper not in the title (R9), so null
 
 ## G086 [easy, epassport_applet, confidence: low, status: labeled]
 > ID-One CNS v2
@@ -718,9 +719,9 @@ Format per title: `part vendor | product | version(s)`. `T` = target, `C` = comp
 - T `h` Cisco | ASA 5520 | -
 - T `h` Cisco | ASA 5540 | -
 - T `h` Cisco | ASA 5550 | -
-- C `o` Cisco | ASA Software | 7.2(4)
+- C `o` Cisco | Adaptive Security Appliance Software | 7.2(4)
 - C `a` Cisco | VPN Client | 5.0.03.0560
-- note: ASA software = o per D2
+- note: ASA software = o per D2 (NVD name: adaptive_security_appliance_software, o 1024 vs a 680)
 
 ## G095 [medium, other_hardware, confidence: low, status: labeled]
 > xFusion Server intelligent Baseboard Management Controller iBMC version 3.3.10.7

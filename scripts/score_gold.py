@@ -11,8 +11,10 @@ import argparse, json, re
 from collections import Counter, defaultdict
 
 def slug(s):
-    s = (s or "-").lower().replace("®", "").replace("™", "")
+    s = (s or "-").lower().replace("®", "").replace("™", "").replace("\\", "")
     s = re.sub(r"\s+", "_", s.strip())
+    s = re.sub(r"_-_", "_", s)                 # ' - ' separators
+    if re.match(r"^v\d", s): s = s[1:]         # 'v2.1' == '2.1' (resolver normalizes this anyway)
     return s or "-"
 
 def items_of(struct):

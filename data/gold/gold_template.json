@@ -1042,7 +1042,7 @@
       "mobile-os",
       "family-not-model"
     ],
-    "status": "labeled",
+    "status": "ambiguous",
     "gold": {
       "clauses": [
         {
@@ -1067,7 +1067,7 @@
         }
       ]
     },
-    "notes": "'Mobile Devices' is a family, not a model",
+    "notes": "'Mobile Devices' is a generic device-class noun (R5), not a model: ambiguous per D6, excluded from scoring",
     "confidence": "low"
   },
   {
@@ -1263,7 +1263,7 @@
         {
           "targets": [
             {
-              "vendor": "IBM",
+              "vendor": null,
               "product": "z/VM",
               "part": "o",
               "version": "6 Release 3"
@@ -1273,7 +1273,7 @@
         }
       ]
     },
-    "notes": "release text kept in version (rule R4); a model may write 6.3",
+    "notes": "release text kept in version (rule R4); a model may write 6.3; vendor IBM not in the title (R9), so null",
     "confidence": "medium"
   },
   {
@@ -1691,14 +1691,14 @@
             {
               "vendor": "Cisco",
               "product": "ASA Virtual",
-              "part": "h",
+              "part": "a",
               "version": "-"
             }
           ],
           "companions": [
             {
               "vendor": "Cisco",
-              "product": "ASA Software",
+              "product": "Adaptive Security Appliance Software",
               "part": "o",
               "versions": [
                 "9.6"
@@ -1708,7 +1708,7 @@
         }
       ]
     },
-    "notes": "ASA software = o per D2; split hardware/virtual is a choice",
+    "notes": "ASA software = o per D2 (NVD name: adaptive_security_appliance_software, o 1024 vs a 680); ASA Virtual is a virtual (software) appliance: a, as NVD adaptive_security_virtual_appliance (a 5 vs h 1); the hardware family stays h",
     "confidence": "low"
   },
   {
@@ -2453,7 +2453,7 @@
           "companions": [
             {
               "vendor": null,
-              "product": "Controller ROM",
+              "product": "Storage Controller ROM",
               "part": "o",
               "versions": [
                 "1.0.20"
@@ -2471,7 +2471,7 @@
         }
       ]
     },
-    "notes": "'StorageController' glue split as Storage + Controller ROM",
+    "notes": "glued 'StorageController' split into 'Storage Controller ROM' (reviewer fix)",
     "confidence": "medium"
   },
   {
@@ -3587,7 +3587,7 @@
         }
       ]
     },
-    "notes": "appliance: a vs h undecided",
+    "notes": "appliance kept as a for consistency with R2 (NVD: email_security_appliance a 104 vs h 11, web_security_appliance a 103 vs h 5); no NVD entry for SecureData",
     "confidence": "low"
   },
   {
@@ -3702,7 +3702,7 @@
           ],
           "companions": [
             {
-              "vendor": "Juniper",
+              "vendor": null,
               "product": "Junos OS",
               "part": "o",
               "versions": [
@@ -3713,7 +3713,7 @@
         }
       ]
     },
-    "notes": "",
+    "notes": "vendor Juniper not in the title (R9), so null",
     "confidence": "medium"
   },
   {
@@ -4097,7 +4097,7 @@
           "companions": [
             {
               "vendor": "Cisco",
-              "product": "ASA Software",
+              "product": "Adaptive Security Appliance Software",
               "part": "o",
               "versions": [
                 "7.2(4)"
@@ -4115,7 +4115,7 @@
         }
       ]
     },
-    "notes": "ASA software = o per D2",
+    "notes": "ASA software = o per D2 (NVD name: adaptive_security_appliance_software, o 1024 vs a 680)",
     "confidence": "medium"
   },
   {
