@@ -8,23 +8,41 @@
           "targets": [
             {
               "vendor": null,
-              "product": "Digital Tachograph - Vehicle Unit SE5000-8",
+              "product": "SE5000-8",
               "part": "h",
               "version": "-"
             }
           ],
-          "companions": []
+          "companions": [
+            {
+              "vendor": null,
+              "product": "Firmware",
+              "part": "o",
+              "versions": [
+                "E"
+              ]
+            }
+          ]
         }
       ]
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:unknown:digital_tachograph_-_vehicle_unit_se5000-8:-:*:*:*:*:*:*:*",
-        "short": "h:unknown:digital_tachograph_-_vehicle_unit_se5000-8:-",
+        "cpe": "cpe:2.3:h:unknown:se5000-8:-:*:*:*:*:*:*:*",
+        "short": "h:unknown:se5000-8:-",
         "part": "h",
         "vendor": "unknown",
-        "product": "digital_tachograph_-_vehicle_unit_se5000-8",
+        "product": "se5000-8",
         "version": "-",
+        "resolution": "unresolved"
+      },
+      {
+        "cpe": "cpe:2.3:o:unknown:firmware:e:*:*:*:*:*:*:*",
+        "short": "o:unknown:firmware:e",
+        "part": "o",
+        "vendor": "unknown",
+        "product": "firmware",
+        "version": "e",
         "resolution": "unresolved"
       }
     ]
@@ -67,8 +85,8 @@
         {
           "targets": [
             {
-              "vendor": "DBsign",
-              "product": "for Client/Server Applications",
+              "vendor": "DBsign for Client",
+              "product": "Server Applications",
               "part": "a",
               "version": "3.0"
             }
@@ -79,11 +97,11 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:a:dbsign:for_client_server_applications:3.0:*:*:*:*:*:*:*",
-        "short": "a:dbsign:for_client_server_applications:3.0",
+        "cpe": "cpe:2.3:a:dbsign_for_client:server_applications:3.0:*:*:*:*:*:*:*",
+        "short": "a:dbsign_for_client:server_applications:3.0",
         "part": "a",
-        "vendor": "dbsign",
-        "product": "for_client_server_applications",
+        "vendor": "dbsign_for_client",
+        "product": "server_applications",
         "version": "3.0",
         "resolution": "explicit_vendor"
       }
@@ -181,10 +199,10 @@
           "companions": [
             {
               "vendor": null,
-              "product": "ePassport",
+              "product": "ePassport [EAC configuration]",
               "part": "a",
               "versions": [
-                "[EAC configuration] version 01 revision 03 patch 00"
+                "01 revision 03 patch 00"
               ]
             }
           ]
@@ -202,12 +220,12 @@
         "resolution": "unresolved"
       },
       {
-        "cpe": "cpe:2.3:a:unknown:epassport:[eac_configuration]_version_01_revision_03_patch_00:*:*:*:*:*:*:*",
-        "short": "a:unknown:epassport:[eac_configuration]_version_01_revision_03_patch_00",
+        "cpe": "cpe:2.3:a:unknown:epassport_eac_configuration:01_revision_03_patch_00:*:*:*:*:*:*:*",
+        "short": "a:unknown:epassport_eac_configuration:01_revision_03_patch_00",
         "part": "a",
         "vendor": "unknown",
-        "product": "epassport",
-        "version": "[eac_configuration]_version_01_revision_03_patch_00",
+        "product": "epassport_eac_configuration",
+        "version": "01_revision_03_patch_00",
         "resolution": "unresolved"
       }
     ]
@@ -330,48 +348,30 @@
   },
   {
     "index": 8,
-    "input": "Fortinet FortiGate™-1240B Unified Threat Management Solutions and FortiOS 4.0 CC Compliant Firmware",
+    "input": "antiKor Next Generation Firewall and Security Management v2",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Fortinet",
-              "product": "FortiGate-1240B",
-              "part": "h",
-              "version": "-"
+              "vendor": "antiKor",
+              "product": "Next Generation Firewall and Security Management",
+              "part": "a",
+              "version": "2"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "FortiOS 4.0 CC Compliant Firmware",
-              "part": "o",
-              "versions": [
-                "-"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:fortinet:fortigate-1240b:-:*:*:*:*:*:*:*",
-        "short": "h:fortinet:fortigate-1240b:-",
-        "part": "h",
-        "vendor": "fortinet",
-        "product": "fortigate-1240b",
-        "version": "-",
-        "resolution": "cpe_exact+explicit"
-      },
-      {
-        "cpe": "cpe:2.3:o:fortinet:fortios_4.0_cc_compliant_firmware:-:*:*:*:*:*:*:*",
-        "short": "o:fortinet:fortios_4.0_cc_compliant_firmware:-",
-        "part": "o",
-        "vendor": "fortinet",
-        "product": "fortios_4.0_cc_compliant_firmware",
-        "version": "-",
+        "cpe": "cpe:2.3:a:antikor:next_generation_firewall_and_security_management:2:*:*:*:*:*:*:*",
+        "short": "a:antikor:next_generation_firewall_and_security_management:2",
+        "part": "a",
+        "vendor": "antikor",
+        "product": "next_generation_firewall_and_security_management",
+        "version": "2",
         "resolution": "explicit_vendor"
       }
     ]
@@ -540,7 +540,7 @@
             {
               "vendor": null,
               "product": "PACE",
-              "part": "a",
+              "part": "h",
               "versions": [
                 "-"
               ]
@@ -548,13 +548,13 @@
             {
               "vendor": null,
               "product": "CA",
-              "part": "a",
+              "part": "h",
               "versions": [
                 "-"
               ]
             },
             {
-              "vendor": null,
+              "vendor": "Idemia",
               "product": "ID-ONE Cosmo V9 Essential",
               "part": "h",
               "versions": [
@@ -576,18 +576,18 @@
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:a:idemia:pace:-:*:*:*:*:*:*:*",
-        "short": "a:idemia:pace:-",
-        "part": "a",
+        "cpe": "cpe:2.3:h:idemia:pace:-:*:*:*:*:*:*:*",
+        "short": "h:idemia:pace:-",
+        "part": "h",
         "vendor": "idemia",
         "product": "pace",
         "version": "-",
         "resolution": "clause_inheritance"
       },
       {
-        "cpe": "cpe:2.3:a:idemia:ca:-:*:*:*:*:*:*:*",
-        "short": "a:idemia:ca:-",
-        "part": "a",
+        "cpe": "cpe:2.3:h:idemia:ca:-:*:*:*:*:*:*:*",
+        "short": "h:idemia:ca:-",
+        "part": "h",
         "vendor": "idemia",
         "product": "ca",
         "version": "-",
@@ -606,49 +606,31 @@
   },
   {
     "index": 13,
-    "input": "Sidewinder G2 Security Appliance Models 210, 310, 315, 410, 415, 510, 515, 1100, 1150, 2150, 4150 and Sidewinder G2 Software v6.1",
+    "input": "IPS-Firewall software suite for NETASQ appliances, version 8.0.1.1",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
               "vendor": null,
-              "product": "Sidewinder G2 Security Appliance",
-              "part": "h",
-              "version": "-"
+              "product": "NETASQ IPS-Firewall",
+              "part": "a",
+              "version": "8.0.1.1"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "Sidewinder G2 Software",
-              "part": "o",
-              "versions": [
-                "6.1"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:mcafee:sidewinder_g2_security_appliance:-:*:*:*:*:*:*:*",
-        "short": "h:mcafee:sidewinder_g2_security_appliance:-",
-        "part": "h",
-        "vendor": "mcafee",
-        "product": "sidewinder_g2_security_appliance",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:o:mcafee:sidewinder_g2_software:6.1:*:*:*:*:*:*:*",
-        "short": "o:mcafee:sidewinder_g2_software:6.1",
-        "part": "o",
-        "vendor": "mcafee",
-        "product": "sidewinder_g2_software",
-        "version": "6.1",
-        "resolution": "explicit_vendor"
+        "cpe": "cpe:2.3:a:unknown:netasq_ips-firewall:8.0.1.1:*:*:*:*:*:*:*",
+        "short": "a:unknown:netasq_ips-firewall:8.0.1.1",
+        "part": "a",
+        "vendor": "unknown",
+        "product": "netasq_ips-firewall",
+        "version": "8.0.1.1",
+        "resolution": "unresolved"
       }
     ]
   },
@@ -684,26 +666,26 @@
   },
   {
     "index": 15,
-    "input": "TOSHIBAe-STUDIO2525AC/3025AC/3525ACall of the above with FAX Unit and FIPS Hard Disk KitSYS V2.1",
+    "input": "Sharp Corporation Multifunction Device with Data Security Kit (AR-FR4 V.M.10, AR-FR5 V.E.10, AR-FR6 V.J.10)",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "TOSHIBA",
-              "product": "e-STUDIO2525AC",
+              "vendor": "Sharp",
+              "product": "AR-FR4",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": "TOSHIBA",
-              "product": "e-STUDIO3025AC",
+              "vendor": "Sharp",
+              "product": "AR-FR5",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": "TOSHIBA",
-              "product": "e-STUDIO3525AC",
+              "vendor": "Sharp",
+              "product": "AR-FR6",
               "part": "h",
               "version": "-"
             }
@@ -711,26 +693,18 @@
           "companions": [
             {
               "vendor": null,
-              "product": "FAX Unit",
-              "part": "h",
+              "product": "Data Security Kit",
+              "part": "a",
               "versions": [
                 "-"
               ]
             },
             {
               "vendor": null,
-              "product": "FIPS Hard Disk Kit",
-              "part": "h",
-              "versions": [
-                "-"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "SYS",
+              "product": "Firmware",
               "part": "o",
               "versions": [
-                "V2.1"
+                "-"
               ]
             }
           ]
@@ -739,58 +713,49 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:unknown:toshibae-studio2525ac:-:*:*:*:*:*:*:*",
-        "short": "h:unknown:toshibae-studio2525ac:-",
+        "cpe": "cpe:2.3:h:sharp:ar-fr4:-:*:*:*:*:*:*:*",
+        "short": "h:sharp:ar-fr4:-",
         "part": "h",
-        "vendor": "unknown",
-        "product": "toshibae-studio2525ac",
+        "vendor": "sharp",
+        "product": "ar-fr4",
         "version": "-",
-        "resolution": "unresolved"
+        "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:h:unknown:e-studio3025ac:-:*:*:*:*:*:*:*",
-        "short": "h:unknown:e-studio3025ac:-",
+        "cpe": "cpe:2.3:h:sharp:ar-fr5:-:*:*:*:*:*:*:*",
+        "short": "h:sharp:ar-fr5:-",
         "part": "h",
-        "vendor": "unknown",
-        "product": "e-studio3025ac",
+        "vendor": "sharp",
+        "product": "ar-fr5",
         "version": "-",
-        "resolution": "unresolved"
+        "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:h:unknown:e-studio3525ac:-:*:*:*:*:*:*:*",
-        "short": "h:unknown:e-studio3525ac:-",
+        "cpe": "cpe:2.3:h:sharp:ar-fr6:-:*:*:*:*:*:*:*",
+        "short": "h:sharp:ar-fr6:-",
         "part": "h",
-        "vendor": "unknown",
-        "product": "e-studio3525ac",
+        "vendor": "sharp",
+        "product": "ar-fr6",
         "version": "-",
-        "resolution": "unresolved"
+        "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:h:unknown:fax_unit:-:*:*:*:*:*:*:*",
-        "short": "h:unknown:fax_unit:-",
-        "part": "h",
-        "vendor": "unknown",
-        "product": "fax_unit",
+        "cpe": "cpe:2.3:a:sharp:data_security_kit:-:*:*:*:*:*:*:*",
+        "short": "a:sharp:data_security_kit:-",
+        "part": "a",
+        "vendor": "sharp",
+        "product": "data_security_kit",
         "version": "-",
-        "resolution": "unresolved"
+        "resolution": "clause_inheritance"
       },
       {
-        "cpe": "cpe:2.3:h:bouncycastle:fips_hard_disk_kit:-:*:*:*:*:*:*:*",
-        "short": "h:bouncycastle:fips_hard_disk_kit:-",
-        "part": "h",
-        "vendor": "bouncycastle",
-        "product": "fips_hard_disk_kit",
-        "version": "-",
-        "resolution": "cpe_prefix(fips)"
-      },
-      {
-        "cpe": "cpe:2.3:o:unknown:sys:2.1:*:*:*:*:*:*:*",
-        "short": "o:unknown:sys:2.1",
+        "cpe": "cpe:2.3:o:sharp:firmware:-:*:*:*:*:*:*:*",
+        "short": "o:sharp:firmware:-",
         "part": "o",
-        "vendor": "unknown",
-        "product": "sys",
-        "version": "2.1",
-        "resolution": "unresolved"
+        "vendor": "sharp",
+        "product": "firmware",
+        "version": "-",
+        "resolution": "clause_inheritance"
       }
     ]
   },
@@ -919,16 +884,16 @@
   },
   {
     "index": 18,
-    "input": "McAfee Vulnerability Manager 7.0",
+    "input": "Symantec Brightmail™ Gateway 9.0.1",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "McAfee",
-              "product": "Vulnerability Manager",
+              "vendor": "Symantec",
+              "product": "Brightmail Gateway",
               "part": "a",
-              "version": "7.0"
+              "version": "9.0.1"
             }
           ],
           "companions": []
@@ -937,13 +902,13 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:a:mcafee:vulnerability_manager:7.0:*:*:*:*:*:*:*",
-        "short": "a:mcafee:vulnerability_manager:7.0",
+        "cpe": "cpe:2.3:a:symantec:brightmail_gateway:9.0.1:*:*:*:*:*:*:*",
+        "short": "a:symantec:brightmail_gateway:9.0.1",
         "part": "a",
-        "vendor": "mcafee",
-        "product": "vulnerability_manager",
-        "version": "7.0",
-        "resolution": "cpe_exact+explicit"
+        "vendor": "symantec",
+        "product": "brightmail_gateway",
+        "version": "9.0.1",
+        "resolution": "explicit_vendor"
       }
     ]
   },
@@ -1012,216 +977,90 @@
   },
   {
     "index": 20,
-    "input": "Oracle Database 11g Enterprise Edition with Oracle Database Vault Release 11.1.0.7 with Critical Patch Updates up to and including July 2009",
+    "input": "IBM DB2 Version 9.1 for z/OS Version 1 Release 10",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Oracle",
-              "product": "Database 11g Enterprise Edition",
+              "vendor": "IBM",
+              "product": "DB2 Version 9.1 for z/OS Version 1 Release 10",
               "part": "a",
               "version": "-"
-            },
-            {
-              "vendor": "Oracle",
-              "product": "Database Vault",
-              "part": "a",
-              "version": "11.1.0.7"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "Critical Patch Updates",
-              "part": "a",
-              "versions": [
-                "up to and including July 2009"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:a:oracle:database_11g_enterprise_edition:-:*:*:*:*:*:*:*",
-        "short": "a:oracle:database_11g_enterprise_edition:-",
+        "cpe": "cpe:2.3:a:ibm:db2_version_9.1_for_z_os_version_1:10:*:*:*:*:*:*:*",
+        "short": "a:ibm:db2_version_9.1_for_z_os_version_1:10",
         "part": "a",
-        "vendor": "oracle",
-        "product": "database_11g_enterprise_edition",
-        "version": "-",
+        "vendor": "ibm",
+        "product": "db2_version_9.1_for_z_os_version_1",
+        "version": "10",
         "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:a:oracle:database_vault:11.1.0.7:*:*:*:*:*:*:*",
-        "short": "a:oracle:database_vault:11.1.0.7",
-        "part": "a",
-        "vendor": "oracle",
-        "product": "database_vault",
-        "version": "11.1.0.7",
-        "resolution": "cpe_exact+explicit"
-      },
-      {
-        "cpe": "cpe:2.3:a:symantec:critical_patch_updates:up_to_and_including_july_2009:*:*:*:*:*:*:*",
-        "short": "a:symantec:critical_patch_updates:up_to_and_including_july_2009",
-        "part": "a",
-        "vendor": "symantec",
-        "product": "critical_patch_updates",
-        "version": "up_to_and_including_july_2009",
-        "resolution": "cpe_prefix(critical)"
       }
     ]
   },
   {
     "index": 21,
-    "input": "Microcontrôleurs sécurisés SC23Z018, SC23ZD12, SC23ZD08, SC23ZD04, SB23ZD18, SB23ZD12, SB23ZD08 et SB23ZD04 incluant optionnellement la librairie cryptographique NesLib révision 3.1",
+    "input": "MICROTECH M7245 Revision 7, M7246 Revision 7, and M7248 Revision 4",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": null,
-              "product": "SC23Z018",
+              "vendor": "MICROTECH",
+              "product": "M7245",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": null,
-              "product": "SC23ZD12",
+              "vendor": "MICROTECH",
+              "product": "M7246",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": null,
-              "product": "SC23ZD08",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "SC23ZD04",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "SB23ZD18",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "SB23ZD12",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "SB23ZD08",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "SB23ZD04",
+              "vendor": "MICROTECH",
+              "product": "M7248",
               "part": "h",
               "version": "-"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "NesLib",
-              "part": "a",
-              "versions": [
-                "3.1"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:unknown:sc23z018:-:*:*:*:*:*:*:*",
-        "short": "h:unknown:sc23z018:-",
+        "cpe": "cpe:2.3:h:microtech:m7245:-:*:*:*:*:*:*:*",
+        "short": "h:microtech:m7245:-",
         "part": "h",
-        "vendor": "unknown",
-        "product": "sc23z018",
-        "version": "-",
-        "resolution": "unresolved"
-      },
-      {
-        "cpe": "cpe:2.3:h:unknown:sc23zd12:-:*:*:*:*:*:*:*",
-        "short": "h:unknown:sc23zd12:-",
-        "part": "h",
-        "vendor": "unknown",
-        "product": "sc23zd12",
-        "version": "-",
-        "resolution": "unresolved"
-      },
-      {
-        "cpe": "cpe:2.3:h:unknown:sc23zd08:-:*:*:*:*:*:*:*",
-        "short": "h:unknown:sc23zd08:-",
-        "part": "h",
-        "vendor": "unknown",
-        "product": "sc23zd08",
-        "version": "-",
-        "resolution": "unresolved"
-      },
-      {
-        "cpe": "cpe:2.3:h:unknown:sc23zd04:-:*:*:*:*:*:*:*",
-        "short": "h:unknown:sc23zd04:-",
-        "part": "h",
-        "vendor": "unknown",
-        "product": "sc23zd04",
-        "version": "-",
-        "resolution": "unresolved"
-      },
-      {
-        "cpe": "cpe:2.3:h:stmicroelectronics:sb23zd18:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:sb23zd18:-",
-        "part": "h",
-        "vendor": "stmicroelectronics",
-        "product": "sb23zd18",
+        "vendor": "microtech",
+        "product": "m7245",
         "version": "-",
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:h:stmicroelectronics:sb23zd12:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:sb23zd12:-",
+        "cpe": "cpe:2.3:h:microtech:m7246:-:*:*:*:*:*:*:*",
+        "short": "h:microtech:m7246:-",
         "part": "h",
-        "vendor": "stmicroelectronics",
-        "product": "sb23zd12",
+        "vendor": "microtech",
+        "product": "m7246",
         "version": "-",
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:h:stmicroelectronics:sb23zd08:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:sb23zd08:-",
+        "cpe": "cpe:2.3:h:microtech:m7248:-:*:*:*:*:*:*:*",
+        "short": "h:microtech:m7248:-",
         "part": "h",
-        "vendor": "stmicroelectronics",
-        "product": "sb23zd08",
+        "vendor": "microtech",
+        "product": "m7248",
         "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:stmicroelectronics:sb23zd04:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:sb23zd04:-",
-        "part": "h",
-        "vendor": "stmicroelectronics",
-        "product": "sb23zd04",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:a:stmicroelectronics:neslib:3.1:*:*:*:*:*:*:*",
-        "short": "a:stmicroelectronics:neslib:3.1",
-        "part": "a",
-        "vendor": "stmicroelectronics",
-        "product": "neslib",
-        "version": "3.1",
         "resolution": "explicit_vendor"
       }
     ]
@@ -1441,16 +1280,16 @@
   },
   {
     "index": 25,
-    "input": "Motorola Mobility LLC Mobile Devices on Android 14",
+    "input": "Samsung SDS EMM v1.5.1",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Motorola Mobility LLC",
-              "product": "Mobile Devices",
+              "vendor": "Samsung",
+              "product": "SDS EMM",
               "part": "a",
-              "version": "Android 14"
+              "version": "1.5.1"
             }
           ],
           "companions": []
@@ -1459,28 +1298,28 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:a:motorola:mobile_devices:android_14:*:*:*:*:*:*:*",
-        "short": "a:motorola:mobile_devices:android_14",
+        "cpe": "cpe:2.3:a:samsung:sds_emm:1.5.1:*:*:*:*:*:*:*",
+        "short": "a:samsung:sds_emm:1.5.1",
         "part": "a",
-        "vendor": "motorola",
-        "product": "mobile_devices",
-        "version": "android_14",
+        "vendor": "samsung",
+        "product": "sds_emm",
+        "version": "1.5.1",
         "resolution": "explicit_vendor"
       }
     ]
   },
   {
     "index": 26,
-    "input": "Sidewinder® G2 Firewall, V6.0",
+    "input": "Astaro Security Gateway (ASG) Version 6.300",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Sidewinder",
-              "product": "G2 Firewall",
+              "vendor": "Astaro",
+              "product": "Security Gateway (ASG)",
               "part": "a",
-              "version": "V6.0"
+              "version": "6.300"
             }
           ],
           "companions": []
@@ -1489,12 +1328,12 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:a:sidewinder:g2_firewall:6.0:*:*:*:*:*:*:*",
-        "short": "a:sidewinder:g2_firewall:6.0",
+        "cpe": "cpe:2.3:a:astaro:security_gateway_asg:6.300:*:*:*:*:*:*:*",
+        "short": "a:astaro:security_gateway_asg:6.300",
         "part": "a",
-        "vendor": "sidewinder",
-        "product": "g2_firewall",
-        "version": "6.0",
+        "vendor": "astaro",
+        "product": "security_gateway_asg",
+        "version": "6.300",
         "resolution": "explicit_vendor"
       }
     ]
@@ -1722,10 +1561,10 @@
         {
           "targets": [
             {
-              "vendor": "SOMA",
-              "product": "ck022 Travel Document",
-              "part": "h",
-              "version": "-"
+              "vendor": null,
+              "product": "SOMA-ck022 Travel Document",
+              "part": "a",
+              "version": "1.0"
             }
           ],
           "companions": []
@@ -1734,13 +1573,13 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:soma:ck022_travel_document:-:*:*:*:*:*:*:*",
-        "short": "h:soma:ck022_travel_document:-",
-        "part": "h",
-        "vendor": "soma",
-        "product": "ck022_travel_document",
-        "version": "-",
-        "resolution": "explicit_vendor"
+        "cpe": "cpe:2.3:a:unknown:soma-ck022_travel_document:1.0:*:*:*:*:*:*:*",
+        "short": "a:unknown:soma-ck022_travel_document:1.0",
+        "part": "a",
+        "vendor": "unknown",
+        "product": "soma-ck022_travel_document",
+        "version": "1.0",
+        "resolution": "unresolved"
       }
     ]
   },
@@ -1929,20 +1768,44 @@
   },
   {
     "index": 33,
-    "input": "bizhub C252 / ineo+ 251 Control Software",
+    "input": "FUJIFILM Apeos C3061 / C2561 / C2061 / C3061 GK / C2561 GK / C2061 GK models with Copy, Print, Fax, Scan and StorageController ROM Ver. 1.0.4A, Fax ROM Ver. 3.0.0",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": null,
-              "product": "bizhub C252",
+              "vendor": "FUJIFILM",
+              "product": "Apeos C3061",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": null,
-              "product": "ineo+ 251",
+              "vendor": "FUJIFILM",
+              "product": "Apeos C2561",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "FUJIFILM",
+              "product": "Apeos C2061",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "FUJIFILM",
+              "product": "Apeos GK",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "FUJIFILM",
+              "product": "Apeos GK",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "FUJIFILM",
+              "product": "Apeos GK",
               "part": "h",
               "version": "-"
             }
@@ -1950,10 +1813,18 @@
           "companions": [
             {
               "vendor": null,
-              "product": "Control Software",
+              "product": "Copy, Print, Fax, Scan and StorageController ROM",
               "part": "o",
               "versions": [
-                "-"
+                "1.0.4A"
+              ]
+            },
+            {
+              "vendor": null,
+              "product": "Fax ROM",
+              "part": "o",
+              "versions": [
+                "3.0.0"
               ]
             }
           ]
@@ -1962,30 +1833,57 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:konicaminolta:bizhub_c252:-:*:*:*:*:*:*:*",
-        "short": "h:konicaminolta:bizhub_c252:-",
+        "cpe": "cpe:2.3:h:fujifilm:apeos_c3061:-:*:*:*:*:*:*:*",
+        "short": "h:fujifilm:apeos_c3061:-",
         "part": "h",
-        "vendor": "konicaminolta",
-        "product": "bizhub_c252",
+        "vendor": "fujifilm",
+        "product": "apeos_c3061",
         "version": "-",
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:h:develop:ineo+_251:-:*:*:*:*:*:*:*",
-        "short": "h:develop:ineo+_251:-",
+        "cpe": "cpe:2.3:h:fujifilm:apeos_c2561:-:*:*:*:*:*:*:*",
+        "short": "h:fujifilm:apeos_c2561:-",
         "part": "h",
-        "vendor": "develop",
-        "product": "ineo+_251",
+        "vendor": "fujifilm",
+        "product": "apeos_c2561",
         "version": "-",
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:o:konicaminolta:control_software:-:*:*:*:*:*:*:*",
-        "short": "o:konicaminolta:control_software:-",
+        "cpe": "cpe:2.3:h:fujifilm:apeos_c2061:-:*:*:*:*:*:*:*",
+        "short": "h:fujifilm:apeos_c2061:-",
+        "part": "h",
+        "vendor": "fujifilm",
+        "product": "apeos_c2061",
+        "version": "-",
+        "resolution": "explicit_vendor"
+      },
+      {
+        "cpe": "cpe:2.3:h:fujifilm:apeos_gk:-:*:*:*:*:*:*:*",
+        "short": "h:fujifilm:apeos_gk:-",
+        "part": "h",
+        "vendor": "fujifilm",
+        "product": "apeos_gk",
+        "version": "-",
+        "resolution": "explicit_vendor"
+      },
+      {
+        "cpe": "cpe:2.3:o:fujifilm:copy_print_fax_scan_and_storagecontroller_rom:1.0.4a:*:*:*:*:*:*:*",
+        "short": "o:fujifilm:copy_print_fax_scan_and_storagecontroller_rom:1.0.4a",
         "part": "o",
-        "vendor": "konicaminolta",
-        "product": "control_software",
-        "version": "-",
+        "vendor": "fujifilm",
+        "product": "copy_print_fax_scan_and_storagecontroller_rom",
+        "version": "1.0.4a",
+        "resolution": "clause_inheritance"
+      },
+      {
+        "cpe": "cpe:2.3:o:fujifilm:fax_rom:3.0.0:*:*:*:*:*:*:*",
+        "short": "o:fujifilm:fax_rom:3.0.0",
+        "part": "o",
+        "vendor": "fujifilm",
+        "product": "fax_rom",
+        "version": "3.0.0",
         "resolution": "clause_inheritance"
       }
     ]
@@ -2022,83 +1920,104 @@
   },
   {
     "index": 35,
-    "input": "Xerox® VersaLink™ C625 and B625 with eMMC",
+    "input": "Sindoh MF2000, MF3000, MF4000, N610, N410 Series",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Xerox",
-              "product": "VersaLink\\ C625",
+              "vendor": "Sindoh",
+              "product": "MF2000",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": "Xerox",
-              "product": "VersaLink\\ B625",
+              "vendor": "Sindoh",
+              "product": "MF3000",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "Sindoh",
+              "product": "MF4000",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "Sindoh",
+              "product": "N610",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "Sindoh",
+              "product": "N410",
               "part": "h",
               "version": "-"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "eMMC",
-              "part": "h",
-              "versions": [
-                "-"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:xerox:versalink_c625:-:*:*:*:*:*:*:*",
-        "short": "h:xerox:versalink_c625:-",
+        "cpe": "cpe:2.3:h:sindoh:mf2000:-:*:*:*:*:*:*:*",
+        "short": "h:sindoh:mf2000:-",
         "part": "h",
-        "vendor": "xerox",
-        "product": "versalink_c625",
+        "vendor": "sindoh",
+        "product": "mf2000",
         "version": "-",
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:h:xerox:versalink_b625:-:*:*:*:*:*:*:*",
-        "short": "h:xerox:versalink_b625:-",
+        "cpe": "cpe:2.3:h:sindoh:mf3000:-:*:*:*:*:*:*:*",
+        "short": "h:sindoh:mf3000:-",
         "part": "h",
-        "vendor": "xerox",
-        "product": "versalink_b625",
+        "vendor": "sindoh",
+        "product": "mf3000",
         "version": "-",
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:h:xerox:emmc:-:*:*:*:*:*:*:*",
-        "short": "h:xerox:emmc:-",
+        "cpe": "cpe:2.3:h:sindoh:mf4000:-:*:*:*:*:*:*:*",
+        "short": "h:sindoh:mf4000:-",
         "part": "h",
-        "vendor": "xerox",
-        "product": "emmc",
+        "vendor": "sindoh",
+        "product": "mf4000",
         "version": "-",
-        "resolution": "clause_inheritance"
+        "resolution": "explicit_vendor"
+      },
+      {
+        "cpe": "cpe:2.3:h:sindoh:n610:-:*:*:*:*:*:*:*",
+        "short": "h:sindoh:n610:-",
+        "part": "h",
+        "vendor": "sindoh",
+        "product": "n610",
+        "version": "-",
+        "resolution": "explicit_vendor"
+      },
+      {
+        "cpe": "cpe:2.3:h:sindoh:n410:-:*:*:*:*:*:*:*",
+        "short": "h:sindoh:n410:-",
+        "part": "h",
+        "vendor": "sindoh",
+        "product": "n410",
+        "version": "-",
+        "resolution": "explicit_vendor"
       }
     ]
   },
   {
     "index": 36,
-    "input": "Carte VITALE 2 - Application VITALE : Composant SB23ZL48 masqué par le logiciel SESAM VITALE v1.0.1 avec correctif version 1",
+    "input": "dragonFly version 3.2 sur composantSM33F1ME",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
               "vendor": null,
-              "product": "Carte VITALE 2",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "Application VITALE",
+              "product": "composantSM33F1ME",
               "part": "h",
               "version": "-"
             }
@@ -2106,18 +2025,10 @@
           "companions": [
             {
               "vendor": null,
-              "product": "SESAM VITALE",
-              "part": "a",
+              "product": "dragonFly",
+              "part": "o",
               "versions": [
-                "1.0.1"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "correctif version",
-              "part": "a",
-              "versions": [
-                "1"
+                "3.2"
               ]
             }
           ]
@@ -2126,72 +2037,46 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:unknown:carte_vitale_2:-:*:*:*:*:*:*:*",
-        "short": "h:unknown:carte_vitale_2:-",
+        "cpe": "cpe:2.3:h:unknown:composantsm33f1me:-:*:*:*:*:*:*:*",
+        "short": "h:unknown:composantsm33f1me:-",
         "part": "h",
         "vendor": "unknown",
-        "product": "carte_vitale_2",
+        "product": "composantsm33f1me",
         "version": "-",
         "resolution": "unresolved"
       },
       {
-        "cpe": "cpe:2.3:h:unknown:application_vitale:-:*:*:*:*:*:*:*",
-        "short": "h:unknown:application_vitale:-",
-        "part": "h",
-        "vendor": "unknown",
-        "product": "application_vitale",
-        "version": "-",
-        "resolution": "unresolved"
-      },
-      {
-        "cpe": "cpe:2.3:a:unknown:sesam_vitale:1.0.1:*:*:*:*:*:*:*",
-        "short": "a:unknown:sesam_vitale:1.0.1",
-        "part": "a",
-        "vendor": "unknown",
-        "product": "sesam_vitale",
-        "version": "1.0.1",
-        "resolution": "unresolved"
-      },
-      {
-        "cpe": "cpe:2.3:a:unknown:correctif_version:1:*:*:*:*:*:*:*",
-        "short": "a:unknown:correctif_version:1",
-        "part": "a",
-        "vendor": "unknown",
-        "product": "correctif_version",
-        "version": "1",
-        "resolution": "unresolved"
+        "cpe": "cpe:2.3:o:linuxfoundation:dragonfly:3.2:*:*:*:*:*:*:*",
+        "short": "o:linuxfoundation:dragonfly:3.2",
+        "part": "o",
+        "vendor": "linuxfoundation",
+        "product": "dragonfly",
+        "version": "3.2",
+        "resolution": "cpe_exact"
       }
     ]
   },
   {
     "index": 37,
-    "input": "IAS ECC v2, version 1.3, in configuration #1 on ID-One Cosmo v8.2 open platform on NXP P6022M VB (Identification de l’application : F0 02 02 13) (ANSSI-CC-2020/50-R01)",
+    "input": "MaskTech ePP Applet on Secora ID S v1.1",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": null,
-              "product": "ID-One Cosmo",
-              "part": "h",
+              "vendor": "MaskTech",
+              "product": "ePP Applet",
+              "part": "a",
               "version": "-"
             }
           ],
           "companions": [
             {
-              "vendor": "NXP",
-              "product": "P6022M VB",
+              "vendor": null,
+              "product": "Secora ID S",
               "part": "h",
               "versions": [
-                "-"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "IAS ECC",
-              "part": "a",
-              "versions": [
-                "1.3"
+                "1.1"
               ]
             }
           ]
@@ -2200,30 +2085,21 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:idemia:id-one_cosmo:-:*:*:*:*:*:*:*",
-        "short": "h:idemia:id-one_cosmo:-",
-        "part": "h",
-        "vendor": "idemia",
-        "product": "id-one_cosmo",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:nxp:p6022m_vb:-:*:*:*:*:*:*:*",
-        "short": "h:nxp:p6022m_vb:-",
-        "part": "h",
-        "vendor": "nxp",
-        "product": "p6022m_vb",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:a:idemia:ias_ecc:1.3:*:*:*:*:*:*:*",
-        "short": "a:idemia:ias_ecc:1.3",
+        "cpe": "cpe:2.3:a:masktech:epp_applet:-:*:*:*:*:*:*:*",
+        "short": "a:masktech:epp_applet:-",
         "part": "a",
-        "vendor": "idemia",
-        "product": "ias_ecc",
-        "version": "1.3",
+        "vendor": "masktech",
+        "product": "epp_applet",
+        "version": "-",
+        "resolution": "explicit_vendor"
+      },
+      {
+        "cpe": "cpe:2.3:h:masktech:secora_id_s:1.1:*:*:*:*:*:*:*",
+        "short": "h:masktech:secora_id_s:1.1",
+        "part": "h",
+        "vendor": "masktech",
+        "product": "secora_id_s",
+        "version": "1.1",
         "resolution": "clause_inheritance"
       }
     ]
@@ -2260,127 +2136,76 @@
   },
   {
     "index": 39,
-    "input": "SA23YR18A and SB23YR18A Secure Microcontrollers, including the cryptographic library Neslib v3.1, in SA or SB configuration",
+    "input": "ATMEL AT90SC6464C Integrated circuit (reference AT568A9 rev. F)",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": null,
-              "product": "SA23YR18A",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": null,
-              "product": "SB23YR18A",
+              "vendor": "ATMEL",
+              "product": "AT90SC6464C",
               "part": "h",
               "version": "-"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "Neslib",
-              "part": "a",
-              "versions": [
-                "3.1"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:stmicroelectronics:sa23yr18a:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:sa23yr18a:-",
+        "cpe": "cpe:2.3:h:atmel:at90sc6464c:-:*:*:*:*:*:*:*",
+        "short": "h:atmel:at90sc6464c:-",
         "part": "h",
-        "vendor": "stmicroelectronics",
-        "product": "sa23yr18a",
+        "vendor": "atmel",
+        "product": "at90sc6464c",
         "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:stmicroelectronics:sb23yr18a:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:sb23yr18a:-",
-        "part": "h",
-        "vendor": "stmicroelectronics",
-        "product": "sb23yr18a",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:a:stmicroelectronics:neslib:3.1:*:*:*:*:*:*:*",
-        "short": "a:stmicroelectronics:neslib:3.1",
-        "part": "a",
-        "vendor": "stmicroelectronics",
-        "product": "neslib",
-        "version": "3.1",
         "resolution": "explicit_vendor"
       }
     ]
   },
   {
     "index": 40,
-    "input": "Cisco Adaptive Security Appliances and ASA Virtual Version 9.6",
+    "input": "Fortress Mesh Point ES520, ES820",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Cisco",
-              "product": "Adaptive Security Appliances",
+              "vendor": null,
+              "product": "Fortress Mesh Point ES520",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": "Cisco",
-              "product": "ASA Virtual",
+              "vendor": null,
+              "product": "Fortress Mesh Point ES820",
               "part": "h",
               "version": "-"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "Firmware",
-              "part": "o",
-              "versions": [
-                "9.6"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:cisco:adaptive_security_appliances:-:*:*:*:*:*:*:*",
-        "short": "h:cisco:adaptive_security_appliances:-",
+        "cpe": "cpe:2.3:h:pragmasys:fortress_mesh_point_es520:-:*:*:*:*:*:*:*",
+        "short": "h:pragmasys:fortress_mesh_point_es520:-",
         "part": "h",
-        "vendor": "cisco",
-        "product": "adaptive_security_appliances",
+        "vendor": "pragmasys",
+        "product": "fortress_mesh_point_es520",
         "version": "-",
-        "resolution": "explicit_vendor"
+        "resolution": "cpe_prefix(fortress)"
       },
       {
-        "cpe": "cpe:2.3:h:cisco:asa_virtual:-:*:*:*:*:*:*:*",
-        "short": "h:cisco:asa_virtual:-",
+        "cpe": "cpe:2.3:h:pragmasys:fortress_mesh_point_es820:-:*:*:*:*:*:*:*",
+        "short": "h:pragmasys:fortress_mesh_point_es820:-",
         "part": "h",
-        "vendor": "cisco",
-        "product": "asa_virtual",
+        "vendor": "pragmasys",
+        "product": "fortress_mesh_point_es820",
         "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:o:cisco:firmware:9.6:*:*:*:*:*:*:*",
-        "short": "o:cisco:firmware:9.6",
-        "part": "o",
-        "vendor": "cisco",
-        "product": "firmware",
-        "version": "9.6",
-        "resolution": "clause_inheritance"
+        "resolution": "cpe_prefix(fortress)"
       }
     ]
   },
@@ -2430,19 +2255,11 @@
           ],
           "companions": [
             {
-              "vendor": null,
-              "product": "KVM",
+              "vendor": "KVM",
+              "product": "and QEMU 2.5",
               "part": "a",
               "versions": [
                 "-"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "QEMU",
-              "part": "a",
-              "versions": [
-                "2.5"
               ]
             }
           ]
@@ -2460,22 +2277,13 @@
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:a:ubuntu:kvm:-:*:*:*:*:*:*:*",
-        "short": "a:ubuntu:kvm:-",
+        "cpe": "cpe:2.3:a:kvm:and_qemu_2.5:-:*:*:*:*:*:*:*",
+        "short": "a:kvm:and_qemu_2.5:-",
         "part": "a",
-        "vendor": "ubuntu",
-        "product": "kvm",
+        "vendor": "kvm",
+        "product": "and_qemu_2.5",
         "version": "-",
-        "resolution": "clause_inheritance"
-      },
-      {
-        "cpe": "cpe:2.3:a:qemu:qemu:2.5:*:*:*:*:*:*:*",
-        "short": "a:qemu:qemu:2.5",
-        "part": "a",
-        "vendor": "qemu",
-        "product": "qemu",
-        "version": "2.5",
-        "resolution": "cpe_exact"
+        "resolution": "explicit_vendor"
       }
     ]
   },
@@ -2529,207 +2337,93 @@
   },
   {
     "index": 44,
-    "input": "IFX_CCI_000Dh, IFX_CCI_0020h, IFX_CCI_0031h, IFX_CCI_0032h, IFX_CCI_0034h design step T23 with optional HSL v2.62.7626, optional SCL v2.04.003, UMSLC lib v01.00.0234 with specific IC-dedicated firmware identifier 80.301.05.1 and user guidance",
+    "input": "Renesas Cryptographic Library v5126 on Renesas RS47X security integrated circuit Version 01",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "IFX",
-              "product": "CCI_000Dh",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "IFX",
-              "product": "CCI_0020h",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "IFX",
-              "product": "CCI_0031h",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "IFX",
-              "product": "CCI_0032h",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "IFX",
-              "product": "CCI_0034h",
+              "vendor": "Renesas",
+              "product": "RS47X",
               "part": "h",
               "version": "-"
             }
           ],
           "companions": [
             {
-              "vendor": null,
-              "product": "HSL",
+              "vendor": "Renesas",
+              "product": "Cryptographic Library",
               "part": "a",
               "versions": [
-                "2.62.7626"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "SCL",
-              "part": "a",
-              "versions": [
-                "2.04.003"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "UMSLC lib",
-              "part": "a",
-              "versions": [
-                "01.00.0234"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "IC-dedicated firmware identifier",
-              "part": "a",
-              "versions": [
-                "80.301.05.1"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "User guidance",
-              "part": "a",
-              "versions": [
-                "-"
+                "5126"
               ]
             }
           ]
+        },
+        {
+          "targets": [
+            {
+              "vendor": null,
+              "product": "Firmware",
+              "part": "o",
+              "version": "01"
+            }
+          ],
+          "companions": []
         }
       ]
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:unknown:cci_000dh:-:*:*:*:*:*:*:*",
-        "short": "h:unknown:cci_000dh:-",
+        "cpe": "cpe:2.3:h:renesas:rs47x:-:*:*:*:*:*:*:*",
+        "short": "h:renesas:rs47x:-",
         "part": "h",
-        "vendor": "unknown",
-        "product": "cci_000dh",
+        "vendor": "renesas",
+        "product": "rs47x",
         "version": "-",
-        "resolution": "unresolved"
+        "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:h:unknown:cci_0020h:-:*:*:*:*:*:*:*",
-        "short": "h:unknown:cci_0020h:-",
-        "part": "h",
-        "vendor": "unknown",
-        "product": "cci_0020h",
-        "version": "-",
-        "resolution": "unresolved"
-      },
-      {
-        "cpe": "cpe:2.3:h:unknown:cci_0031h:-:*:*:*:*:*:*:*",
-        "short": "h:unknown:cci_0031h:-",
-        "part": "h",
-        "vendor": "unknown",
-        "product": "cci_0031h",
-        "version": "-",
-        "resolution": "unresolved"
-      },
-      {
-        "cpe": "cpe:2.3:h:unknown:cci_0032h:-:*:*:*:*:*:*:*",
-        "short": "h:unknown:cci_0032h:-",
-        "part": "h",
-        "vendor": "unknown",
-        "product": "cci_0032h",
-        "version": "-",
-        "resolution": "unresolved"
-      },
-      {
-        "cpe": "cpe:2.3:h:unknown:cci_0034h:-:*:*:*:*:*:*:*",
-        "short": "h:unknown:cci_0034h:-",
-        "part": "h",
-        "vendor": "unknown",
-        "product": "cci_0034h",
-        "version": "-",
-        "resolution": "unresolved"
-      },
-      {
-        "cpe": "cpe:2.3:a:unknown:hsl:2.62.7626:*:*:*:*:*:*:*",
-        "short": "a:unknown:hsl:2.62.7626",
+        "cpe": "cpe:2.3:a:renesas:cryptographic_library:5126:*:*:*:*:*:*:*",
+        "short": "a:renesas:cryptographic_library:5126",
         "part": "a",
-        "vendor": "unknown",
-        "product": "hsl",
-        "version": "2.62.7626",
-        "resolution": "unresolved"
+        "vendor": "renesas",
+        "product": "cryptographic_library",
+        "version": "5126",
+        "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:a:schneider-electric:scl:2.04.003:*:*:*:*:*:*:*",
-        "short": "a:schneider-electric:scl:2.04.003",
-        "part": "a",
-        "vendor": "schneider-electric",
-        "product": "scl",
-        "version": "2.04.003",
-        "resolution": "cpe_prefix(scl)"
-      },
-      {
-        "cpe": "cpe:2.3:a:unknown:umslc_lib:01.00.0234:*:*:*:*:*:*:*",
-        "short": "a:unknown:umslc_lib:01.00.0234",
-        "part": "a",
+        "cpe": "cpe:2.3:o:unknown:firmware:01:*:*:*:*:*:*:*",
+        "short": "o:unknown:firmware:01",
+        "part": "o",
         "vendor": "unknown",
-        "product": "umslc_lib",
-        "version": "01.00.0234",
-        "resolution": "unresolved"
-      },
-      {
-        "cpe": "cpe:2.3:a:unknown:ic-dedicated_firmware_identifier:80.301.05.1:*:*:*:*:*:*:*",
-        "short": "a:unknown:ic-dedicated_firmware_identifier:80.301.05.1",
-        "part": "a",
-        "vendor": "unknown",
-        "product": "ic-dedicated_firmware_identifier",
-        "version": "80.301.05.1",
-        "resolution": "unresolved"
-      },
-      {
-        "cpe": "cpe:2.3:a:unknown:user_guidance:-:*:*:*:*:*:*:*",
-        "short": "a:unknown:user_guidance:-",
-        "part": "a",
-        "vendor": "unknown",
-        "product": "user_guidance",
-        "version": "-",
+        "product": "firmware",
+        "version": "01",
         "resolution": "unresolved"
       }
     ]
   },
   {
     "index": 45,
-    "input": "STMicroelectronics NesLib 6.7.4 on ST33K1M5A and ST33K1M5M B03",
+    "input": "Google H1D3 Secure Microcontroller with Crypto Library v1.5.2",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "STMicroelectronics",
-              "product": "ST33K1M5A",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "STMicroelectronics",
-              "product": "ST33K1M5M",
+              "vendor": "Google",
+              "product": "H1D3 Secure Microcontroller",
               "part": "h",
               "version": "-"
             }
           ],
           "companions": [
             {
-              "vendor": "STMicroelectronics",
-              "product": "NesLib",
+              "vendor": null,
+              "product": "Crypto Library",
               "part": "a",
               "versions": [
-                "6.7.4"
+                "1.5.2"
               ]
             }
           ]
@@ -2738,31 +2432,22 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:stmicroelectronics:st33k1m5a:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:st33k1m5a:-",
+        "cpe": "cpe:2.3:h:google:h1d3_secure_microcontroller:-:*:*:*:*:*:*:*",
+        "short": "h:google:h1d3_secure_microcontroller:-",
         "part": "h",
-        "vendor": "stmicroelectronics",
-        "product": "st33k1m5a",
+        "vendor": "google",
+        "product": "h1d3_secure_microcontroller",
         "version": "-",
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:h:stmicroelectronics:st33k1m5m:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:st33k1m5m:-",
-        "part": "h",
-        "vendor": "stmicroelectronics",
-        "product": "st33k1m5m",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:a:stmicroelectronics:neslib:6.7.4:*:*:*:*:*:*:*",
-        "short": "a:stmicroelectronics:neslib:6.7.4",
+        "cpe": "cpe:2.3:a:google:crypto_library:1.5.2:*:*:*:*:*:*:*",
+        "short": "a:google:crypto_library:1.5.2",
         "part": "a",
-        "vendor": "stmicroelectronics",
-        "product": "neslib",
-        "version": "6.7.4",
-        "resolution": "explicit_vendor"
+        "vendor": "google",
+        "product": "crypto_library",
+        "version": "1.5.2",
+        "resolution": "clause_inheritance"
       }
     ]
   },
@@ -2915,7 +2600,7 @@
           "targets": [
             {
               "vendor": "Connect:Direct",
-              "product": "with Secure+ Option",
+              "product": "with Secure+",
               "part": "a",
               "version": "3.7"
             }
@@ -2935,7 +2620,7 @@
           "targets": [
             {
               "vendor": "Connect:Direct",
-              "product": "with Secure+ Option",
+              "product": "with Secure+",
               "part": "a",
               "version": "4.2"
             }
@@ -2955,11 +2640,11 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:a:connectdirect:with_secure+_option:3.7:*:*:*:*:*:*:*",
-        "short": "a:connectdirect:with_secure+_option:3.7",
+        "cpe": "cpe:2.3:a:connectdirect:with_secure+:3.7:*:*:*:*:*:*:*",
+        "short": "a:connectdirect:with_secure+:3.7",
         "part": "a",
         "vendor": "connectdirect",
-        "product": "with_secure+_option",
+        "product": "with_secure+",
         "version": "3.7",
         "resolution": "explicit_vendor"
       },
@@ -2973,11 +2658,11 @@
         "resolution": "cpe_exact"
       },
       {
-        "cpe": "cpe:2.3:a:connectdirect:with_secure+_option:4.2:*:*:*:*:*:*:*",
-        "short": "a:connectdirect:with_secure+_option:4.2",
+        "cpe": "cpe:2.3:a:connectdirect:with_secure+:4.2:*:*:*:*:*:*:*",
+        "short": "a:connectdirect:with_secure+:4.2",
         "part": "a",
         "vendor": "connectdirect",
-        "product": "with_secure+_option",
+        "product": "with_secure+",
         "version": "4.2",
         "resolution": "explicit_vendor"
       },
@@ -2994,27 +2679,33 @@
   },
   {
     "index": 48,
-    "input": "CISCO IOS/IPSec release 12.4(6)T3, 12.4(7) & 12.2(33)SRA",
+    "input": "Primus HSM FW 3.1.0 Series E, Series E2, Series X, Series X2",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "CISCO IOS/IPSec",
-              "product": "12.4(6)T3",
-              "part": "o",
+              "vendor": "Primus",
+              "product": "HSM FW 3.1.0 Series E",
+              "part": "h",
               "version": "-"
             },
             {
-              "vendor": "CISCO IOS/IPSec",
-              "product": "12.4(7)",
-              "part": "o",
+              "vendor": "Primus",
+              "product": "HSM FW 3.1.0 Series E2",
+              "part": "h",
               "version": "-"
             },
             {
-              "vendor": "CISCO IOS/IPSec",
-              "product": "12.2(33)SRA",
-              "part": "o",
+              "vendor": "Primus",
+              "product": "HSM FW 3.1.0 Series X",
+              "part": "h",
+              "version": "-"
+            },
+            {
+              "vendor": "Primus",
+              "product": "HSM FW 3.1.0 Series X2",
+              "part": "h",
               "version": "-"
             }
           ],
@@ -3024,29 +2715,38 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:o:cisco:12.46t3:-:*:*:*:*:*:*:*",
-        "short": "o:cisco:12.46t3:-",
-        "part": "o",
-        "vendor": "cisco",
-        "product": "12.46t3",
+        "cpe": "cpe:2.3:h:primus:hsm_fw_3.1.0_series_e:-:*:*:*:*:*:*:*",
+        "short": "h:primus:hsm_fw_3.1.0_series_e:-",
+        "part": "h",
+        "vendor": "primus",
+        "product": "hsm_fw_3.1.0_series_e",
         "version": "-",
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:o:cisco:12.47:-:*:*:*:*:*:*:*",
-        "short": "o:cisco:12.47:-",
-        "part": "o",
-        "vendor": "cisco",
-        "product": "12.47",
+        "cpe": "cpe:2.3:h:primus:hsm_fw_3.1.0_series_e2:-:*:*:*:*:*:*:*",
+        "short": "h:primus:hsm_fw_3.1.0_series_e2:-",
+        "part": "h",
+        "vendor": "primus",
+        "product": "hsm_fw_3.1.0_series_e2",
         "version": "-",
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:o:cisco:12.233sra:-:*:*:*:*:*:*:*",
-        "short": "o:cisco:12.233sra:-",
-        "part": "o",
-        "vendor": "cisco",
-        "product": "12.233sra",
+        "cpe": "cpe:2.3:h:primus:hsm_fw_3.1.0_series_x:-:*:*:*:*:*:*:*",
+        "short": "h:primus:hsm_fw_3.1.0_series_x:-",
+        "part": "h",
+        "vendor": "primus",
+        "product": "hsm_fw_3.1.0_series_x",
+        "version": "-",
+        "resolution": "explicit_vendor"
+      },
+      {
+        "cpe": "cpe:2.3:h:primus:hsm_fw_3.1.0_series_x2:-:*:*:*:*:*:*:*",
+        "short": "h:primus:hsm_fw_3.1.0_series_x2:-",
+        "part": "h",
+        "vendor": "primus",
+        "product": "hsm_fw_3.1.0_series_x2",
         "version": "-",
         "resolution": "explicit_vendor"
       }
@@ -3054,64 +2754,31 @@
   },
   {
     "index": 49,
-    "input": "Xerox WorkCentre 5030/5050 Multifunction Systems, System Software Version 5.003.07.000",
+    "input": "Data Security Kit(D) Software V1.00J",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Xerox",
-              "product": "WorkCentre 5030",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Xerox",
-              "product": "WorkCentre 5050",
-              "part": "h",
-              "version": "-"
+              "vendor": null,
+              "product": "Data Security Kit(D)",
+              "part": "a",
+              "version": "1.00J"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "System Software",
-              "part": "o",
-              "versions": [
-                "5.003.07.000"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:xerox:workcentre_5030:-:*:*:*:*:*:*:*",
-        "short": "h:xerox:workcentre_5030:-",
-        "part": "h",
-        "vendor": "xerox",
-        "product": "workcentre_5030",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:xerox:workcentre_5050:-:*:*:*:*:*:*:*",
-        "short": "h:xerox:workcentre_5050:-",
-        "part": "h",
-        "vendor": "xerox",
-        "product": "workcentre_5050",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:o:xerox:system_software:5.003.07.000:*:*:*:*:*:*:*",
-        "short": "o:xerox:system_software:5.003.07.000",
-        "part": "o",
-        "vendor": "xerox",
-        "product": "system_software",
-        "version": "5.003.07.000",
-        "resolution": "clause_inheritance"
+        "cpe": "cpe:2.3:a:unknown:data_security_kitd:1.00j:*:*:*:*:*:*:*",
+        "short": "a:unknown:data_security_kitd:1.00j",
+        "part": "a",
+        "vendor": "unknown",
+        "product": "data_security_kitd",
+        "version": "1.00j",
+        "resolution": "unresolved"
       }
     ]
   },
@@ -3123,14 +2790,14 @@
         {
           "targets": [
             {
-              "vendor": "ST",
-              "product": "33KTPM2XSPI",
+              "vendor": "Trusted Platform Modules",
+              "product": "ST33KTPM2XSPI",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": "ST",
-              "product": "33KTPM2X",
+              "vendor": "Trusted Platform Modules",
+              "product": "ST33KTPM2X",
               "part": "h",
               "version": "-"
             }
@@ -3150,28 +2817,28 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:stmicroelectronics:st33ktpm2xspi:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:st33ktpm2xspi:-",
+        "cpe": "cpe:2.3:h:trusted_platform_modules:st33ktpm2xspi:-:*:*:*:*:*:*:*",
+        "short": "h:trusted_platform_modules:st33ktpm2xspi:-",
         "part": "h",
-        "vendor": "stmicroelectronics",
+        "vendor": "trusted_platform_modules",
         "product": "st33ktpm2xspi",
         "version": "-",
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:h:stmicroelectronics:st33ktpm2x:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:st33ktpm2x:-",
+        "cpe": "cpe:2.3:h:trusted_platform_modules:st33ktpm2x:-:*:*:*:*:*:*:*",
+        "short": "h:trusted_platform_modules:st33ktpm2x:-",
         "part": "h",
-        "vendor": "stmicroelectronics",
+        "vendor": "trusted_platform_modules",
         "product": "st33ktpm2x",
         "version": "-",
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:o:stmicroelectronics:tpm_firmware:9.257:*:*:*:*:*:*:*",
-        "short": "o:stmicroelectronics:tpm_firmware:9.257",
+        "cpe": "cpe:2.3:o:trusted_platform_modules:tpm_firmware:9.257:*:*:*:*:*:*:*",
+        "short": "o:trusted_platform_modules:tpm_firmware:9.257",
         "part": "o",
-        "vendor": "stmicroelectronics",
+        "vendor": "trusted_platform_modules",
         "product": "tpm_firmware",
         "version": "9.257",
         "resolution": "clause_inheritance"

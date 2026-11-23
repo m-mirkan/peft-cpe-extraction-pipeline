@@ -8,7 +8,7 @@
           "targets": [
             {
               "vendor": "ST",
-              "product": "ST31R480 A01",
+              "product": "31R480 A01",
               "part": "h",
               "version": "-"
             }
@@ -17,17 +17,17 @@
             {
               "vendor": null,
               "product": "MIFARE DESFire EV3",
-              "part": "h",
+              "part": "a",
               "versions": [
                 "-"
               ]
             },
             {
               "vendor": null,
-              "product": "(ANSSI-CC-2025/31)",
+              "product": "Firmware",
               "part": "o",
               "versions": [
-                "-"
+                "1.0.3"
               ]
             }
           ]
@@ -45,21 +45,21 @@
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:h:nxp:mifare_desfire_ev3:-:*:*:*:*:*:*:*",
-        "short": "h:nxp:mifare_desfire_ev3:-",
-        "part": "h",
+        "cpe": "cpe:2.3:a:nxp:mifare_desfire_ev3:-:*:*:*:*:*:*:*",
+        "short": "a:nxp:mifare_desfire_ev3:-",
+        "part": "a",
         "vendor": "nxp",
         "product": "mifare_desfire_ev3",
         "version": "-",
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:o:stmicroelectronics:anssi-cc-2025_31:-:*:*:*:*:*:*:*",
-        "short": "o:stmicroelectronics:anssi-cc-2025_31:-",
+        "cpe": "cpe:2.3:o:stmicroelectronics:firmware:1.0.3:*:*:*:*:*:*:*",
+        "short": "o:stmicroelectronics:firmware:1.0.3",
         "part": "o",
         "vendor": "stmicroelectronics",
-        "product": "anssi-cc-2025_31",
-        "version": "-",
+        "product": "firmware",
+        "version": "1.0.3",
         "resolution": "clause_inheritance"
       }
     ]
@@ -73,9 +73,9 @@
           "targets": [
             {
               "vendor": "NXP",
-              "product": "JCOP",
+              "product": "JCOP 5.2",
               "part": "a",
-              "version": "5.2"
+              "version": "-"
             }
           ],
           "companions": [
@@ -83,6 +83,26 @@
               "vendor": null,
               "product": "SN100.C58",
               "part": "h",
+              "versions": [
+                "-"
+              ]
+            }
+          ]
+        },
+        {
+          "targets": [
+            {
+              "vendor": null,
+              "product": "SN100.C58",
+              "part": "h",
+              "version": "-"
+            }
+          ],
+          "companions": [
+            {
+              "vendor": null,
+              "product": "JCOP 5.2",
+              "part": "a",
               "versions": [
                 "-"
               ]
@@ -107,6 +127,15 @@
         "part": "h",
         "vendor": "nxp",
         "product": "sn100.c58",
+        "version": "-",
+        "resolution": "explicit_vendor"
+      },
+      {
+        "cpe": "cpe:2.3:a:nxp:jcop_5.2:-:*:*:*:*:*:*:*",
+        "short": "a:nxp:jcop_5.2:-",
+        "part": "a",
+        "vendor": "nxp",
+        "product": "jcop_5.2",
         "version": "-",
         "resolution": "explicit_vendor"
       }
@@ -467,7 +496,7 @@
           ],
           "companions": [
             {
-              "vendor": null,
+              "vendor": "DERMALOG",
               "product": "DermalogBPZF1Plugin",
               "part": "a",
               "versions": [
@@ -475,7 +504,7 @@
               ]
             },
             {
-              "vendor": null,
+              "vendor": "DERMALOG",
               "product": "DermalogFakeFingerDetectionZF1Plugin",
               "part": "a",
               "versions": [
@@ -483,7 +512,7 @@
               ]
             },
             {
-              "vendor": null,
+              "vendor": "DERMALOG",
               "product": "DermalogAuditLogger",
               "part": "a",
               "versions": [
@@ -520,7 +549,7 @@
         "vendor": "dermalog",
         "product": "dermalogbpzf1plugin",
         "version": "1.2.5.1817",
-        "resolution": "clause_inheritance"
+        "resolution": "explicit_vendor"
       },
       {
         "cpe": "cpe:2.3:a:dermalog:dermalogfakefingerdetectionzf1plugin:1.3.1.1817:*:*:*:*:*:*:*",
@@ -529,7 +558,7 @@
         "vendor": "dermalog",
         "product": "dermalogfakefingerdetectionzf1plugin",
         "version": "1.3.1.1817",
-        "resolution": "clause_inheritance"
+        "resolution": "explicit_vendor"
       },
       {
         "cpe": "cpe:2.3:a:dermalog:dermalogauditlogger:1.0.1.1803:*:*:*:*:*:*:*",
@@ -538,7 +567,7 @@
         "vendor": "dermalog",
         "product": "dermalogauditlogger",
         "version": "1.0.1.1803",
-        "resolution": "clause_inheritance"
+        "resolution": "explicit_vendor"
       }
     ]
   },
@@ -581,7 +610,7 @@
           "targets": [
             {
               "vendor": "EMC",
-              "product": "ViPR",
+              "product": "ViPR Controller",
               "part": "a",
               "version": "2.1.0.3"
             }
@@ -592,76 +621,43 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:a:emc:vipr:2.1.0.3:*:*:*:*:*:*:*",
-        "short": "a:emc:vipr:2.1.0.3",
+        "cpe": "cpe:2.3:a:emc:vipr_controller:2.1.0.3:*:*:*:*:*:*:*",
+        "short": "a:emc:vipr_controller:2.1.0.3",
         "part": "a",
         "vendor": "emc",
-        "product": "vipr",
+        "product": "vipr_controller",
         "version": "2.1.0.3",
-        "resolution": "explicit_vendor"
+        "resolution": "cpe_exact+explicit"
       }
     ]
   },
   {
     "index": 61,
-    "input": "Cisco Catalyst 2960CX and 3560CX Series Compact Switches running IOS 15.2(3)E1",
+    "input": "SDoT Security Gateway, Version 6.2i",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Cisco",
-              "product": "Catalyst 2960CX",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Cisco",
-              "product": "Catalyst 3560CX",
-              "part": "h",
-              "version": "-"
+              "vendor": null,
+              "product": "SDoT Security Gateway",
+              "part": "a",
+              "version": "6.2i"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "IOS",
-              "part": "o",
-              "versions": [
-                "15.2(3)E1"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:cisco:catalyst_2960cx:-:*:*:*:*:*:*:*",
-        "short": "h:cisco:catalyst_2960cx:-",
-        "part": "h",
-        "vendor": "cisco",
-        "product": "catalyst_2960cx",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:cisco:catalyst_3560cx:-:*:*:*:*:*:*:*",
-        "short": "h:cisco:catalyst_3560cx:-",
-        "part": "h",
-        "vendor": "cisco",
-        "product": "catalyst_3560cx",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:o:cisco:ios:15.2(3)e1:*:*:*:*:*:*:*",
-        "short": "o:cisco:ios:15.2(3)e1",
-        "part": "o",
-        "vendor": "cisco",
-        "product": "ios",
-        "version": "15.2(3)e1",
-        "resolution": "cpe_exact+explicit"
+        "cpe": "cpe:2.3:a:unknown:sdot_security_gateway:6.2i:*:*:*:*:*:*:*",
+        "short": "a:unknown:sdot_security_gateway:6.2i",
+        "part": "a",
+        "vendor": "unknown",
+        "product": "sdot_security_gateway",
+        "version": "6.2i",
+        "resolution": "unresolved"
       }
     ]
   },
@@ -817,14 +813,14 @@
   },
   {
     "index": 67,
-    "input": "ST33J2M0 including optional cryptographic library NESLIB (F02) (ANSSI-CC-2024/06-R01)",
+    "input": "T6ND1 Integrated Circuit with Crypto Library v6.0",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "ST",
-              "product": "33J2M0",
+              "vendor": null,
+              "product": "T6ND1",
               "part": "h",
               "version": "-"
             }
@@ -832,18 +828,10 @@
           "companions": [
             {
               "vendor": null,
-              "product": "NESLIB",
+              "product": "Crypto Library",
               "part": "a",
               "versions": [
-                "F02"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "(ANSSI-CC-2024/06-R01)",
-              "part": "o",
-              "versions": [
-                "-"
+                "6.0"
               ]
             }
           ]
@@ -852,31 +840,22 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:stmicroelectronics:st33j2m0:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:st33j2m0:-",
+        "cpe": "cpe:2.3:h:unknown:t6nd1:-:*:*:*:*:*:*:*",
+        "short": "h:unknown:t6nd1:-",
         "part": "h",
-        "vendor": "stmicroelectronics",
-        "product": "st33j2m0",
+        "vendor": "unknown",
+        "product": "t6nd1",
         "version": "-",
-        "resolution": "explicit_vendor"
+        "resolution": "unresolved"
       },
       {
-        "cpe": "cpe:2.3:a:stmicroelectronics:neslib:f02:*:*:*:*:*:*:*",
-        "short": "a:stmicroelectronics:neslib:f02",
+        "cpe": "cpe:2.3:a:unknown:crypto_library:6.0:*:*:*:*:*:*:*",
+        "short": "a:unknown:crypto_library:6.0",
         "part": "a",
-        "vendor": "stmicroelectronics",
-        "product": "neslib",
-        "version": "f02",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:o:stmicroelectronics:anssi-cc-2024_06-r01:-:*:*:*:*:*:*:*",
-        "short": "o:stmicroelectronics:anssi-cc-2024_06-r01:-",
-        "part": "o",
-        "vendor": "stmicroelectronics",
-        "product": "anssi-cc-2024_06-r01",
-        "version": "-",
-        "resolution": "clause_inheritance"
+        "vendor": "unknown",
+        "product": "crypto_library",
+        "version": "6.0",
+        "resolution": "unresolved"
       }
     ]
   },
@@ -978,13 +957,13 @@
             },
             {
               "vendor": "Samsung",
-              "product": "Multifunction MultiXPress K4250",
+              "product": "Multifunction MultiXpress K4250",
               "part": "h",
               "version": "-"
             },
             {
               "vendor": "Samsung",
-              "product": "Multifunction MultiXPress K4300",
+              "product": "Multifunction MultiXpress K4300",
               "part": "h",
               "version": "-"
             },
@@ -1112,128 +1091,31 @@
   },
   {
     "index": 71,
-    "input": "Infineon Smart Card IC (Security Controller) SLE66CX162PE / m1531-a25 and SLE66CX80PE / m1533-a25 all with optional libraries RSA V1.6, EC, V1.1, SHA-2 V1.0 and both with specific IC dedicated software",
+    "input": "SLS 32TLC00xS(M) CIPURSE™4move v1.0.2",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Infineon",
-              "product": "Smart Card IC (Security Controller) SLE66CX162PE",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Infineon",
-              "product": "Smart Card IC (Security Controller) m1531-a25",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Infineon",
-              "product": "Smart Card IC (Security Controller) SLE66CX80PE",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Infineon",
-              "product": "Smart Card IC (Security Controller) m1533-a25",
-              "part": "h",
-              "version": "-"
+              "vendor": null,
+              "product": "SLS 32TLC00xS(M) CIPURSE\\u00b74move",
+              "part": "a",
+              "version": "1.0.2"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "RSA libraries",
-              "part": "a",
-              "versions": [
-                "RSA V1.6"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "EC libraries",
-              "part": "a",
-              "versions": [
-                "EC, V1.1"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "SHA-2 libraries",
-              "part": "a",
-              "versions": [
-                "SHA-2 V1.0"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:infineon:smart_card_ic_security_controller_sle66cx162pe:-:*:*:*:*:*:*:*",
-        "short": "h:infineon:smart_card_ic_security_controller_sle66cx162pe:-",
-        "part": "h",
-        "vendor": "infineon",
-        "product": "smart_card_ic_security_controller_sle66cx162pe",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:infineon:smart_card_ic_security_controller_m1531-a25:-:*:*:*:*:*:*:*",
-        "short": "h:infineon:smart_card_ic_security_controller_m1531-a25:-",
-        "part": "h",
-        "vendor": "infineon",
-        "product": "smart_card_ic_security_controller_m1531-a25",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:infineon:smart_card_ic_security_controller_sle66cx80pe:-:*:*:*:*:*:*:*",
-        "short": "h:infineon:smart_card_ic_security_controller_sle66cx80pe:-",
-        "part": "h",
-        "vendor": "infineon",
-        "product": "smart_card_ic_security_controller_sle66cx80pe",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:infineon:smart_card_ic_security_controller_m1533-a25:-:*:*:*:*:*:*:*",
-        "short": "h:infineon:smart_card_ic_security_controller_m1533-a25:-",
-        "part": "h",
-        "vendor": "infineon",
-        "product": "smart_card_ic_security_controller_m1533-a25",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:a:emc:rsa_libraries:rsa_v1.6:*:*:*:*:*:*:*",
-        "short": "a:emc:rsa_libraries:rsa_v1.6",
+        "cpe": "cpe:2.3:a:unknown:sls_32tlc00xsm_cipurseu00b74move:1.0.2:*:*:*:*:*:*:*",
+        "short": "a:unknown:sls_32tlc00xsm_cipurseu00b74move:1.0.2",
         "part": "a",
-        "vendor": "emc",
-        "product": "rsa_libraries",
-        "version": "rsa_v1.6",
-        "resolution": "cpe_prefix(rsa)"
-      },
-      {
-        "cpe": "cpe:2.3:a:infineon:ec_libraries:ec,_v1.1:*:*:*:*:*:*:*",
-        "short": "a:infineon:ec_libraries:ec,_v1.1",
-        "part": "a",
-        "vendor": "infineon",
-        "product": "ec_libraries",
-        "version": "ec,_v1.1",
-        "resolution": "clause_inheritance"
-      },
-      {
-        "cpe": "cpe:2.3:a:infineon:sha-2_libraries:sha-2_v1.0:*:*:*:*:*:*:*",
-        "short": "a:infineon:sha-2_libraries:sha-2_v1.0",
-        "part": "a",
-        "vendor": "infineon",
-        "product": "sha-2_libraries",
-        "version": "sha-2_v1.0",
-        "resolution": "clause_inheritance"
+        "vendor": "unknown",
+        "product": "sls_32tlc00xsm_cipurseu00b74move",
+        "version": "1.0.2",
+        "resolution": "unresolved"
       }
     ]
   },
@@ -1246,7 +1128,7 @@
           "targets": [
             {
               "vendor": "Apple",
-              "product": "Vision Pro with M2",
+              "product": "Vision Pro",
               "part": "h",
               "version": "-"
             }
@@ -1261,29 +1143,16 @@
               ]
             }
           ]
-        },
-        {
-          "targets": [],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "(ANSSI-CC-2026/05)",
-              "part": "a",
-              "versions": [
-                "-"
-              ]
-            }
-          ]
         }
       ]
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:apple:vision_pro_with_m2:-:*:*:*:*:*:*:*",
-        "short": "h:apple:vision_pro_with_m2:-",
+        "cpe": "cpe:2.3:h:apple:vision_pro:-:*:*:*:*:*:*:*",
+        "short": "h:apple:vision_pro:-",
         "part": "h",
         "vendor": "apple",
-        "product": "vision_pro_with_m2",
+        "product": "vision_pro",
         "version": "-",
         "resolution": "explicit_vendor"
       },
@@ -1295,15 +1164,6 @@
         "product": "visionos",
         "version": "2.4_(build_22o238)",
         "resolution": "cpe_exact+clause_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:a:unknown:anssi-cc-2026_05:-:*:*:*:*:*:*:*",
-        "short": "a:unknown:anssi-cc-2026_05:-",
-        "part": "a",
-        "vendor": "unknown",
-        "product": "anssi-cc-2026_05",
-        "version": "-",
-        "resolution": "unresolved"
       }
     ]
   },
@@ -1365,13 +1225,13 @@
         {
           "targets": [
             {
-              "vendor": null,
+              "vendor": "Versa Networks",
               "product": "Versa Director",
               "part": "h",
               "version": "-"
             },
             {
-              "vendor": null,
+              "vendor": "Versa Networks",
               "product": "Versa Analytics",
               "part": "h",
               "version": "-"
@@ -1455,22 +1315,22 @@
         "resolution": "cpe_prefix(versa)"
       },
       {
-        "cpe": "cpe:2.3:h:versa-networks:versa_director:-:*:*:*:*:*:*:*",
-        "short": "h:versa-networks:versa_director:-",
+        "cpe": "cpe:2.3:h:versa_networks:versa_director:-:*:*:*:*:*:*:*",
+        "short": "h:versa_networks:versa_director:-",
         "part": "h",
-        "vendor": "versa-networks",
+        "vendor": "versa_networks",
         "product": "versa_director",
         "version": "-",
-        "resolution": "cpe_exact"
+        "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:h:versa-networks:versa_analytics:-:*:*:*:*:*:*:*",
-        "short": "h:versa-networks:versa_analytics:-",
+        "cpe": "cpe:2.3:h:versa_networks:versa_analytics:-:*:*:*:*:*:*:*",
+        "short": "h:versa_networks:versa_analytics:-",
         "part": "h",
-        "vendor": "versa-networks",
+        "vendor": "versa_networks",
         "product": "versa_analytics",
         "version": "-",
-        "resolution": "cpe_exact+clause_vendor"
+        "resolution": "explicit_vendor"
       }
     ]
   },
@@ -1536,16 +1396,16 @@
   },
   {
     "index": 76,
-    "input": "Microsoft SQL Server 2022 Database Engine Enterprise Edition x64 (English) version 16.0.4105.2",
+    "input": "EMC Isilon® OneFS® v6.5.4",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Microsoft",
-              "product": "SQL Server 2022 Database Engine Enterprise Edition x64 (English) version 16.0.4105.2",
-              "part": "a",
-              "version": "-"
+              "vendor": "EMC",
+              "product": "Isilon\\OneFS",
+              "part": "o",
+              "version": "6.5.4"
             }
           ],
           "companions": []
@@ -1554,12 +1414,12 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:a:microsoft:sql_server_2022_database_engine_enterprise_edition_x64_english:16.0.4105.2:*:*:*:*:*:*:*",
-        "short": "a:microsoft:sql_server_2022_database_engine_enterprise_edition_x64_english:16.0.4105.2",
-        "part": "a",
-        "vendor": "microsoft",
-        "product": "sql_server_2022_database_engine_enterprise_edition_x64_english",
-        "version": "16.0.4105.2",
+        "cpe": "cpe:2.3:o:emc:isilononefs:6.5.4:*:*:*:*:*:*:*",
+        "short": "o:emc:isilononefs:6.5.4",
+        "part": "o",
+        "vendor": "emc",
+        "product": "isilononefs",
+        "version": "6.5.4",
         "resolution": "explicit_vendor"
       }
     ]
@@ -1572,7 +1432,7 @@
         {
           "targets": [
             {
-              "vendor": "ST",
+              "vendor": null,
               "product": "ST33TPM12LPC",
               "part": "h",
               "version": "-"
@@ -1626,56 +1486,14 @@
   },
   {
     "index": 79,
-    "input": "STMicroelectronics Secured microcontroller ST33F1ME, ST33F768E, SC33F768E, ST33F640E, SC33F640E, ST33F512E, SC33F512E et SC33F384E all with optional cryptographic library NESLIB 3.0",
+    "input": "NXP Secure Smart Card Controller N7122 with IC Dedicated Software and Crypto Library (R1/R2/R3)",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "STMicroelectronics",
-              "product": "ST33F1ME",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "STMicroelectronics",
-              "product": "ST33F768E",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "STMicroelectronics",
-              "product": "SC33F768E",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "STMicroelectronics",
-              "product": "ST33F640E",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "STMicroelectronics",
-              "product": "SC33F640E",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "STMicroelectronics",
-              "product": "ST33F512E",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "STMicroelectronics",
-              "product": "SC33F512E",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "STMicroelectronics",
-              "product": "SC33F384E",
+              "vendor": "NXP",
+              "product": "N7122",
               "part": "h",
               "version": "-"
             }
@@ -1683,10 +1501,12 @@
           "companions": [
             {
               "vendor": null,
-              "product": "NESLIB",
+              "product": "IC Dedicated Software and Crypto Library",
               "part": "a",
               "versions": [
-                "3.0"
+                "R1",
+                "R2",
+                "R3"
               ]
             }
           ]
@@ -1695,85 +1515,40 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:stmicroelectronics:st33f1me:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:st33f1me:-",
+        "cpe": "cpe:2.3:h:nxp:n7122:-:*:*:*:*:*:*:*",
+        "short": "h:nxp:n7122:-",
         "part": "h",
-        "vendor": "stmicroelectronics",
-        "product": "st33f1me",
+        "vendor": "nxp",
+        "product": "n7122",
         "version": "-",
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:h:stmicroelectronics:st33f768e:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:st33f768e:-",
-        "part": "h",
-        "vendor": "stmicroelectronics",
-        "product": "st33f768e",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:stmicroelectronics:sc33f768e:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:sc33f768e:-",
-        "part": "h",
-        "vendor": "stmicroelectronics",
-        "product": "sc33f768e",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:stmicroelectronics:st33f640e:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:st33f640e:-",
-        "part": "h",
-        "vendor": "stmicroelectronics",
-        "product": "st33f640e",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:stmicroelectronics:sc33f640e:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:sc33f640e:-",
-        "part": "h",
-        "vendor": "stmicroelectronics",
-        "product": "sc33f640e",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:stmicroelectronics:st33f512e:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:st33f512e:-",
-        "part": "h",
-        "vendor": "stmicroelectronics",
-        "product": "st33f512e",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:stmicroelectronics:sc33f512e:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:sc33f512e:-",
-        "part": "h",
-        "vendor": "stmicroelectronics",
-        "product": "sc33f512e",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:stmicroelectronics:sc33f384e:-:*:*:*:*:*:*:*",
-        "short": "h:stmicroelectronics:sc33f384e:-",
-        "part": "h",
-        "vendor": "stmicroelectronics",
-        "product": "sc33f384e",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:a:stmicroelectronics:neslib:3.0:*:*:*:*:*:*:*",
-        "short": "a:stmicroelectronics:neslib:3.0",
+        "cpe": "cpe:2.3:a:nxp:ic_dedicated_software_and_crypto_library:r1:*:*:*:*:*:*:*",
+        "short": "a:nxp:ic_dedicated_software_and_crypto_library:r1",
         "part": "a",
-        "vendor": "stmicroelectronics",
-        "product": "neslib",
-        "version": "3.0",
-        "resolution": "explicit_vendor"
+        "vendor": "nxp",
+        "product": "ic_dedicated_software_and_crypto_library",
+        "version": "r1",
+        "resolution": "clause_inheritance"
+      },
+      {
+        "cpe": "cpe:2.3:a:nxp:ic_dedicated_software_and_crypto_library:r2:*:*:*:*:*:*:*",
+        "short": "a:nxp:ic_dedicated_software_and_crypto_library:r2",
+        "part": "a",
+        "vendor": "nxp",
+        "product": "ic_dedicated_software_and_crypto_library",
+        "version": "r2",
+        "resolution": "clause_inheritance"
+      },
+      {
+        "cpe": "cpe:2.3:a:nxp:ic_dedicated_software_and_crypto_library:r3:*:*:*:*:*:*:*",
+        "short": "a:nxp:ic_dedicated_software_and_crypto_library:r3",
+        "part": "a",
+        "vendor": "nxp",
+        "product": "ic_dedicated_software_and_crypto_library",
+        "version": "r3",
+        "resolution": "clause_inheritance"
       }
     ]
   },
@@ -1897,66 +1672,31 @@
   },
   {
     "index": 83,
-    "input": "IBM WebSpherePortal 6.0.0.0 (with APAR PK67104 and APAR PK79436)",
+    "input": "Symfoware Server Enterprise Extended Edition 8.0.1(with patch T000132QP-01 and T000133QP-01)",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "IBM",
-              "product": "WebSpherePortal",
+              "vendor": "Symfoware",
+              "product": "Server Enterprise Extended Edition",
               "part": "a",
-              "version": "6.0.0.0"
+              "version": "8.0.1"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "(APAR PK67104)",
-              "part": "a",
-              "versions": [
-                "-"
-              ]
-            },
-            {
-              "vendor": null,
-              "product": "(APAR PK79436)",
-              "part": "a",
-              "versions": [
-                "-"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:a:ibm:websphereportal:6.0.0.0:*:*:*:*:*:*:*",
-        "short": "a:ibm:websphereportal:6.0.0.0",
+        "cpe": "cpe:2.3:a:symfoware:server_enterprise_extended_edition:8.0.1:*:*:*:*:*:*:*",
+        "short": "a:symfoware:server_enterprise_extended_edition:8.0.1",
         "part": "a",
-        "vendor": "ibm",
-        "product": "websphereportal",
-        "version": "6.0.0.0",
+        "vendor": "symfoware",
+        "product": "server_enterprise_extended_edition",
+        "version": "8.0.1",
         "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:a:ibm:apar_pk67104:-:*:*:*:*:*:*:*",
-        "short": "a:ibm:apar_pk67104:-",
-        "part": "a",
-        "vendor": "ibm",
-        "product": "apar_pk67104",
-        "version": "-",
-        "resolution": "clause_inheritance"
-      },
-      {
-        "cpe": "cpe:2.3:a:ibm:apar_pk79436:-:*:*:*:*:*:*:*",
-        "short": "a:ibm:apar_pk79436:-",
-        "part": "a",
-        "vendor": "ibm",
-        "product": "apar_pk79436",
-        "version": "-",
-        "resolution": "clause_inheritance"
       }
     ]
   },
@@ -1992,48 +1732,30 @@
   },
   {
     "index": 85,
-    "input": "Junos OS 20.3R1 for ACX5448-M",
+    "input": "AhnLab TrusGuard V2.2",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": null,
-              "product": "ACX5448-M",
-              "part": "h",
-              "version": "-"
+              "vendor": "AhnLab",
+              "product": "TrusGuard",
+              "part": "a",
+              "version": "2.2"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "Junos OS",
-              "part": "o",
-              "versions": [
-                "20.3R1"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:juniper:acx5448-m:-:*:*:*:*:*:*:*",
-        "short": "h:juniper:acx5448-m:-",
-        "part": "h",
-        "vendor": "juniper",
-        "product": "acx5448-m",
-        "version": "-",
-        "resolution": "cpe_exact"
-      },
-      {
-        "cpe": "cpe:2.3:o:juniper:junos_os:20.3r1:*:*:*:*:*:*:*",
-        "short": "o:juniper:junos_os:20.3r1",
-        "part": "o",
-        "vendor": "juniper",
-        "product": "junos_os",
-        "version": "20.3r1",
+        "cpe": "cpe:2.3:a:ahnlab:trusguard:2.2:*:*:*:*:*:*:*",
+        "short": "a:ahnlab:trusguard:2.2",
+        "part": "a",
+        "vendor": "ahnlab",
+        "product": "trusguard",
+        "version": "2.2",
         "resolution": "explicit_vendor"
       }
     ]
@@ -2070,61 +1792,25 @@
   },
   {
     "index": 87,
-    "input": "HP Color LaserJet Enterprise M856, HP LaserJet Enterprise M610/M611/M612, HP LaserJet Enterprise M507, HP Color LaserJet Enterprise M751 and HP Color LaserJet Managed E75245 printers with HP FutureSmart 5.7.1.1 Firmware",
+    "input": "Océ Smart Imager 8.3.3.39 as used in the Océ VP 2090 R3.3",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "HP",
-              "product": "Color LaserJet Enterprise M856",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "HP",
-              "product": "LaserJet Enterprise M610",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "HP",
-              "product": "LaserJet Enterprise M611",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "HP",
-              "product": "LaserJet Enterprise M612",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "HP",
-              "product": "LaserJet Enterprise M507",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "HP",
-              "product": "Color LaserJet Enterprise M751",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "HP",
-              "product": "Color LaserJet Managed E75245",
+              "vendor": "Océ",
+              "product": "VP 2090",
               "part": "h",
               "version": "-"
             }
           ],
           "companions": [
             {
-              "vendor": "HP",
-              "product": "FutureSmart Firmware",
-              "part": "o",
+              "vendor": "Océ",
+              "product": "Smart Imager",
+              "part": "a",
               "versions": [
-                "5.7.1.1"
+                "8.3.3.39"
               ]
             }
           ]
@@ -2133,89 +1819,57 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:hp:color_laserjet_enterprise_m856:-:*:*:*:*:*:*:*",
-        "short": "h:hp:color_laserjet_enterprise_m856:-",
+        "cpe": "cpe:2.3:h:oc:vp_2090:-:*:*:*:*:*:*:*",
+        "short": "h:oc:vp_2090:-",
         "part": "h",
-        "vendor": "hp",
-        "product": "color_laserjet_enterprise_m856",
+        "vendor": "oc",
+        "product": "vp_2090",
         "version": "-",
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:h:hp:laserjet_enterprise_m610:-:*:*:*:*:*:*:*",
-        "short": "h:hp:laserjet_enterprise_m610:-",
-        "part": "h",
-        "vendor": "hp",
-        "product": "laserjet_enterprise_m610",
-        "version": "-",
+        "cpe": "cpe:2.3:a:oc:smart_imager:8.3.3.39:*:*:*:*:*:*:*",
+        "short": "a:oc:smart_imager:8.3.3.39",
+        "part": "a",
+        "vendor": "oc",
+        "product": "smart_imager",
+        "version": "8.3.3.39",
         "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:hp:laserjet_enterprise_m611:-:*:*:*:*:*:*:*",
-        "short": "h:hp:laserjet_enterprise_m611:-",
-        "part": "h",
-        "vendor": "hp",
-        "product": "laserjet_enterprise_m611",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:hp:laserjet_enterprise_m612:-:*:*:*:*:*:*:*",
-        "short": "h:hp:laserjet_enterprise_m612:-",
-        "part": "h",
-        "vendor": "hp",
-        "product": "laserjet_enterprise_m612",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:hp:laserjet_enterprise_m507:-:*:*:*:*:*:*:*",
-        "short": "h:hp:laserjet_enterprise_m507:-",
-        "part": "h",
-        "vendor": "hp",
-        "product": "laserjet_enterprise_m507",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:hp:color_laserjet_enterprise_m751:-:*:*:*:*:*:*:*",
-        "short": "h:hp:color_laserjet_enterprise_m751:-",
-        "part": "h",
-        "vendor": "hp",
-        "product": "color_laserjet_enterprise_m751",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:hp:color_laserjet_managed_e75245:-:*:*:*:*:*:*:*",
-        "short": "h:hp:color_laserjet_managed_e75245:-",
-        "part": "h",
-        "vendor": "hp",
-        "product": "color_laserjet_managed_e75245",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:o:hp:futuresmart_firmware:5.7.1.1:*:*:*:*:*:*:*",
-        "short": "o:hp:futuresmart_firmware:5.7.1.1",
-        "part": "o",
-        "vendor": "hp",
-        "product": "futuresmart_firmware",
-        "version": "5.7.1.1",
-        "resolution": "cpe_exact+explicit"
       }
     ]
   },
   {
     "index": 88,
-    "input": "Hewlett-Packard Networking A-Series Switches: 12500, 9500, 7500, 5820, 5800, 5500, and 5120",
+    "input": "xPortalNet HS Server version 2.0.0.2, xPortalNet HS Client version 2.0.0.2 and Xp-GLS5100 Controllers",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Hewlett-Packard",
-              "product": "Networking A-Series Switches",
+              "vendor": null,
+              "product": "xPortalNet HS Server",
+              "part": "a",
+              "version": "2.0.0.2"
+            }
+          ],
+          "companions": []
+        },
+        {
+          "targets": [
+            {
+              "vendor": null,
+              "product": "xPortalNet HS Client",
+              "part": "a",
+              "version": "2.0.0.2"
+            }
+          ],
+          "companions": []
+        },
+        {
+          "targets": [
+            {
+              "vendor": null,
+              "product": "Xp-GLS5100",
               "part": "h",
               "version": "-"
             }
@@ -2226,13 +1880,31 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:hewlett-packard:networking_a-series_switches:-:*:*:*:*:*:*:*",
-        "short": "h:hewlett-packard:networking_a-series_switches:-",
+        "cpe": "cpe:2.3:a:unknown:xportalnet_hs_server:2.0.0.2:*:*:*:*:*:*:*",
+        "short": "a:unknown:xportalnet_hs_server:2.0.0.2",
+        "part": "a",
+        "vendor": "unknown",
+        "product": "xportalnet_hs_server",
+        "version": "2.0.0.2",
+        "resolution": "unresolved"
+      },
+      {
+        "cpe": "cpe:2.3:a:unknown:xportalnet_hs_client:2.0.0.2:*:*:*:*:*:*:*",
+        "short": "a:unknown:xportalnet_hs_client:2.0.0.2",
+        "part": "a",
+        "vendor": "unknown",
+        "product": "xportalnet_hs_client",
+        "version": "2.0.0.2",
+        "resolution": "unresolved"
+      },
+      {
+        "cpe": "cpe:2.3:h:unknown:xp-gls5100:-:*:*:*:*:*:*:*",
+        "short": "h:unknown:xp-gls5100:-",
         "part": "h",
-        "vendor": "hewlett-packard",
-        "product": "networking_a-series_switches",
+        "vendor": "unknown",
+        "product": "xp-gls5100",
         "version": "-",
-        "resolution": "explicit_vendor"
+        "resolution": "unresolved"
       }
     ]
   },
@@ -2298,20 +1970,14 @@
   },
   {
     "index": 91,
-    "input": "Infineon smartcard IC (Security Controller) M7791 B12 and G11 with specific IC-dedicated firmware",
+    "input": "NXP Secure Smart Card Controller N7021 VA including IC Dedicated Software",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Infineon",
-              "product": "M7791 B12",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Infineon",
-              "product": "M7791 G11",
+              "vendor": "NXP",
+              "product": "Secure Smart Card Controller N7021 VA",
               "part": "h",
               "version": "-"
             }
@@ -2319,8 +1985,8 @@
           "companions": [
             {
               "vendor": null,
-              "product": "IC-dedicated firmware",
-              "part": "o",
+              "product": "IC Dedicated Software",
+              "part": "a",
               "versions": [
                 "-"
               ]
@@ -2331,31 +1997,13 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:infineon:m7791_b12:-:*:*:*:*:*:*:*",
-        "short": "h:infineon:m7791_b12:-",
+        "cpe": "cpe:2.3:h:nxp:secure_smart_card_controller_n7021_va:-:*:*:*:*:*:*:*",
+        "short": "h:nxp:secure_smart_card_controller_n7021_va:-",
         "part": "h",
-        "vendor": "infineon",
-        "product": "m7791_b12",
+        "vendor": "nxp",
+        "product": "secure_smart_card_controller_n7021_va",
         "version": "-",
         "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:h:infineon:m7791_g11:-:*:*:*:*:*:*:*",
-        "short": "h:infineon:m7791_g11:-",
-        "part": "h",
-        "vendor": "infineon",
-        "product": "m7791_g11",
-        "version": "-",
-        "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:o:infineon:ic-dedicated_firmware:-:*:*:*:*:*:*:*",
-        "short": "o:infineon:ic-dedicated_firmware:-",
-        "part": "o",
-        "vendor": "infineon",
-        "product": "ic-dedicated_firmware",
-        "version": "-",
-        "resolution": "clause_inheritance"
       }
     ]
   },
@@ -2421,60 +2069,16 @@
   },
   {
     "index": 94,
-    "input": "Cisco ASA 5505, 5510, 5520, 5540, and 5550 (Release 7.2(4)), Cisco VPN Client Release 5.0.03.0560",
+    "input": "McAfee Firewall Enterprise v7.0.1.02HW02",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Cisco",
-              "product": "ASA 5505",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Cisco",
-              "product": "ASA 5510",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Cisco",
-              "product": "ASA 5520",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Cisco",
-              "product": "ASA 5540",
-              "part": "h",
-              "version": "-"
-            },
-            {
-              "vendor": "Cisco",
-              "product": "ASA 5550",
-              "part": "h",
-              "version": "-"
-            }
-          ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "Firmware",
-              "part": "o",
-              "versions": [
-                "7.2(4)"
-              ]
-            }
-          ]
-        },
-        {
-          "targets": [
-            {
-              "vendor": "Cisco",
-              "product": "VPN Client",
+              "vendor": "McAfee",
+              "product": "Firewall Enterprise",
               "part": "a",
-              "version": "5.0.03.0560"
+              "version": "7.0.1.02"
             }
           ],
           "companions": []
@@ -2483,67 +2087,13 @@
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:cisco:asa_5505:-:*:*:*:*:*:*:*",
-        "short": "h:cisco:asa_5505:-",
-        "part": "h",
-        "vendor": "cisco",
-        "product": "asa_5505",
-        "version": "-",
-        "resolution": "cpe_exact+explicit"
-      },
-      {
-        "cpe": "cpe:2.3:h:cisco:asa_5510:-:*:*:*:*:*:*:*",
-        "short": "h:cisco:asa_5510:-",
-        "part": "h",
-        "vendor": "cisco",
-        "product": "asa_5510",
-        "version": "-",
-        "resolution": "cpe_exact+explicit"
-      },
-      {
-        "cpe": "cpe:2.3:h:cisco:asa_5520:-:*:*:*:*:*:*:*",
-        "short": "h:cisco:asa_5520:-",
-        "part": "h",
-        "vendor": "cisco",
-        "product": "asa_5520",
-        "version": "-",
-        "resolution": "cpe_exact+explicit"
-      },
-      {
-        "cpe": "cpe:2.3:h:cisco:asa_5540:-:*:*:*:*:*:*:*",
-        "short": "h:cisco:asa_5540:-",
-        "part": "h",
-        "vendor": "cisco",
-        "product": "asa_5540",
-        "version": "-",
-        "resolution": "cpe_exact+explicit"
-      },
-      {
-        "cpe": "cpe:2.3:h:cisco:asa_5550:-:*:*:*:*:*:*:*",
-        "short": "h:cisco:asa_5550:-",
-        "part": "h",
-        "vendor": "cisco",
-        "product": "asa_5550",
-        "version": "-",
-        "resolution": "cpe_exact+explicit"
-      },
-      {
-        "cpe": "cpe:2.3:o:cisco:firmware:7.2(4):*:*:*:*:*:*:*",
-        "short": "o:cisco:firmware:7.2(4)",
-        "part": "o",
-        "vendor": "cisco",
-        "product": "firmware",
-        "version": "7.2(4)",
-        "resolution": "clause_inheritance"
-      },
-      {
-        "cpe": "cpe:2.3:a:cisco:vpn_client:5.0.03.0560:*:*:*:*:*:*:*",
-        "short": "a:cisco:vpn_client:5.0.03.0560",
+        "cpe": "cpe:2.3:a:mcafee:firewall_enterprise:7.0.1.02:*:*:*:*:*:*:*",
+        "short": "a:mcafee:firewall_enterprise:7.0.1.02",
         "part": "a",
-        "vendor": "cisco",
-        "product": "vpn_client",
-        "version": "5.0.03.0560",
-        "resolution": "cpe_exact+explicit"
+        "vendor": "mcafee",
+        "product": "firewall_enterprise",
+        "version": "7.0.1.02",
+        "resolution": "explicit_vendor"
       }
     ]
   },
@@ -2647,8 +2197,8 @@
           ],
           "companions": [
             {
-              "vendor": null,
-              "product": "Yunshan Software",
+              "vendor": "Yunshan",
+              "product": "Software",
               "part": "o",
               "versions": [
                 "600R021C10SPC100"
@@ -2678,13 +2228,13 @@
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:o:huawei:yunshan_software:600r021c10spc100:*:*:*:*:*:*:*",
-        "short": "o:huawei:yunshan_software:600r021c10spc100",
+        "cpe": "cpe:2.3:o:yunshan:software:600r021c10spc100:*:*:*:*:*:*:*",
+        "short": "o:yunshan:software:600r021c10spc100",
         "part": "o",
-        "vendor": "huawei",
-        "product": "yunshan_software",
+        "vendor": "yunshan",
+        "product": "software",
         "version": "600r021c10spc100",
-        "resolution": "clause_inheritance"
+        "resolution": "explicit_vendor"
       }
     ]
   },
@@ -2807,14 +2357,6 @@
           "companions": [
             {
               "vendor": null,
-              "product": "Facsimile Function",
-              "part": "a",
-              "versions": [
-                "-"
-              ]
-            },
-            {
-              "vendor": null,
               "product": "Software: System/Copy",
               "part": "o",
               "versions": [
@@ -2823,7 +2365,7 @@
             },
             {
               "vendor": null,
-              "product": "Network Support",
+              "product": "Software: Network Support",
               "part": "o",
               "versions": [
                 "10.63"
@@ -2831,7 +2373,7 @@
             },
             {
               "vendor": null,
-              "product": "Fax",
+              "product": "Software: Fax",
               "part": "o",
               "versions": [
                 "02.00.00"
@@ -2839,7 +2381,7 @@
             },
             {
               "vendor": null,
-              "product": "RemoteFax",
+              "product": "Software: RemoteFax",
               "part": "o",
               "versions": [
                 "01.00.00"
@@ -2847,7 +2389,7 @@
             },
             {
               "vendor": null,
-              "product": "NetworkDocBox",
+              "product": "Software: NetworkDocBox",
               "part": "o",
               "versions": [
                 "1.04"
@@ -2855,7 +2397,7 @@
             },
             {
               "vendor": null,
-              "product": "Web Support",
+              "product": "Software: Web Support",
               "part": "o",
               "versions": [
                 "1.02"
@@ -2863,7 +2405,7 @@
             },
             {
               "vendor": null,
-              "product": "Web Uapl",
+              "product": "Software: Web Uapl",
               "part": "o",
               "versions": [
                 "1.02"
@@ -2871,7 +2413,7 @@
             },
             {
               "vendor": null,
-              "product": "animation",
+              "product": "Software: animation",
               "part": "o",
               "versions": [
                 "1.01"
@@ -2879,7 +2421,7 @@
             },
             {
               "vendor": null,
-              "product": "Scanner",
+              "product": "Software: Scanner",
               "part": "o",
               "versions": [
                 "01.03"
@@ -2887,7 +2429,7 @@
             },
             {
               "vendor": null,
-              "product": "Printer",
+              "product": "Software: Printer",
               "part": "o",
               "versions": [
                 "1.02.1"
@@ -2895,7 +2437,7 @@
             },
             {
               "vendor": null,
-              "product": "PCL",
+              "product": "Software: PCL",
               "part": "o",
               "versions": [
                 "1.02"
@@ -2903,7 +2445,7 @@
             },
             {
               "vendor": null,
-              "product": "PCL Font",
+              "product": "Software: PCL Font",
               "part": "o",
               "versions": [
                 "1.05"
@@ -2911,7 +2453,7 @@
             },
             {
               "vendor": null,
-              "product": "Data Erase Std",
+              "product": "Software: Data Erase Std",
               "part": "o",
               "versions": [
                 "1.01m"
@@ -2919,7 +2461,7 @@
             },
             {
               "vendor": null,
-              "product": "GWFCU3-24(WW)",
+              "product": "Software: GWFCU3-24(WW)",
               "part": "o",
               "versions": [
                 "02.00.00"
@@ -2927,7 +2469,7 @@
             },
             {
               "vendor": null,
-              "product": "Engine A",
+              "product": "Hardware: Engine A",
               "part": "o",
               "versions": [
                 "2.0:20"
@@ -2935,7 +2477,7 @@
             },
             {
               "vendor": null,
-              "product": "Engine(Scanner)",
+              "product": "Hardware: Engine(Scanner)",
               "part": "o",
               "versions": [
                 "1.01:00"
@@ -2943,7 +2485,7 @@
             },
             {
               "vendor": null,
-              "product": "OpePanel",
+              "product": "Hardware: OpePanel",
               "part": "o",
               "versions": [
                 "1.02"
@@ -2951,7 +2493,7 @@
             },
             {
               "vendor": null,
-              "product": "LANG0",
+              "product": "Hardware: LANG0",
               "part": "o",
               "versions": [
                 "1.02"
@@ -2959,7 +2501,7 @@
             },
             {
               "vendor": null,
-              "product": "LANG1",
+              "product": "Hardware: LANG1",
               "part": "o",
               "versions": [
                 "1.02"
@@ -3133,15 +2675,6 @@
         "resolution": "explicit_vendor"
       },
       {
-        "cpe": "cpe:2.3:a:ricoh:facsimile_function:-:*:*:*:*:*:*:*",
-        "short": "a:ricoh:facsimile_function:-",
-        "part": "a",
-        "vendor": "ricoh",
-        "product": "facsimile_function",
-        "version": "-",
-        "resolution": "clause_inheritance"
-      },
-      {
         "cpe": "cpe:2.3:o:ricoh:software_system_copy:2.02:*:*:*:*:*:*:*",
         "short": "o:ricoh:software_system_copy:2.02",
         "part": "o",
@@ -3151,166 +2684,166 @@
         "resolution": "clause_inheritance"
       },
       {
-        "cpe": "cpe:2.3:o:ricoh:network_support:10.63:*:*:*:*:*:*:*",
-        "short": "o:ricoh:network_support:10.63",
+        "cpe": "cpe:2.3:o:ricoh:software_network_support:10.63:*:*:*:*:*:*:*",
+        "short": "o:ricoh:software_network_support:10.63",
         "part": "o",
         "vendor": "ricoh",
-        "product": "network_support",
+        "product": "software_network_support",
         "version": "10.63",
         "resolution": "clause_inheritance"
       },
       {
-        "cpe": "cpe:2.3:o:ricoh:fax:02.00.00:*:*:*:*:*:*:*",
-        "short": "o:ricoh:fax:02.00.00",
+        "cpe": "cpe:2.3:o:ricoh:software_fax:02.00.00:*:*:*:*:*:*:*",
+        "short": "o:ricoh:software_fax:02.00.00",
         "part": "o",
         "vendor": "ricoh",
-        "product": "fax",
+        "product": "software_fax",
         "version": "02.00.00",
         "resolution": "clause_inheritance"
       },
       {
-        "cpe": "cpe:2.3:o:ricoh:remotefax:01.00.00:*:*:*:*:*:*:*",
-        "short": "o:ricoh:remotefax:01.00.00",
+        "cpe": "cpe:2.3:o:ricoh:software_remotefax:01.00.00:*:*:*:*:*:*:*",
+        "short": "o:ricoh:software_remotefax:01.00.00",
         "part": "o",
         "vendor": "ricoh",
-        "product": "remotefax",
+        "product": "software_remotefax",
         "version": "01.00.00",
         "resolution": "clause_inheritance"
       },
       {
-        "cpe": "cpe:2.3:o:ricoh:networkdocbox:1.04:*:*:*:*:*:*:*",
-        "short": "o:ricoh:networkdocbox:1.04",
+        "cpe": "cpe:2.3:o:ricoh:software_networkdocbox:1.04:*:*:*:*:*:*:*",
+        "short": "o:ricoh:software_networkdocbox:1.04",
         "part": "o",
         "vendor": "ricoh",
-        "product": "networkdocbox",
+        "product": "software_networkdocbox",
         "version": "1.04",
         "resolution": "clause_inheritance"
       },
       {
-        "cpe": "cpe:2.3:o:ricoh:web_support:1.02:*:*:*:*:*:*:*",
-        "short": "o:ricoh:web_support:1.02",
+        "cpe": "cpe:2.3:o:ricoh:software_web_support:1.02:*:*:*:*:*:*:*",
+        "short": "o:ricoh:software_web_support:1.02",
         "part": "o",
         "vendor": "ricoh",
-        "product": "web_support",
+        "product": "software_web_support",
         "version": "1.02",
         "resolution": "clause_inheritance"
       },
       {
-        "cpe": "cpe:2.3:o:ricoh:web_uapl:1.02:*:*:*:*:*:*:*",
-        "short": "o:ricoh:web_uapl:1.02",
+        "cpe": "cpe:2.3:o:ricoh:software_web_uapl:1.02:*:*:*:*:*:*:*",
+        "short": "o:ricoh:software_web_uapl:1.02",
         "part": "o",
         "vendor": "ricoh",
-        "product": "web_uapl",
+        "product": "software_web_uapl",
         "version": "1.02",
         "resolution": "clause_inheritance"
       },
       {
-        "cpe": "cpe:2.3:o:ricoh:animation:1.01:*:*:*:*:*:*:*",
-        "short": "o:ricoh:animation:1.01",
+        "cpe": "cpe:2.3:o:ricoh:software_animation:1.01:*:*:*:*:*:*:*",
+        "short": "o:ricoh:software_animation:1.01",
         "part": "o",
         "vendor": "ricoh",
-        "product": "animation",
+        "product": "software_animation",
         "version": "1.01",
         "resolution": "clause_inheritance"
       },
       {
-        "cpe": "cpe:2.3:o:ricoh:scanner:01.03:*:*:*:*:*:*:*",
-        "short": "o:ricoh:scanner:01.03",
+        "cpe": "cpe:2.3:o:ricoh:software_scanner:01.03:*:*:*:*:*:*:*",
+        "short": "o:ricoh:software_scanner:01.03",
         "part": "o",
         "vendor": "ricoh",
-        "product": "scanner",
+        "product": "software_scanner",
         "version": "01.03",
         "resolution": "clause_inheritance"
       },
       {
-        "cpe": "cpe:2.3:o:ricoh:printer:1.02.1:*:*:*:*:*:*:*",
-        "short": "o:ricoh:printer:1.02.1",
+        "cpe": "cpe:2.3:o:ricoh:software_printer:1.02.1:*:*:*:*:*:*:*",
+        "short": "o:ricoh:software_printer:1.02.1",
         "part": "o",
         "vendor": "ricoh",
-        "product": "printer",
+        "product": "software_printer",
         "version": "1.02.1",
         "resolution": "clause_inheritance"
       },
       {
-        "cpe": "cpe:2.3:o:ricoh:pcl:1.02:*:*:*:*:*:*:*",
-        "short": "o:ricoh:pcl:1.02",
+        "cpe": "cpe:2.3:o:ricoh:software_pcl:1.02:*:*:*:*:*:*:*",
+        "short": "o:ricoh:software_pcl:1.02",
         "part": "o",
         "vendor": "ricoh",
-        "product": "pcl",
+        "product": "software_pcl",
         "version": "1.02",
         "resolution": "clause_inheritance"
       },
       {
-        "cpe": "cpe:2.3:o:ricoh:pcl_font:1.05:*:*:*:*:*:*:*",
-        "short": "o:ricoh:pcl_font:1.05",
+        "cpe": "cpe:2.3:o:ricoh:software_pcl_font:1.05:*:*:*:*:*:*:*",
+        "short": "o:ricoh:software_pcl_font:1.05",
         "part": "o",
         "vendor": "ricoh",
-        "product": "pcl_font",
+        "product": "software_pcl_font",
         "version": "1.05",
         "resolution": "clause_inheritance"
       },
       {
-        "cpe": "cpe:2.3:o:ricoh:data_erase_std:1.01m:*:*:*:*:*:*:*",
-        "short": "o:ricoh:data_erase_std:1.01m",
+        "cpe": "cpe:2.3:o:ricoh:software_data_erase_std:1.01m:*:*:*:*:*:*:*",
+        "short": "o:ricoh:software_data_erase_std:1.01m",
         "part": "o",
         "vendor": "ricoh",
-        "product": "data_erase_std",
+        "product": "software_data_erase_std",
         "version": "1.01m",
         "resolution": "clause_inheritance"
       },
       {
-        "cpe": "cpe:2.3:o:ricoh:gwfcu3-24ww:02.00.00:*:*:*:*:*:*:*",
-        "short": "o:ricoh:gwfcu3-24ww:02.00.00",
+        "cpe": "cpe:2.3:o:ricoh:software_gwfcu3-24ww:02.00.00:*:*:*:*:*:*:*",
+        "short": "o:ricoh:software_gwfcu3-24ww:02.00.00",
         "part": "o",
         "vendor": "ricoh",
-        "product": "gwfcu3-24ww",
+        "product": "software_gwfcu3-24ww",
         "version": "02.00.00",
         "resolution": "clause_inheritance"
       },
       {
-        "cpe": "cpe:2.3:o:docker:engine_a:2.0:20:*:*:*:*:*:*:*",
-        "short": "o:docker:engine_a:2.0:20",
+        "cpe": "cpe:2.3:o:ibm:hardware_engine_a:2.0:20:*:*:*:*:*:*:*",
+        "short": "o:ibm:hardware_engine_a:2.0:20",
         "part": "o",
-        "vendor": "docker",
-        "product": "engine_a",
+        "vendor": "ibm",
+        "product": "hardware_engine_a",
         "version": "2.0:20",
-        "resolution": "cpe_prefix(engine)"
+        "resolution": "cpe_prefix(hardware)"
       },
       {
-        "cpe": "cpe:2.3:o:ricoh:enginescanner:1.01:00:*:*:*:*:*:*:*",
-        "short": "o:ricoh:enginescanner:1.01:00",
+        "cpe": "cpe:2.3:o:ibm:hardware_enginescanner:1.01:00:*:*:*:*:*:*:*",
+        "short": "o:ibm:hardware_enginescanner:1.01:00",
         "part": "o",
-        "vendor": "ricoh",
-        "product": "enginescanner",
+        "vendor": "ibm",
+        "product": "hardware_enginescanner",
         "version": "1.01:00",
-        "resolution": "clause_inheritance"
+        "resolution": "cpe_prefix(hardware)"
       },
       {
-        "cpe": "cpe:2.3:o:ricoh:opepanel:1.02:*:*:*:*:*:*:*",
-        "short": "o:ricoh:opepanel:1.02",
+        "cpe": "cpe:2.3:o:ibm:hardware_opepanel:1.02:*:*:*:*:*:*:*",
+        "short": "o:ibm:hardware_opepanel:1.02",
         "part": "o",
-        "vendor": "ricoh",
-        "product": "opepanel",
+        "vendor": "ibm",
+        "product": "hardware_opepanel",
         "version": "1.02",
-        "resolution": "clause_inheritance"
+        "resolution": "cpe_prefix(hardware)"
       },
       {
-        "cpe": "cpe:2.3:o:ricoh:lang0:1.02:*:*:*:*:*:*:*",
-        "short": "o:ricoh:lang0:1.02",
+        "cpe": "cpe:2.3:o:ibm:hardware_lang0:1.02:*:*:*:*:*:*:*",
+        "short": "o:ibm:hardware_lang0:1.02",
         "part": "o",
-        "vendor": "ricoh",
-        "product": "lang0",
+        "vendor": "ibm",
+        "product": "hardware_lang0",
         "version": "1.02",
-        "resolution": "clause_inheritance"
+        "resolution": "cpe_prefix(hardware)"
       },
       {
-        "cpe": "cpe:2.3:o:ricoh:lang1:1.02:*:*:*:*:*:*:*",
-        "short": "o:ricoh:lang1:1.02",
+        "cpe": "cpe:2.3:o:ibm:hardware_lang1:1.02:*:*:*:*:*:*:*",
+        "short": "o:ibm:hardware_lang1:1.02",
         "part": "o",
-        "vendor": "ricoh",
-        "product": "lang1",
+        "vendor": "ibm",
+        "product": "hardware_lang1",
         "version": "1.02",
-        "resolution": "clause_inheritance"
+        "resolution": "cpe_prefix(hardware)"
       }
     ]
   },
@@ -3346,49 +2879,31 @@
   },
   {
     "index": 100,
-    "input": "Cisco IronPort S-Series Web Security Appliance (WSA) (S160, S360, S660) running AsyncOS 5.6.1",
+    "input": "Trustwave Network Access Control (NAC) Software Version 3.4.0",
     "extracted_structure": {
       "clauses": [
         {
           "targets": [
             {
-              "vendor": "Cisco",
-              "product": "IronPort S-Series Web Security Appliance (WSA)",
-              "part": "h",
-              "version": "-"
+              "vendor": "Trustwave",
+              "product": "Network Access Control (NAC) Software",
+              "part": "a",
+              "version": "3.4.0"
             }
           ],
-          "companions": [
-            {
-              "vendor": null,
-              "product": "AsyncOS",
-              "part": "o",
-              "versions": [
-                "5.6.1"
-              ]
-            }
-          ]
+          "companions": []
         }
       ]
     },
     "cpes": [
       {
-        "cpe": "cpe:2.3:h:cisco:ironport_s-series_web_security_appliance_wsa:-:*:*:*:*:*:*:*",
-        "short": "h:cisco:ironport_s-series_web_security_appliance_wsa:-",
-        "part": "h",
-        "vendor": "cisco",
-        "product": "ironport_s-series_web_security_appliance_wsa",
-        "version": "-",
+        "cpe": "cpe:2.3:a:trustwave:network_access_control_nac_software:3.4.0:*:*:*:*:*:*:*",
+        "short": "a:trustwave:network_access_control_nac_software:3.4.0",
+        "part": "a",
+        "vendor": "trustwave",
+        "product": "network_access_control_nac_software",
+        "version": "3.4.0",
         "resolution": "explicit_vendor"
-      },
-      {
-        "cpe": "cpe:2.3:o:cisco:asyncos:5.6.1:*:*:*:*:*:*:*",
-        "short": "o:cisco:asyncos:5.6.1",
-        "part": "o",
-        "vendor": "cisco",
-        "product": "asyncos",
-        "version": "5.6.1",
-        "resolution": "cpe_exact+explicit"
       }
     ]
   }

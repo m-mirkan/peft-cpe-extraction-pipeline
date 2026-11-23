@@ -1,136 +1,136 @@
 {
   "baseline": {
     "ALL": {
-      "titles": 99,
+      "titles": 100,
       "failed": 0,
-      "gold_items": 330,
-      "pred_items": 318,
-      "tp": 180,
-      "loose_tp": 185,
-      "prod_tp": 190,
-      "part_ok": 180,
-      "exact_title": 32
+      "gold_items": 273,
+      "pred_items": 271,
+      "tp": 121,
+      "loose_tp": 129,
+      "prod_tp": 134,
+      "part_ok": 121,
+      "exact_title": 30
     },
     "other_hardware": {
       "titles": 9,
       "failed": 0,
       "gold_items": 22,
-      "pred_items": 21,
-      "tp": 9,
-      "loose_tp": 9,
-      "prod_tp": 10,
-      "part_ok": 9,
-      "exact_title": 2
+      "pred_items": 22,
+      "tp": 11,
+      "loose_tp": 11,
+      "prod_tp": 11,
+      "part_ok": 11,
+      "exact_title": 3
     },
     "difficulty:medium": {
-      "titles": 40,
+      "titles": 41,
       "failed": 0,
-      "gold_items": 99,
+      "gold_items": 96,
       "pred_items": 102,
-      "tp": 53,
-      "loose_tp": 56,
-      "prod_tp": 61,
-      "part_ok": 53,
-      "exact_title": 12
+      "tp": 47,
+      "loose_tp": 50,
+      "prod_tp": 52,
+      "part_ok": 47,
+      "exact_title": 11
     },
     "epassport_applet": {
       "titles": 13,
       "failed": 0,
-      "gold_items": 21,
-      "pred_items": 31,
+      "gold_items": 19,
+      "pred_items": 30,
       "tp": 5,
-      "loose_tp": 6,
-      "prod_tp": 5,
+      "loose_tp": 7,
+      "prod_tp": 6,
       "part_ok": 5,
-      "exact_title": 1
+      "exact_title": 2
     },
     "difficulty:easy": {
       "titles": 30,
       "failed": 0,
-      "gold_items": 31,
-      "pred_items": 31,
+      "gold_items": 30,
+      "pred_items": 30,
       "tp": 17,
-      "loose_tp": 17,
+      "loose_tp": 18,
       "prod_tp": 18,
       "part_ok": 17,
-      "exact_title": 16
+      "exact_title": 17
     },
     "enterprise_sw": {
       "titles": 18,
       "failed": 0,
       "gold_items": 29,
-      "pred_items": 32,
+      "pred_items": 28,
       "tp": 16,
       "loose_tp": 16,
       "prod_tp": 16,
       "part_ok": 16,
-      "exact_title": 8
+      "exact_title": 9
     },
     "smartcard_chip": {
       "titles": 17,
       "failed": 0,
-      "gold_items": 61,
-      "pred_items": 66,
-      "tp": 33,
-      "loose_tp": 33,
-      "prod_tp": 40,
-      "part_ok": 33,
-      "exact_title": 6
+      "gold_items": 36,
+      "pred_items": 37,
+      "tp": 13,
+      "loose_tp": 14,
+      "prod_tp": 22,
+      "part_ok": 13,
+      "exact_title": 4
     },
     "difficulty:hard": {
       "titles": 29,
       "failed": 0,
-      "gold_items": 200,
-      "pred_items": 185,
-      "tp": 110,
-      "loose_tp": 112,
-      "prod_tp": 111,
-      "part_ok": 110,
-      "exact_title": 4
+      "gold_items": 147,
+      "pred_items": 139,
+      "tp": 57,
+      "loose_tp": 61,
+      "prod_tp": 64,
+      "part_ok": 57,
+      "exact_title": 2
     },
     "network_security": {
       "titles": 23,
       "failed": 0,
-      "gold_items": 78,
-      "pred_items": 61,
-      "tp": 33,
-      "loose_tp": 34,
-      "prod_tp": 33,
-      "part_ok": 33,
-      "exact_title": 7
+      "gold_items": 51,
+      "pred_items": 51,
+      "tp": 21,
+      "loose_tp": 23,
+      "prod_tp": 21,
+      "part_ok": 21,
+      "exact_title": 6
     },
     "printer_mfp": {
       "titles": 12,
       "failed": 0,
-      "gold_items": 107,
-      "pred_items": 96,
-      "tp": 79,
-      "loose_tp": 81,
-      "prod_tp": 80,
-      "part_ok": 79,
-      "exact_title": 5
+      "gold_items": 103,
+      "pred_items": 93,
+      "tp": 51,
+      "loose_tp": 53,
+      "prod_tp": 53,
+      "part_ok": 51,
+      "exact_title": 3
+    },
+    "mobile_embedded": {
+      "titles": 4,
+      "failed": 0,
+      "gold_items": 7,
+      "pred_items": 5,
+      "tp": 3,
+      "loose_tp": 3,
+      "prod_tp": 4,
+      "part_ok": 3,
+      "exact_title": 2
     },
     "os_platform": {
       "titles": 4,
       "failed": 0,
       "gold_items": 6,
-      "pred_items": 6,
-      "tp": 3,
-      "loose_tp": 4,
-      "prod_tp": 3,
-      "part_ok": 3,
-      "exact_title": 1
-    },
-    "mobile_embedded": {
-      "titles": 3,
-      "failed": 0,
-      "gold_items": 6,
       "pred_items": 5,
-      "tp": 2,
+      "tp": 1,
       "loose_tp": 2,
-      "prod_tp": 3,
-      "part_ok": 2,
-      "exact_title": 2
+      "prod_tp": 1,
+      "part_ok": 1,
+      "exact_title": 1
     }
   }
 }
