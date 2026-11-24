@@ -87,6 +87,10 @@ def main():
     parser.add_argument("--lora_alpha", type=int, default=32)
     parser.add_argument("--max_length", type=int, default=1024)
     parser.add_argument("--max_steps", type=int, default=-1, help="Set >0 for a quick smoke test")
+    parser.add_argument("--save_steps", type=int, default=0,
+                        help="Save a resumable checkpoint every N steps (0 = off, original behavior). Use with --output_dir on Google Drive.")
+    parser.add_argument("--resume", action="store_true",
+                        help="Resume from the latest checkpoint-* in --output_dir if one exists (otherwise start fresh)")
     args = parser.parse_args()
 
     print(f"[Train] Loading tokenizer & 4-bit QLoRA model: {args.model_id}")
@@ -137,7 +141,9 @@ def main():
         logging_steps=5,
         eval_strategy="steps",
         eval_steps=50,
-        save_strategy="no",
+        save_strategy="steps" if args.save_steps > 0 else "no",
+        save_steps=args.save_steps if args.save_steps > 0 else 500,
+        save_total_limit=2,
         bf16=torch.cuda.is_bf16_supported(),
         fp16=not torch.cuda.is_bf16_supported(),
         gradient_checkpointing=True,
@@ -155,7 +161,13 @@ def main():
     )
 
     print("[Train] Starting QLoRA fine-tuning...")
-    trainer.train()
+    resume_ckpt = None
+    if args.resume and os.path.isdir(args.output_dir):
+        ckpts = [d for d in os.listdir(args.output_dir) if d.startswith("checkpoint-")]
+        if ckpts:
+            resume_ckpt = os.path.join(args.output_dir, max(ckpts, key=lambda d: int(d.split("-")[1])))
+            print(f"[Train] Resuming from {resume_ckpt}")
+    trainer.train(resume_from_checkpoint=resume_ckpt)
 
     os.makedirs(args.output_dir, exist_ok=True)
     model.save_pretrained(args.output_dir)
