@@ -104,6 +104,19 @@ It is applied in four places:
 - **D10. DECIDED:** hardware revision / stepping (`A02`, `rev. E`, `Revision 3`, `T23`) goes in the hardware `version` (drafts), not in the product name.
 - **D11. DECIDED:** chip names keep their manufacturer prefix in the product (`ST23YL80B`, never `23YL80B`). The vendor field stays `null` unless the title states the vendor; the resolver infers it from NVD.
 
+## 5b. Decisions added in v1.1 (2026-11-28, after the error analysis of adapter v1 on the gold set)
+
+These rules were written after looking at where adapter v1 failed on the gold set, so the gold set is a development set from this point on. They are general rules: no gold title, product name or model code is used as training data (gates A and B in scripts/build_training_data_v3.py enforce this).
+
+- **D12.** `IC Dedicated Software` (also `IC Dedicated Support Software`) in a chip title is an `o` companion of the chip. The chip is `h`, product = the model code only (`Secure Smart Card Controller`, `Smart Card IC` and similar class words are dropped), and a trailing revision (`VA`, `RV08`, `rev. B`) is the chip version. A crypto library named without a version is noise.
+- **D13.** Device-class words directly before a model code are dropped (`Secure Flash Memory W75...` becomes `W75...`). Product-line names are kept (`Mesh Point ES520`).
+- **D14.** Standalone firewall / gateway / UTM software is `o` (restates D2); management, policy and compliance software is `a`. Acronyms in parentheses (`(NAC)`) and a trailing `Software` are dropped from the product.
+- **D15.** A function list (`Copy, Print, Fax, Scan`) in a printer title is noise. ROMs after it are `o` companions with split names (`StorageController ROM` becomes `Storage Controller ROM`, `Fax ROM`).
+- **D16.** Editions, patch ids and `LTS` / `Long Term Support` are never part of the product or the version (restates D4 and D5 for patch ids).
+- **D17.** A bare `Brand v8.1` has the brand as the product and `8.1` as the version. A multi-word vendor shown in the title (`Alcatel-Lucent Enterprise`, `Palo Alto Networks`) stays out of the product. A reference code next to a chip revision (`AT568A9 rev. F`) is noise; only the revision is kept (D10).
+
+Not addressed on purpose (label-style differences in the gold set, not model errors): whether a brand-like first word is a vendor or part of the product (`dbsign`, `antikor`, `KnoWho`), and acronym product lists such as the Ionix modules.
+
 ## 6. Worked examples (to verify before they become training data)
 
 | # | Title (short) | Baseline | Proposed |
@@ -124,3 +137,4 @@ It is applied in four places:
 - v0.2 (2026-11-21): added proposed defaults for D3-D7 (so the gold drafts and the codebook agree) and new open decisions D8-D10. Gold draft G013 aligned to R5 (device-class words stripped).
 - v0.2b (2026-11-21): the 4 ambiguous gold titles (G031, G039, G047, G048) were replaced by clearer titles from the pool, so all 100 gold titles are scoreable. D6 still applies to future ambiguous titles.
 - v1.0 (2026-11-21): all decisions D3-D10 confirmed as written; new D11 (ST prefix kept in chip names). The gold drafts already follow these rules.
+- v1.1 (2026-11-28): D12-D17 added after the v1 error analysis (training data v3). The gold set is a development set from this version on.
